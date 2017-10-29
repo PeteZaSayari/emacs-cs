@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<?xml-stylesheet type="text/xsl" href="tohtml.xsl"?>
+
+<cheatsheet version="1.0" lang="en" created="2017-09-29">
+
+  <header>
+    <title>EMACS Cheatsheet</title>
+    <subtitle>For version 22</subtitle>
+  </header>
+
+  <body>
+    <chapter title="Prefixes">
+      <it>
+        <k>C-c</k>
+        <d>Commands particular to the current editing mode</d>
+      </it>
+
+      <it>
+        <k>C-x</k>
+        <d>Commands for files and buffers</d>
+      </it>
+
+      <it>
+        <k>C-h</k>
+        <d>Help commands</d>
+      </it>
+
+      <it>
+        <k>M-x</k>
+        <d>Literal function name</d>
+      </it>
+    </chapter>
+
+    <chapter title="Buffer and files functions">
+      <it>
+        <k>C-x C-s</k>
+        <f>save-buffer</f>
+        <d>Save current buffer to disk.</d>
+      </it>
+
+      <it>
+        <k>C-x s</k>
+        <f>save-some-buffers</f>
+        <d>Ask about saving all unsaved buffers to disk.</d>
+      </it>
+
+      <it>
+        <k>C-x C-c</k>
+        <f>save-buffers-kill-emacs</f>
+        <d>Ask about saving all unsaved buffers to disk and exit
+           Emacs.</d>
+      </it>
+
+      <it>
+        <k>C-x C-z</k>
+        <f>suspend-emacs</f>
+        <d>Suspend Emacs and make it a background process.</d>
+      </it>
+
+      <it>
+        <k>C-x C-b</k>
+        <f>list-buffers</f>
+        <d>List all buffers.</d>
+      </it>
+
+      <it>
+        <k>C-x k</k>
+        <f>kill-buffer</f>
+        <d>Kill a buffer (the current buffer, by default).</d>
+      </it>
+
+      <it>
+        <k>C-x C-q</k>
+        <f>vc-toggle-read-only</f>
+        <d>Toggle read-only status on the current buffer (and perform
+           version control if applicable).</d>
+      </it>
+
+      <it>
+        <k>C-x i</k>
+        <f>insert-file</f>
+        <d>Insert the contents of a file at point.</d>
+      </it>
+    </chapter>
+
+    <chapter title="Movement and navigation">
+      <it>
+        <k>C-p | UpArrow</k>
+        <f>previous-line</f>
+        <d>Move point up to the previous line.</d>
+      </it>
+
+      <it>
+        <k>C-n | DownArrow</k>
+        <f>next-line</f>
+        <d>Move point down to the next line.</d>
+      </it>
+
+      <it>
+        <k>C-f | RightArrow</k>
+        <f>forward-char</f>
+        <d>Move point forward to the next character.</d>
+      </it>
+
+      <it>
+        <k>C-b | LeftArrow</k>
+        <f>back-char</f>
+        <d>Move point backward to the previous character.</d>
+      </it>
+
+      <it>
+        <k>M-f</k>
+        <f>forward-word</f>
+        <d>Move point forward to the next word.</d>
+      </it>
+
+      <it>
+        <k>M-b</k>
+        <f>backward-word</f>
+        <d>Move point backward to the previous word.</d>
+      </it>
+
+      <it>
+        <k>C-v | PgDn</k>
+        <f>scroll-up</f>
+        <d>Scroll the text upward by a screen.</d>
+      </it>
+
+      <it>
+        <k>M-v | PgUp</k>
+        <f>scroll-down</f>
+        <d>Scroll the text downward by a screen.</d>
+      </it>
+
+      <it>
+        <k>Home</k>
+        <f>beginning-of-buffer</f>
+        <d>Move point to the beginning of the buffer. (On some
+           versions, this key is defined by default to move to the
+           beginning of the current line.)</d>
+      </it>
+
+      <it>
+        <k>End</k>
+        <f>end-of-buffer</f>
+        <d>Move point to the end of the buffer. (On some versions,
+           this key is defined by default to move to the end of the
+           current line.)</d>
+      </it>
+
+      <it>
+        <k>C-a</k>
+        <f>beginning-of-line</f>
+        <d>Move point to the beginning of the line.</d>
+      </it>
+
+      <it>
+        <k>C-e</k>
+        <f>end-of-line</f>
+        <d>Move point to the end of the line.</d>
+      </it>
+
+      <it>
+        <k>M-a</k>
+        <f>beginning-of-sentence</f>
+        <d>Move point to the beginning of the sentence.</d>
+      </it>
+
+      <it>
+        <k>M-e</k>
+        <f>end-of-sentence</f>
+        <d>Move point to the end of the sentence.</d>
+      </it>
+
+      <it>
+        <k>C-{</k>
+        <f>beginning-of-paragraph</f>
+        <d>Move point to the beginning of the paragraph.</d>
+      </it>
+
+      <it>
+        <k>C-}</k>
+        <f>end-of-paragraph</f>
+        <d>Move point to the end of the paragraph.</d>
+      </it>
+    </chapter>
+
+    <chapter title="Common Emacs editing commands">
+      <it>
+        <k>Ins</k>
+        <f>overwrite-mode</f>
+        <d>Toggle overwrite mode (default is off).</d>
+      </it>
+
+      <it>
+        <k>Backspace | Del</k>
+        <f>delete-backward-char</f>
+        <d>Delete the character before point.</d>
+      </it>
+
+      <it>
+        <k>C-d</k>
+        <f>delete-char</f>
+        <d>Delete the character at point.</d>
+      </it>
+
+      <it>
+        <k>M-d</k>
+        <f>kill-word</f>
+        <d>Delete the characters from point forward to the end of the
+           word.</d>
+      </it>
+
+      <it>
+        <k>M-Backspace | M-Del</k>
+        <f>backward-kill-word</f>
+        <d>Delete the characters from point backward to the beginning
+           of the word.</d>
+      </it>
+
+      <it>
+        <k>C-_</k>
+        <f>undo</f>
+        <d>Undo your last typing or action.</d>
+      </it>
+
+      <it>
+        <k>C-q[CHAR] or [NUM]</k>
+        <f>quoted-insert</f>
+        <d>Insert, at point, the literal character keypress or the
+           character whose octal value is XXX.</d>
+      </it>
+
+      <it>
+        <k>C-u[NUM][COMMAND]</k>
+        <f>universal-argument</f>
+        <d>Execute command a total of number (default 4) times in
+           succession.</d>
+      </it>
+    </chapter>
+
+    <chapter title="Functions for marking and killing text">
+      <it>
+        <k>C-Space</k>
+        <f>set-mark-command</f>
+        <d>Set the mark at point.</d>
+      </it>
+
+      <it>
+        <k>C-k</k>
+        <f>kill-line</f>
+        <d>Kill all text from point to the end of the line.</d>
+      </it>
+
+      <it>
+        <k>C-w</k>
+        <f>kill-region</f>
+        <d>Kill the region.</d>
+      </it>
+
+      <it>
+        <k>M-w</k>
+        <f>kill-ring-save</f>
+        <d>Save the region in the kill ring, but don't kill it.</d>
+      </it>
+
+      <it>
+        <k>C-y</k>
+        <f>yank</f>
+        <d>Yank text from the kill ring.</d>
+      </it>
+    </chapter>
+
+    <chapter title="Text mode key bindings">
+      <it>
+	      <k>Esc</k>
+	      <d>Prefix for mode-specific commands</d>
+      </it>
+
+      <it>
+	      <k>Esc Tab | M-Tab</k>
+	      <f>ispell-complete-word</f>
+      </it>
+
+      <it>
+	      <k>Esc S | M-S</k>
+	      <f>center-paragraph</f>
+      </it>
+
+      <it>
+	      <k>Esc s | M-s</k>
+	      <f>center-line</f>
+      </it>
+    </chapter>
+
+    <chapter title="Text manipulation commands">
+      <it>
+	      <k>C-x C-i | C-x Tab</k>
+	      <f>indent-rigidly</f>
+	      <d>This command indents lines in the region (or at point).</d>
+      </it>
+
+      <it>
+	      <k></k>
+	      <f>fill-region</f>
+	      <d>This command fills all paragraphs in the region.</d>
+      </it>
+
+      <it>
+	      <k>M-q</k>
+	      <f>fill-paragraph</f>
+	      <d>This command fills the single paragraph at point.</d>
+      </it>
+
+      <it>
+	      <k>M-\</k>
+	      <f>delete-horizontal-space</f>
+	      <d>This command removes any horizontal space to the right and
+	         left of point.</d>
+      </it>
+
+      <it>
+	      <k>C-o</k>
+	      <f>open-line</f>
+	      <d>This command opens a new line of vertical space below
+	         point, without moving point.</d>
+      </it>
+
+      <it>
+	      <k>C-t</k>
+	      <f>transpose-chars</f>
+	      <d>This command transposes the single characters to the right
+	         and left of point.</d>
+      </it>
+
+      <it>
+	      <k>M-t</k>
+	      <f>transpose-words</f>
+	      <d>This command transposes the single words to the right and
+	         left of point.</d>
+      </it>
+
+      <it>
+	      <k>C-x C-t</k>
+	      <f>transpose-lines</f>
+	      <d>This command transposes the line at point with the line
+	         before it.</d>
+      </it>
+
+      <it>
+	      <k>M-^</k>
+	      <f>delete-indentation</f>
+	      <d>This command joins the line at point with the previous
+	         line. Preface with C-1 to join the line at point with the
+	         next line.</d>
+      </it>
+
+      <it>
+	      <k>M-u</k>
+	      <f>uppercase-word</f>
+	      <d>This command converts the text at point to the end of the
+	         word to uppercase letters.</d>
+      </it>
+
+      <it>
+	      <k>M-l</k>
+	      <f>downcase-word</f>
+	      <d>This command converts the text at point to the end of the
+	         word to lowercase letters.</d>
+      </it>
+
+      <it>
+	      <k>C-x C-l</k>
+	      <f>downcase-region</f>
+	      <d>This command converts the region to lowercase letters.</d>
+      </it>
+
+      <it>
+	      <k>C-x C-u</k>
+	      <f>upcase-region</f>
+	      <d>This command converts the region to uppercase letters.</d>
+      </it>
+    </chapter>
+
+    <chapter title="Search and replace commands">
+      <it>
+	      <k>C-s [STRING] [C-w] [C-y]</k>
+	      <f>isearch-forward</f>
+	      <d>Incrementally search forward through the buffer for string
+	         (default is the last search string you gave, if any); C-w
+	         uses the text from point forward to the end of the word and
+	         C-y uses everything from point to the end of the line.</d>
+      </it>
+
+      <it>
+	      <k>C-r [STRING] [C-w] [C-y]</k>
+	      <f>isearch-backward</f>
+	      <d>Incrementally search backward through the buffer for string
+	         (default is the last search string you gave, if any); C-w
+	         uses the text from point forward to the end of the word,
+	         and C-y uses everything from point to the end of the
+	         line.</d>
+      </it>
+
+      <it>
+	      <k>C-s Enter C-w [WORD OR PHRASE]</k>
+	      <f>word-search-forward</f>
+	      <d>Search forward through the buffer for the given word or
+	         phrase, regardless of spacing.</d>
+      </it>
+
+      <it>
+	      <k>C-r Enter C-w [WORD OR PHRASE]</k>
+	      <f>word-search-backward</f>
+	      <d>Search backward through the buffer for the given word or
+	         phrase, regardless of spacing.</d>
+      </it>
+
+      <it>
+	      <k>C-M-s</k>
+	      <f>isearch-forward-regexp</f>
+	      <d>Incrementally search forward through the buffer for a given
+	         regular expression.</d>
+      </it>
+
+      <it>
+	      <k>C-M-r</k>
+	      <f>isearch-backward-regexp</f>
+	      <d>Incrementally search backward through the buffer for a
+	         given regular expression.</d>
+      </it>
+
+      <it>
+	      <k></k>
+	      <f>replace-string</f>
+	      <d>Search for a given string from point to the end of the
+	         buffer and replace it with a given string.</d>
+      </it>
+
+      <it>
+	      <k></k>
+	      <f>replace-regexp</f>
+	      <d>Search for a given regular expression from point to the end
+	         of the buffer and replace it with a given string.</d>
+      </it>
+
+      <it>
+	      <k>M-%</k>
+	      <f>query-replace</f>
+	      <d>Search for a given string from point to the end of the
+	         buffer and, in each instance, query to replace it with a
+	         given string.</d>
+      </it>
+
+      <it>
+	      <k>C-M-%</k>
+	      <f>query-replace-regexp</f>
+	      <d>Search for a given regular expression from point to the end
+	         of the buffer and, in each instance, query to replace it
+	         with a given string.</d>
+      </it>
+    </chapter>
+  </body>
+
+  <footer>
+    <line>Copyright (C) 2017 Pete Za Sayari</line>
+    <line>&lt;petezasayari@gmail.com&gt;</line>
+    <line></line>
+    <line>Released under the terms of the GNU General Public License
+          version 3 or later.</line>
+    <line></line>
+    <line>For more Emacs documentation see the Emacs distribution or
+          http://www.gnu.org/software/emacs</line>
+    <line>For the XML-XSLT source for this cheat sheet see
+          https://github.com/PeteZaSayari/emacs-cs</line>
+  </footer>
+
+</cheatsheet>
+
+<!--
+  <it>  <item>
+  <f>   <function>
+  <d>   <description>
+  <k>   <key>
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
