@@ -5,7 +5,7 @@
 
   <header>
     <title>EMACS Cheatsheet</title>
-    <subtitle>For version 22</subtitle>
+    <subtitle>For version 25</subtitle>
   </header>
 
   <body>
@@ -32,6 +32,11 @@
     </chapter>
 
     <chapter title="Buffer and files functions">
+      <it>
+	<k>C-x C-f</k>
+	<f>find-file</f>
+	<d>Visit a file.</d>
+      </it>
       <it>
         <k>C-x C-s</k>
         <f>save-buffer</f>
@@ -185,7 +190,7 @@
       </it>
     </chapter>
 
-    <chapter title="Common Emacs editing commands">
+    <chapter title="Common editing commands">
       <it>
         <k>Ins</k>
         <f>overwrite-mode</f>
@@ -460,6 +465,45 @@
 	         with a given string.</d>
       </it>
     </chapter>
+
+    <chapter title="Commands for using rectangles">
+      <it>
+	<k>C-space</k>
+	<f>set-mark-command</f>
+	<d>Marks one corner of a rectangle (point marks the opposite corner).</d>
+      </it>
+
+      <it>
+	<k>C-x r k</k>
+	<f>kill-rectangle</f>
+	<d>Kills the current rectangle and saves it in a special rectangle buffer.</d>
+      </it>
+
+      <it>
+	<k>C-x r d</k>
+	<f>delete-rectangle</f>
+	<d>Deletes the current rectangle and doesn't save it for yanking.</d>
+      </it>
+
+      <it>
+	<k>C-x r c</k>
+	<f>clear-rectangle</f>
+	<d>Clears the current rectangle, replacing the entire area with whitespace.</d>
+      </it>
+
+      <it>
+	<k>C-x r o</k>
+	<f>open-rectangle</f>
+	<d>Opens the current rectangle, filling the entire area with whitespace and moving all text from the rectangle to the right.</d>
+      </it>
+
+      <it>
+	<k>C-x r y</k>
+	<f>yank-rectangle</f>
+	<d>Yanks the contents of the last-killed rectangle at point, moving all existing text to the right.</d>
+      </it>
+    </chapter>
+    
   </body>
 
   <footer>

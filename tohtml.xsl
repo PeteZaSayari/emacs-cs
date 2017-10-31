@@ -10,13 +10,13 @@
         <title>Testing XML Example</title>
         <style>
           @font-face {
-	          font-family: 'Adobe Caslon Pro';
-	          src: url('fonts/ACaslonPro-Regular.otf')
-	               format('opentype');
-	          font-weight: normal;
-	          font-style: normal;
-	          }
-	        @font-face {
+            font-family: 'Adobe Caslon Pro';
+            src: url('fonts/ACaslonPro-Regular.otf')
+                 format('opentype');
+            font-weight: normal;
+            font-style: normal;
+            }
+          @font-face {
             font-family: 'Adobe Caslon Pro';
             src: url('fonts/ACaslonPro-Bold.otf')
                  format('opentype');
@@ -24,14 +24,23 @@
             font-style: normal;
             }
           @font-face {
-	          font-family: 'Adobe Caslon Pro';
-	          src: url('fonts/ACaslonPro-Italic.otf')
+            font-family: 'Adobe Caslon Pro';
+            src: url('fonts/ACaslonPro-Italic.otf')
                  format('opentype');
-	          font-weight: normal;
-	          font-style: italic;
-	          }
+            font-weight: normal;
+            font-style: italic;
+            }
+          @page {
+            size: 297mm 210mm;
+            margin: 10mm;
+            orphans:2;
+            widows:2;
+          }
           .onecol {
             column-count: 1;
+          }
+          .solid {
+            page-break-inside: avoid;
           }
           body {
             column-count: 4;
@@ -40,8 +49,18 @@
             font-size: .75em;
             font-family: Adobe Caslon Pro;
           }
-          .mini {font-size: .075em;}
-          table {font-size: 1em;}
+          table {
+            font-size: 1em;
+            border: 0;
+            border-spacing: 0;
+            width: 100%;
+          }
+          td {
+            text-indent: 0;
+            vertical-align: top;
+            padding: 0;
+            width: 50%;
+          }
         </style>
       </head>
 
@@ -68,23 +87,23 @@
 
   <xsl:template match="body">
     <xsl:for-each select="chapter">
-      <div class="onecol" align="center">
+      <div style="padding-bottom: .5em;">
+      <div class="onecol" align="center"  style="padding-bottom: .125em;">
         <strong><xsl:value-of select="@title"/></strong>
-        <div><p class="mini"><br/></p></div>
       </div>
 
       <xsl:for-each select="it">
-        <div style="page-break-inside: avoid;">
-          <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <div class="solid" style="padding-bottom: .125em;">
+          <table>
             <tr>
               <xsl:choose>
                 <xsl:when test="k">
-                  <td valign="top" width="50%">
+                  <td>
                     <kbd><xsl:value-of select="k"/></kbd>
                   </td>
                 </xsl:when>
                 <xsl:otherwise>
-                  <td width="50%">
+                  <td>
                     <xsl:text> </xsl:text>
                   </td>
                 </xsl:otherwise>
@@ -92,7 +111,7 @@
 
               <xsl:choose>
                 <xsl:when test="f">
-                  <td valign="top">
+                  <td>
                     <em><xsl:value-of select="f"/></em>
                   </td>
                 </xsl:when>
@@ -109,36 +128,22 @@
               <xsl:value-of select="d"/>
             </div>
           </xsl:if>
-          <div>
-            <p class="mini"><br/></p>
-          </div>
         </div>
       </xsl:for-each>
-
-      <div>
-        <p class="mini"><br/></p>
-      </div>
-      <div>
-        <p class="mini"><br/></p>
       </div>
     </xsl:for-each>
   </xsl:template>
 
   <xsl:template match="footer">
-    <div>
-      <p class="mini"><br/></p>
-    </div>
-
-    <hr />
-
-    <div>
-      <p class="mini"><br/></p>
-    </div>
-
-    <div align="center" style="font-size: .75em">
-      <xsl:for-each select="line">
-          <xsl:value-of select="."/><br />
-      </xsl:for-each>
+    <div style="page-break-inside: avoid;">
+      <div style="padding-top: .3em; padding-bottom: .3em;">
+        <hr />
+      </div>
+      <div align="center" style="font-size: .75em">
+        <xsl:for-each select="line">
+            <xsl:value-of select="."/><br />
+        </xsl:for-each>
+      </div>
     </div>
   </xsl:template>
 

@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<changelog>
+  <release n="1" date="2017.10.29" author="Pete Za Sayari">
+    <version>0.0</version>
+
+    <added>
+      <i>Created the project;</i>
+    </added>
+  </release>
+
+  <release n="2" date="2017.10.31" author="Pete Za Sayari">
+    <version>0.1</version>
+
+    <added>
+      <i>Added the footer;</i>
+      <i>Added the Caslon fonts;</i>
+      <i>Added this changelog;</i>
+      <i>Added CSS instructions for the printing pagination;</i>
+      <i>Added a TODO list file;</i>
+      <i>Added some content.</i>
+    </added>
+
+    <changed>
+      <i>Deleted the empty lines between the paragraphs; replaced with
+         "padding-bottom" values in the CSS.</i>
+      <i>Some minor changes.</i>
+    </changed>
+  </release>
+</changelog>
+
+
+<!-- TEMPLATE
+
+<changelog>
+  <release n="NUM" date="DATE" author="STRING">
+    <version>n.n</version>
+    <added>
+      <i>new features.</i>
+    </added>
+
+    <changed>
+      <i>changes in existing functionality.</i>
+    </changed>
+
+    <deprecated>
+      <i>once-stable features removed in upcoming releases.</i>
+    </deprecated>
+
+    <removed>
+      <i>deprecated features removed in this release.</i>
+    </removed>
+
+    <fixed>
+      <i>any bug fixes.</i>
+    </fixed>
+  </release>
+</changelog>
+
+-->
