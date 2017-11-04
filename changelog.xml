@@ -2,7 +2,7 @@
 
 <changelog>
 
-  <release n="3" date="???" author="Pete Za Sayari">
+  <release n="3" date="2017.11.04" author="Pete Za Sayari">
     <version>0.2</version>
 
     <added>
@@ -14,7 +14,7 @@
 
     <changed>
       <i file="TODO.xml">Modified the structure.</i>
-      <i>Implemented the footer with "padding-bottom"</i>
+      <i file="tohtml.xsl">Implemented the footer with "padding-bottom"</i>
     </changed>
   </release>
 
