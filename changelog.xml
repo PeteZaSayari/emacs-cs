@@ -1,12 +1,21 @@
 <?xml version='1.0' encoding='utf-8'?>
 
 <changelog>
-  <release n="1" date="2017.10.29" author="Pete Za Sayari">
-    <version>0.0</version>
+
+  <release n="3" date="???" author="Pete Za Sayari">
+    <version>0.2</version>
 
     <added>
-      <i>Created the project;</i>
+      <i file="TODO.xml">Attribute "file" into the "i" tag.</i>
+      <i file="emcsh.xml">"Things you shuld never know about", a good
+      idea from another cheatsheet.</i>
+      <i file="emcsh.xml">IBM course, 3rd and 4th module.</i>
     </added>
+
+    <changed>
+      <i file="TODO.xml">Modified the structure.</i>
+      <i>Implemented the footer with "padding-bottom"</i>
+    </changed>
   </release>
 
   <release n="2" date="2017.10.31" author="Pete Za Sayari">
@@ -23,36 +32,46 @@
 
     <changed>
       <i>Deleted the empty lines between the paragraphs; replaced with
-         "padding-bottom" values in the CSS.</i>
+      "padding-bottom" values in the CSS.</i>
       <i>Some minor changes.</i>
     </changed>
   </release>
+
+  <release n="1" date="2017.10.29" author="Pete Za Sayari">
+    <version>0.0</version>
+
+    <added>
+      <i>Created the project;</i>
+    </added>
+  </release>
+
 </changelog>
 
-
+<!-- ============================================================= -->
 <!-- TEMPLATE
 
 <changelog>
   <release n="NUM" date="DATE" author="STRING">
     <version>n.n</version>
+
     <added>
-      <i>new features.</i>
+      <i file="">new features.</i>
     </added>
 
     <changed>
-      <i>changes in existing functionality.</i>
+      <i file="">changes in existing functionality.</i>
     </changed>
 
     <deprecated>
-      <i>once-stable features removed in upcoming releases.</i>
+      <i file="">once-stable features removed in upcoming releases.</i>
     </deprecated>
 
     <removed>
-      <i>deprecated features removed in this release.</i>
+      <i file="">deprecated features removed in this release.</i>
     </removed>
 
     <fixed>
-      <i>any bug fixes.</i>
+      <i file="">any bug fixes.</i>
     </fixed>
   </release>
 </changelog>

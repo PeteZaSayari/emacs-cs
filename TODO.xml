@@ -1,19 +1,27 @@
 <?xml version='1.0' encoding='utf-8'?>
 
 <TODO>
-  <i created="2017.10.29" priority="C" status="open">
+  <task created="2017.11.04" priority="A" status="open">
+   Ask at stackoverflow about the problem of the fonts.
+  </task>
+
+  <task created="2017.10.29" priority="B" status="open">
     A README file. It needs instructions to read on a web browser and
     to print on paper.
-  </i>
+  </task>
 </TODO>
 
+<!-- ============================================================= -->
 <!-- TEMPLATE
+
 <TODO>
- <i created="DATE"
-    priority="A (blocker)|B (critical)|C (normal)|D (unuseful)"
-    status="open|resolved|won't do"
-    due="DATE"
-    solved="DATE">
+  <task created="DATE"
+        priority="A (major)|B (minor)|C (trivial)"
+        status="open|resolved|won't do"
+        due="DATE"
+        solved="DATE">
    TEXT
- </i>
+  </task>
 </TODO>
+
+-->

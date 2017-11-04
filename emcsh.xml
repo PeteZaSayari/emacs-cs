@@ -9,6 +9,50 @@
   </header>
 
   <body>
+    <chapter title="Command line options">
+      <it>
+	<k>--visit=&lt;filespec&gt; | --file=&lt;filespec&gt; |
+	&lt;filespec&gt;</k>
+	<f></f>
+	<d>Open filespec into individual buffers for editing.</d>
+      </it>
+
+      <it>
+	<k>+row[:column]</k>
+	<f></f>
+	<d>Move point to line number row and (optional) horizontal
+	position column in the file (default is +1:1).</d>
+      </it>
+
+      <it>
+	<k>--insert &lt;file&gt;</k>
+	<f></f>
+	<d>Insert file at the beginning of the buffer.</d>
+      </it>
+
+      <it>
+	<k>--load &lt;file&gt; | -l &lt;file&gt;</k>
+	<f></f>
+	<d>Execute the Emacs Lisp instructions in file.</d>
+      </it>
+
+      <it>
+	<k>--g &lt;dimensions&gt; | --geometry &lt;dimensions&gt;</k>
+	<f></f>
+	<d>Set the window's width, height, and position according to
+	the given X window dimensions (the default is to make the
+	window 80x40 characters).</d>
+      </it>
+
+      <it>
+	<k>-nw | --no-windows</k>
+	<f></f>
+	<d>In X, don't use an X client window, but open in the current
+	terminal window instead. This option doesn't affect console
+	sessions.</d>
+      </it>
+    </chapter>
+    
     <chapter title="Prefixes">
       <it>
         <k>C-c</k>
@@ -57,9 +101,10 @@
       </it>
 
       <it>
-        <k>C-x C-z</k>
+        <k>C-x C-z | C-z</k>
         <f>suspend-emacs</f>
-        <d>Suspend Emacs and make it a background process.</d>
+        <d>Suspend Emacs and make it a background process (press
+        <kbd>fg | fg %emacs</kbd> to <i>awake</i> it back.</d>
       </it>
 
       <it>
@@ -114,13 +159,13 @@
       </it>
 
       <it>
-        <k>M-f</k>
+        <k>M-f | C-RightArrow</k>
         <f>forward-word</f>
         <d>Move point forward to the next word.</d>
       </it>
 
       <it>
-        <k>M-b</k>
+        <k>M-b | C-LeftArrow</k>
         <f>backward-word</f>
         <d>Move point backward to the previous word.</d>
       </it>
@@ -138,7 +183,7 @@
       </it>
 
       <it>
-        <k>Home</k>
+        <k>C-Home</k>
         <f>beginning-of-buffer</f>
         <d>Move point to the beginning of the buffer. (On some
            versions, this key is defined by default to move to the
@@ -146,7 +191,7 @@
       </it>
 
       <it>
-        <k>End</k>
+        <k>C-End</k>
         <f>end-of-buffer</f>
         <d>Move point to the end of the buffer. (On some versions,
            this key is defined by default to move to the end of the
@@ -154,13 +199,13 @@
       </it>
 
       <it>
-        <k>C-a</k>
+        <k>Home | C-a</k>
         <f>beginning-of-line</f>
         <d>Move point to the beginning of the line.</d>
       </it>
 
       <it>
-        <k>C-e</k>
+        <k>End | C-e</k>
         <f>end-of-line</f>
         <d>Move point to the end of the line.</d>
       </it>
@@ -470,13 +515,15 @@
       <it>
 	<k>C-space</k>
 	<f>set-mark-command</f>
-	<d>Marks one corner of a rectangle (point marks the opposite corner).</d>
+	<d>Marks one corner of a rectangle (point marks the opposite
+	corner).</d>
       </it>
 
       <it>
 	<k>C-x r k</k>
 	<f>kill-rectangle</f>
-	<d>Kills the current rectangle and saves it in a special rectangle buffer.</d>
+	<d>Kills the current rectangle and saves it in a special
+	rectangle buffer.</d>
       </it>
 
       <it>
@@ -488,19 +535,361 @@
       <it>
 	<k>C-x r c</k>
 	<f>clear-rectangle</f>
-	<d>Clears the current rectangle, replacing the entire area with whitespace.</d>
+	<d>Clears the current rectangle, replacing the entire area
+	with whitespace.</d>
       </it>
 
       <it>
 	<k>C-x r o</k>
 	<f>open-rectangle</f>
-	<d>Opens the current rectangle, filling the entire area with whitespace and moving all text from the rectangle to the right.</d>
+	<d>Opens the current rectangle, filling the entire area with
+	whitespace and moving all text from the rectangle to the
+	right.</d>
       </it>
 
       <it>
 	<k>C-x r y</k>
 	<f>yank-rectangle</f>
-	<d>Yanks the contents of the last-killed rectangle at point, moving all existing text to the right.</d>
+	<d>Yanks the contents of the last-killed rectangle at point,
+	moving all existing text to the right.</d>
+      </it>
+    </chapter>
+
+    <chapter title="Advanced mark and selection commands">
+      <it>
+	<k>C-u C-space</k>
+	<f>pop-to-mark-command</f>
+	<d>Moves to the previous mark in the mark ring.</d>
+      </it>
+
+      <it>
+	<k>C-x C-x</k>
+	<f>exchange-point-and-mark</f>
+	<d>Swaps the location of point and the mark.</d>
+      </it>
+
+      <it>
+	<k>M-@</k>
+	<f>mark-word</f>
+	<d>Marks all text from point to the end of the current word.</d>
+      </it>
+
+      <it>
+	<k>M-h</k>
+	<f>mark-paragraph</f>
+	<d>Marks the current paragraph, regardless of the location of
+	point.</d>
+      </it>
+
+      <it>
+	<k></k>
+	<f>transient-mark-mode</f>
+	<d>Toggles Transient Mark mode.</d>
+      </it>
+
+      <it>
+	<k>C-x h</k>
+	<f>mark-whole-buffer</f>
+	<d>Marks the entire buffer, regardless of the location of point.</d>
+      </it>
+    </chapter>
+
+    <chapter title="Advanced kill and yank commands">
+      <it>
+	<k>[NUM] C-k</k>
+	<f>kill-line</f>
+	<d>Kills integer number of lines. If 0, kills from point to
+	the beginning of the line; if negative, kills in reverse (not
+	sure for version 25).</d>
+      </it>
+
+      <it>
+	<k>M-k</k>
+	<f>kill-sentence</f>
+	<d>Kills from point to the end of the sentence.</d>
+      </it>
+
+      <it>
+	<k>M-z</k>
+	<f>zap-to-char</f>
+	<d>Zaps all text from point to the specified character.</d>
+      </it>
+
+      <it>
+	<k>M-y</k>
+	<f>yank-pop</f>
+	<d>Moves to the next slot in the kill ring.</d>
+      </it>
+
+      <it>
+	<k>[NUM] C-y</k>
+	<f>yank</f>
+	<d>Yanks the specified slot in the kill ring.</d>
+      </it>
+    </chapter>
+
+    <chapter title="Registers commands">
+      <it>
+	<k>C-x r space X</k>
+	<f>point-to-register</f>
+	<d>Save point to register X.</d>
+      </it>
+
+      <it>
+	<k>C-x r s X</k>
+	<f>copy-to-register</f>
+	<d>Save the region to register X.</d>
+      </it>
+
+      <it>
+	<k>C-x r r X</k>
+	<f>copy-rectangle-to-register</f>
+	<d>Save the selected rectangle to register X.</d>
+      </it>
+
+      <it>
+	<k></k>
+	<f>view-register</f>
+	<d>View the contents of a given register.</d>
+      </it>
+
+      <it>
+	<k>C-x r j X</k>
+	<f>jump-to-register</f>
+	<d>Move point to the location given in register X.</d>
+      </it>
+
+      <it>
+	<k>C-x r i X</k>
+	<f>insert-register</f>
+	<d>Insert the contents of register X at point.</d>
+      </it>
+    </chapter>
+
+    <chapter title="Bookmarks commands">
+      <it>
+	<k>C-x r m Bookmark</k>
+	<f>bookmark-set</f>
+	<d>Set a bookmark named Bookmark.</d>
+      </it>
+
+      <it>
+	<k>C-x r l</k>
+	<f>bookmarks-bmenu-list</f>
+	<d>List all saved bookmarks.</d>
+      </it>
+
+      <it>
+	<k></k>
+	<f>bookmark-delete</f>
+	<d>Delete a bookmark.</d>
+      </it>
+
+      <it>
+	<k>C-x r b Bookmark</k>
+	<f>bookmark-jump</f>
+	<d>Jump to the location set in the bookmark named Bookmark.</d>
+      </it>
+
+      <it>
+	<k></k>
+	<f>bookmark-save</f>
+	<d>Save all bookmarks to the bookmark file, ~/.emacs.bmk.</d>
+      </it>
+    </chapter>
+
+    <chapter title="nXML mode">
+      <it>
+	<k>C-c C-n</k>
+	<f>rng-next-error</f>
+	<d>Move to the next location where the document
+	structure is not valid. If the document isn't valid, the
+	cursor will jump to the probable error, and display a message
+	in the minibuffer explaining what it doesn't like. If the
+	document is valid from the cursor to the end of the file, the
+	message “No more errors” appears in the minibuffer. To
+	validate the entire document, move to the top of the document
+	with M-&lt; and then use this key sequence. If it says “No
+	more errors” with point at the top of the file, the entire
+	file is valid; otherwise it will jump the cursor to the next
+	invalid content.</d>
+      </it>
+
+      <it>
+	<k>C-c C-v</k>
+	<f>rng-validate-mode</f>
+	<d>Turn validation on or off. If validation is turned on, in
+	the status line's mode area you will see either “nXML Valid”
+	or “nXML Invalid”. If validation is turned off, neither word
+	will appear after “nXML” in the mode line. You may want to
+	turn validation off during serious document surgery, then turn
+	it back on when you think it's valid again.</d>
+      </it>
+      
+      <it>
+	<k>tab</k>
+	<f>indent-for-tab-command</f>
+	<d>Indent the current line according to the level of nested
+	block tags. The indentation is two spaces per level.</d>
+      </it>
+
+      <it>
+	<k>M-C-\</k>
+	<f>indent-region</f>
+	<d>Indent all the lines in the region using the same process
+	as for tab.</d>
+      </it>
+
+      <it>
+	<k>C-c C-f</k>
+	<f>nxml-finish-element</f>
+	<d>Insert an end tag for whatever element the cursor is
+	in. This works whether you are still inside the start tag or
+	in the content.</d>
+      </it>
+
+      <it>
+	<k>C-c C-i</k>
+	<f>nxml-balanced-close-start-tag-inline</f>
+	<d>Used when you have finished the start tag of an
+	inline element, up to but not including the closing
+	“&gt;”. This command adds the closing “&gt;” and an end tag,
+	and then places the cursor between the tags so you can type
+	the content.</d>
+      </it>
+
+      <it>
+	<k>C-c C-b</k>
+	<f>nxml-balanced-close-start-tag-block</f>
+	<d>Like C-c C-i, but used with block elements. The
+	command adds the closing “&gt;”, then a blank line, then an
+	end tag on yet another separate line. The cursor is left
+	indented at the proper level on the central blank line.</d>
+      </it>
+
+      <it>
+	<k>M-q</k>
+	<f>fill-paragraph</f>
+	<d>Reformat the paragraph containing the cursor. This works
+	best if the content does not start on the same line as the
+	start tag.</d>
+      </it>
+
+      <it>
+	<k>C-c C-x</k>
+	<f>nxml-insert-xml-declaration</f>
+	<d>Inserts an XML processing instruction at the top of the
+	file.</d>
+      </it>
+
+      <it>
+	<k>M-C-f</k>
+	<f>forward-sexp</f>
+	<d>Move forward over tag. If point is not inside a
+	tag, it moves to a position just before the next tag. If point
+	is inside a start tag, it jumps to a position just before the
+	closing “&gt;”. If point is inside an end tag, it moves just
+	past the end tag.</d>
+      </it>
+
+      <it>
+	<k>M-C-b</k>
+	<f>backward-sexp</f>
+	<d>Move backward over tag. If point is not inside a
+	tag, it moves just after the previous start tag. If point is
+	inside a start tag, it jumps to a position just after the
+	starting “&lt;”. If point is inside an end tag, it moves just
+	before that tag.</d>
+      </it>
+
+      <it>
+	<k>M-C-n</k>
+	<f>nxml-forward-element</f>
+	<d>Move the cursor to the end of the next element.</d>
+      </it>
+
+      <it>
+	<k>M-C-p</k>
+	<f>nxml-backward-element</f>
+	<d>Move the cursor before the previous element.</d>
+      </it>
+
+      <it>
+	<k>M-C-d</k>
+	<f>nxml-down-element</f>
+	<d>Move the cursor to the next included element after point,
+	to a position just after the start tag; d is for “down.”</d>
+      </it>
+
+      <it>
+	<k>M-C-u</k>
+	<f>nxml-backward-up-element</f>
+	<d>Move the cursor to a position just before the start tag of
+	the element containing point; u is for “up.”</d>
+      </it>
+
+      <it>
+	<k>C-c C-o C-d</k>
+	<f>nxml-hide-subheadings</f>
+	<d>Hide the children of the current element, as in emacs
+	outline-mode.</d>
+      </it>
+
+      <it>
+	<k>C-c C-o C-s</k>
+	<f>nxml-hide-subheadings</f>
+	<d>Reverses the action of C-c C-o C-d, revealing the children
+	of the current element.</d>
+      </it>
+    </chapter>
+
+    <chapter title="Things you should never know about">
+      <it>
+	<k>M-x dunnet</k>
+	<f></f>
+	<d>Dungeon</d>
+      </it>
+
+      <it>
+	<k>M-x tetris</k>
+	<f></f>
+	<d>Tetris</d>
+      </it>
+
+      <it>
+	<k>M-x blackbox</k>
+	<f></f>
+	<d>Hide &amp; seek</d>
+      </it>
+
+      <it>
+	<k>M-x doctor</k>
+	<f></f>
+	<d>Psychotherapy</d>
+      </it>
+
+      <it>
+	<k>M-x gomoku</k>
+	<f></f>
+	<d>Gomoku</d>
+      </it>
+
+      <it>
+	<k>M-x landmark</k>
+	<f></f>
+	<d>Robot game</d>
+      </it>
+
+      <it>
+	<k>M-x snake</k>
+	<f></f>
+	<d>The snake game</d>
+      </it>
+
+      <it>
+	<k>M-x solitaire</k>
+	<f></f>
+	<d>Peg solitaire</d>
       </it>
     </chapter>
     
@@ -510,8 +899,8 @@
     <line>Copyright (C) 2017 Pete Za Sayari</line>
     <line>&lt;petezasayari@gmail.com&gt;</line>
     <line></line>
-    <line>Released under the terms of the GNU General Public License
-          version 3 or later.</line>
+    <line>Released under the terms of the GNU General Public License</line>
+    <line>version 3 or later.</line>
     <line></line>
     <line>For more Emacs documentation see the Emacs distribution or
           http://www.gnu.org/software/emacs</line>
@@ -527,31 +916,4 @@
   <d>   <description>
   <k>   <key>
 -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

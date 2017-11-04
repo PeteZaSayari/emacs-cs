@@ -3,75 +3,58 @@
   version="1.0"
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   xmlns="http://www.w3.org/1999/xhtml">
+<!-- src: url('fonts/ACaslonPro-Regular.otf') format('opentype'); -->
 
   <xsl:template match="cheatsheet">
     <html>
       <head>
         <title>Testing XML Example</title>
-        <style>
+        <style type="text/css">
           @font-face {
             font-family: 'Adobe Caslon Pro';
-            src: url('fonts/ACaslonPro-Regular.otf')
-                 format('opentype');
+            src: url('fonts/ACaslonPro-Regular.otf') format('opentype');
             font-weight: normal;
-            font-style: normal;
-            }
+            font-style: normal;}
           @font-face {
             font-family: 'Adobe Caslon Pro';
-            src: url('fonts/ACaslonPro-Bold.otf')
-                 format('opentype');
+            src: url('fonts/ACaslonPro-Bold.otf') format('opentype');
             font-weight: bold;
-            font-style: normal;
-            }
+            font-style: normal;}
           @font-face {
             font-family: 'Adobe Caslon Pro';
-            src: url('fonts/ACaslonPro-Italic.otf')
-                 format('opentype');
+            src: url('fonts/ACaslonPro-Italic.otf') format('opentype');
             font-weight: normal;
-            font-style: italic;
-            }
+            font-style: italic;}
           @page {
             size: 297mm 210mm;
             margin: 10mm;
             orphans:2;
-            widows:2;
-          }
-          .onecol {
-            column-count: 1;
-          }
-          .solid {
-            page-break-inside: avoid;
-          }
+            widows:2;}
+          .onecol {column-count: 1;}
+          .solid {page-break-inside: avoid;}
           body {
             column-count: 4;
             column-gap: 10px;
             column-fill: balance;
             font-size: .75em;
-            font-family: Adobe Caslon Pro;
-          }
+            font-family: Adobe Caslon Pro;}
           table {
             font-size: 1em;
             border: 0;
             border-spacing: 0;
-            width: 100%;
-          }
+            width: 100%;}
           td {
             text-indent: 0;
             vertical-align: top;
             padding: 0;
-            width: 50%;
-          }
+            width: 50%;}
         </style>
       </head>
 
       <body>
-
-      <xsl:apply-templates select="header"/>
-
-      <xsl:apply-templates select="body"/>
-
-      <xsl:apply-templates select="footer"/>
-
+        <xsl:apply-templates select="header"/>
+        <xsl:apply-templates select="body"/>
+        <xsl:apply-templates select="footer"/>
       </body>
     </html>
   </xsl:template>
@@ -135,29 +118,25 @@
   </xsl:template>
 
   <xsl:template match="footer">
-    <div style="page-break-inside: avoid;">
-      <div style="padding-top: .3em; padding-bottom: .3em;">
+    <div style="page-break-inside: avoid; font-size: .75em">
+      <div style="page-break-inside: avoid;
+		  padding-top: .3em; padding-bottom: .3em;">
         <hr />
       </div>
-      <div align="center" style="font-size: .75em">
-        <xsl:for-each select="line">
-            <xsl:value-of select="."/><br />
-        </xsl:for-each>
+
+      <div align="center">
+	<xsl:for-each select="line">
+	  <xsl:choose>
+	    <xsl:when test=". !=''">
+	      <xsl:value-of select="."/><br/>
+	    </xsl:when>
+            <xsl:otherwise>
+              <div style="padding-bottom: .75em"></div>
+            </xsl:otherwise>
+          </xsl:choose>
+	</xsl:for-each>
       </div>
     </div>
   </xsl:template>
 
 </xsl:stylesheet>
-
-
-
-
-
-
-
-
-
-
-
-
-
