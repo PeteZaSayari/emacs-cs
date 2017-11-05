@@ -3,7 +3,6 @@
   version="1.0"
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   xmlns="http://www.w3.org/1999/xhtml">
-<!-- src: url('fonts/ACaslonPro-Regular.otf') format('opentype'); -->
 
   <xsl:template match="cheatsheet">
     <html>
@@ -12,24 +11,27 @@
         <style type="text/css">
           @font-face {
             font-family: 'Adobe Caslon Pro';
-            src: url('fonts/ACaslonPro-Regular.otf') format('opentype');
+            src: local('Adobe Caslon Pro Regular'),
+                 local('ACaslonPro-Regular');
             font-weight: normal;
             font-style: normal;}
           @font-face {
             font-family: 'Adobe Caslon Pro';
-            src: url('fonts/ACaslonPro-Bold.otf') format('opentype');
+            src: local('Adobe Caslon Pro Bold'),
+                 local('ACaslonPro-Bold');
             font-weight: bold;
             font-style: normal;}
           @font-face {
             font-family: 'Adobe Caslon Pro';
-            src: url('fonts/ACaslonPro-Italic.otf') format('opentype');
+            src: local('Adobe Caslon Pro Italic'),
+                 local('ACaslonPro-Italic');
             font-weight: normal;
             font-style: italic;}
           @page {
             size: 297mm 210mm;
             margin: 10mm;
-            orphans:2;
-            widows:2;}
+            orphans: 2;
+            widows: 2;}
           .onecol {column-count: 1;}
           .solid {page-break-inside: avoid;}
           body {

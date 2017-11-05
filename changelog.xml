@@ -2,7 +2,21 @@
 
 <changelog>
 
-  <release n="3" date="???" author="Pete Za Sayari">
+  <release n="4" date="######" author="Pete Za Sayari" email="petezasayari@gmail.com">
+    <version>0.3</version>
+
+    <added>
+      <i file="emcsh.xml">IBM course, 5th module.</i>
+      <i file="changelog.xml">Attribute "email" into the tag "release"</i>
+      <i file="README.md">Added the readme file.
+    </added>
+
+    <changed>
+      <i file="tohtml.xsl">"@font-face" now uses only local files.</i>
+    </changed>
+  </release>
+
+  <release n="3" date="2017.11.04" author="Pete Za Sayari" email="petezasayari@gmail.com">
     <version>0.2</version>
 
     <added>
@@ -14,11 +28,12 @@
 
     <changed>
       <i file="TODO.xml">Modified the structure.</i>
-      <i>Implemented the footer with "padding-bottom"</i>
+      <i file="tohtml.xsl">Implemented the footer with
+      "padding-bottom"</i>
     </changed>
   </release>
 
-  <release n="2" date="2017.10.31" author="Pete Za Sayari">
+  <release n="2" date="2017.10.31" author="Pete Za Sayari" email="petezasayari@gmail.com">
     <version>0.1</version>
 
     <added>
@@ -37,7 +52,7 @@
     </changed>
   </release>
 
-  <release n="1" date="2017.10.29" author="Pete Za Sayari">
+  <release n="1" date="2017.10.29" author="Pete Za Sayari" email="petezasayari@gmail.com">
     <version>0.0</version>
 
     <added>
@@ -51,7 +66,7 @@
 <!-- TEMPLATE
 
 <changelog>
-  <release n="NUM" date="DATE" author="STRING">
+  <release n="NUM" date="DATE" author="STRING" email="EMAIL">
     <version>n.n</version>
 
     <added>
