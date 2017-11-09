@@ -1,14 +1,22 @@
 <?xml version='1.0' encoding='utf-8'?>
 
 <changelog>
+  <release n="5" date="######" author="Pete Za Sayari" email="petezasayari@gmail.com">
+    <version>0.4</version>
 
-  <release n="4" date="######" author="Pete Za Sayari" email="petezasayari@gmail.com">
+    <added>
+      <i file="emcsh.xml">A better dictionary.</i>
+      <i file="README.md">Better explanations.</i>
+    </added>
+  </release>
+
+  <release n="4" date="2017.11.05" author="Pete Za Sayari" email="petezasayari@gmail.com">
     <version>0.3</version>
 
     <added>
       <i file="emcsh.xml">IBM course, 5th module.</i>
       <i file="changelog.xml">Attribute "email" into the tag "release"</i>
-      <i file="README.md">Added the readme file.
+      <i file="README.md">Added the readme file.</i>
     </added>
 
     <changed>
