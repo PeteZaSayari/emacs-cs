@@ -993,54 +993,533 @@
       </it>
     </chapter>
 
+    <chapter title="Managing variables">
+      <it>
+	<k/>
+	<f>set-variable</f>
+	<d>Ask for a variable to change and for the needed value.</d>
+      </it>
+
+      <it>
+	<k/>
+	<f>auto-mode-alist</f>
+	<d>If set to <em>nil</em>, automatic selection of major mode
+	based on file name extension is turned off. Its default value
+	is a list of file name extensions and corresponding modes.</d>
+      </it>
+
+      <it>
+	<k/>
+	<f>auto-save-default</f>
+	<d>If not set to <em>nil</em>, Emacs automatically saves a
+	changed buffer to its corresponding file at preset
+	intervals. Its default value is t.</d>
+      </it>
+
+      <it>
+	<k/>
+	<f>auto-save-interval</f>
+	<d>Contains the number of character changes after which
+	Auto-save mode, if true, is invoked; the default value is
+	300.</d>
+      </it>
+
+      <it>
+	<k/>
+	<f>calendar-latitude</f>
+	<d>Contains the latitude value for the location of the user's
+	workstation, in degrees; the default value is
+	<em>nil</em>.</d>
+      </it>
+
+      <it>
+	<k/>
+	<f>calendar-longitude</f>
+	<d>Contains the longitude value for the location of the user's
+	workstation, in degrees; the default value is
+	<em>nil</em>.</d>
+      </it>
+
+      <it>
+	<k/>
+	<f>calendar-location-name</f>
+	<d>Contains the value for the location name (such as city,
+	state, and country) for the location of the user's
+	workstation; the default value is <em>nil</em>.</d>
+      </it>
+
+      <it>
+	<k/>
+	<f>colon-double-space</f>
+	<d>If not set to <em>nil</em>, commands for filling text
+	insert two spaces after a colon instead of one. The default
+	value is nil.</d>
+      </it>
+
+      <it>
+	<k/>
+	<f>command-line-args</f>
+	<d>Contains the list of arguments used in the command line
+	that executed the current Emacs session.</d>
+      </it>
+
+      <it>
+	<k/>
+	<f>command-line-default-directory</f>
+	<d>Contains the path name of the directory from which the
+	current Emacs session was executed.</d>
+      </it>
+
+      <it>
+	<k/>
+	<f>compare-ignore-case</f>
+	<d>If not set to <em>nil</em>, Emacs ignores differences in
+	uppercase and lowercase letters when running the
+	compare-windows function, as described in fifth installment of
+	this series (see Resources). The default value is
+	<em>nil</em>.</d>
+      </it>
+
+      <it>
+	<k/>
+	<f>confirm-kill-emacs</f>
+	<d>If set to <em>nil</em>, Emacs doesn't ask for a
+	confirmation when exiting; otherwise, the exit verification
+	might be customized as an Emacs Lisp function such as
+	<em>y-or-n-p</em>. The default value is <em>nil</em>.</d>
+      </it>
+
+      <it>
+	<k/>
+	<f>default-justification</f>
+	<d>Sets the default justification style. The value can be one
+	of left, right, center, full, or none. The default value is
+	left.</d>
+      </it>
+
+      <it>
+	<k/>
+	<f>default-major-mode</f>
+	<d>Selects the default major mode for new files or
+	buffers. The default value is <em>fundamental-mode</em>.</d>
+      </it>
+
+      <it>
+	<k/>
+	<f>display-time-24hr-format</f>
+	<d>If set to t, Emacs displays time in 24-hour military
+	format, instead of the standard 12-hour format with AM or PM
+	suffix. The default value is <em>nil</em>.</d>
+      </it>
+
+      <it>
+	<k/>
+	<f>display-time-day-and-date</f>
+	<d>If not set to <em>nil</em>, Emacs displays time with the
+	current day of the week, current month, and current day of the
+	month, instead of just the hour and minute. The default value
+	is <em>nil</em>.</d>
+      </it>
+
+      <it>
+	<k/>
+	<f>fill-column</f>
+	<d>Contains the number for the column on each line where text
+	begins to be filled to the next line. The default value is
+	70.</d>
+      </it>
+
+      <it>
+	<k/>
+	<f>initial-major-mode</f>
+	<d>Specifies the major mode to use for the <em>*scratch*</em>
+	buffer on startup. The default value is
+	<em>lisp-interaction-mode</em>.</d>
+      </it>
+
+      <it>
+	<k/>
+	<f>inverse-video</f>
+	<d>If not set to <em>nil</em>, Emacs inverts the display
+	colors, if possible. The default value is <em>nil</em>.</d>
+      </it>
+
+      <it>
+	<k/>
+	<f>kill-ring</f>
+	<d>Contains the contents of the Emacs kill ring.</d>
+      </it>
+
+      <it>
+	<k/>
+	<f>kill-ring-max</f>
+	<d>Sets the number of allowable entries in the Emacs kill
+	ring. The default value is 60.</d>
+      </it>
+
+      <it>
+	<k/>
+	<f>kill-whole-line</f>
+	<d>If not set to <em>nil</em>, the kill-line function (bound
+	to <kbd>C-k</kbd>) kills the current line and its trailing
+	newline character, if the function is executed at the very
+	beginning of the line. The default value is <em>nil</em>.</d>
+      </it>
+
+      <it>
+	<k/>
+	<f>make-backup-files</f>
+	<d>If not set to <em>nil</em>, Emacs saves a backup of a
+	buffer before any changes are made to a file of the same name
+	but with a tilde character (<kbd>~</kbd>) appended to the
+	end.</d>
+      </it>
+
+      <it>
+	<k/>
+	<f>mark-ring</f>
+	<d>Contains the contents of the current mark ring of the buffer.</d>
+      </it>
+
+      <it>
+	<k/>
+	<f>mark-ring-max</f>
+	<d>Contains the number of allowable entries in the mark
+	ring. The default value is 16.</d>
+      </it>
+
+      <it>
+	<k/>
+	<f>mouse-avoidance-mode</f>
+	<d>Contains a value describing the type of mouse-avoidance
+	mode. The default value is <em>nil</em>.</d>
+      </it>
+
+      <it>
+	<k/>
+	<f>next-line-add-newline</f>
+	<d>If not set to <em>nil</em>, Emacs adds a new line whenever
+	the down arrow is pressed at the end of the buffer. The
+	default value is <em>nil</em> (in more recent versions of
+	Emacs).</d>
+      </it>
+
+      <it>
+	<k/>
+	<f>scroll-bar-mode</f>
+	<d>Contains the value for the side of the Emacs frame on which
+	to place the scroll bar: right or left. If set to
+	<em>nil</em>, the scroll bar is turned off.  The default value
+	is left.</d>
+      </it>
+
+      <it>
+	<k/>
+	<f>scroll-step</f>
+	<d>Contains the number of lines to move through the buffer
+	lines with the <em>scroll-down</em> and <em>scroll-up</em>
+	functions (which are bound to the <kbd>PgDn</kbd> and
+	<kbd>PgUp</kbd> keys by default). If set to 0, Emacs centers
+	point in the middle of the window when scrolling.</d>
+      </it>
+
+      <it>
+	<k/>
+	<f>show-trailing-whitespace</f>
+	<d>If not set to <em>nil</em>, Emacs makes any whitespace at
+	the end of lines in the current buffer visible. The default
+	value is <em>nil</em>.</d>
+      </it>
+
+      <it>
+	<k/>
+	<f>visible-bell</f>
+	<d>If not set to <em>nil</em>, Emacs makes the frame blink
+	instead of ringing the audible system bell. The default value
+	is <em>nil</em>.</d>
+      </it>
+
+      <it>
+	<k/>
+	<f>x-cut-buffer-max</f>
+	<d>Sets the maximum number of characters from the kill ring
+	that are also stored in the X Window System cut buffer. The
+	default value is 20000.</d>
+      </it>
+    </chapter>
+
+    <chapter title="Interface functions">
+      <it>
+	<k/>
+	<f>column-number-mode</f>
+	<d>Toggle the display, in the mode line, of the current column
+	the cursor is at, preceded by a <kbd>C</kbd>. The default
+	value is <em>nil</em>.</d>
+      </it>
+
+      <it>
+	<k/>
+	<f>display-time</f>
+	<d>Toggle the display of the current time in the mode
+	line. The default value is <em>nil</em>.</d>
+      </it>
+
+      <it>
+	<k/>
+	<f>font-lock-mode</f>
+	<d>If not set to <em>nil</em>, Emacs turns on the Font Lock
+	mode automatically for the current buffer. The default value
+	is <em>nil</em>.</d>
+      </it>
+
+      <it>
+	<k/>
+	<f>global-font-lock-mode</f>
+	<d>If not set to <em>nil</em>, Emacs turns on the Font Lock
+	mode automatically for all buffers. The default value is
+	<em>nil</em>.</d>
+      </it>
+
+      <it>
+	<k/>
+	<f>line-number-mode</f>
+	<d>Toggle the display, in the mode line, of the current line
+	the cursor is at, preceded by an <kbd>L</kbd>. The default
+	value is <em>t</em>.</d>
+      </it>
+
+      <it>
+	<k/>
+	<f>menu-bar-mode</f>
+	<d>Toggle the display of the Emacs menu bar. The default value
+	is <em>t</em>.</d>
+      </it>
+
+      <it>
+	<k/>
+	<f>sunrise-sunset</f>
+	<d>Display the time of today's sunrise and sunset for the
+	current geographic location. If preceded with the
+	<kbd>universal-argument</kbd>, this function prompts for a
+	specific day.</d>
+      </it>
+
+      <it>
+	<k/>
+	<f>tool-bar-mode</f>
+	<d>Toggle the display of the Emacs toolbar. The default value
+	is <em>t</em>.</d>
+      </it>
+    </chapter>
+
+    <chapter title="Customize functions">
+      <it>
+        <k/>
+        <f>customize-changed-options &lt;Enterversion&gt;</f>
+        <d>Open a new customization buffer for all faces, options, or
+        groups that have been changed since the version of Emacs given
+        by version.</d>
+      </it>
+
+      <it>
+        <k/>
+        <f>customize-customized</f>
+        <d>Open a new customization buffer for all options and faces
+        that have already been customized but haven't been saved to
+        disk.</d>
+      </it>
+
+      <it>
+        <k/>
+        <f>customize-face</f>
+        <d>Enter regexp Open a new customization buffer for all the
+        face, option, or groups relevant to the regular expression
+        given by regexp.</d>
+      </it>
+
+      <it>
+        <k/>
+        <f>customize-face</f>
+        <d>Enter face Open a new customization buffer for the face
+        name given by face.</d>
+      </it>
+
+      <it>
+        <k/>
+        <f>customize-group</f>
+        <d>Enter group Open a new customization buffer for the group
+        name given by group.</d>
+      </it>
+
+      <it>
+        <k/>
+        <f>customize-option</f>
+        <d>Enter option Open a new customization buffer for the option
+        name given by option.</d>
+      </it>
+
+      <it>
+        <k/>
+        <f>customize-saved</f>
+        <d>Open a new customization buffer for all faces and options
+        that you've changed with the Customize function.</d>
+      </it>
+    </chapter>
+
     <chapter title="Things you should never know about">
       <it>
-        <k>M-x dunnet</k>
-        <f/>
-        <d>Dungeon</d>
+        <k/>
+        <f>hanoi</f>
+        <d>The hanoi tower, with a default of 3 discs; <kbd>M-x
+        hanoi-unix</kbd> and <kbd>M-x hanoi-unix-64</kbd> uses the
+        unix timestamp, making a move each second in line with the
+        clock, and with the latter pretending it uses a 64-bit
+        clock.</d>
       </it>
 
       <it>
-        <k>M-x tetris</k>
-        <f/>
-        <d>Tetris</d>
+        <k/>
+        <f>5x5</f>
+        <d>You are given a 5x5 grid with a central cross already
+        filled-in; your goal is to fill all the cells by toggling them
+        on and off in the right order to win. With an optional digit
+        argument you can change the size of the grid.</d>
       </it>
 
       <it>
-        <k>M-x blackbox</k>
-        <f/>
-        <d>Hide &amp; seek</d>
+        <k/>
+        <f>animate-birthday-present</f>
+        <d>A fancy birthday present animation.</d>
       </it>
 
       <it>
-        <k>M-x doctor</k>
-        <f/>
-        <d>Psychotherapy</d>
+        <k/>
+        <f>butterfly</f>
+        <d>The animate package is also used by <kbd>M-x
+        butterfly</kbd> command, a command added to Emacs as an homage
+        to the XKCD strip at <kbd>www.xkcd.com/378/</kbd></d>
       </it>
 
       <it>
-        <k>M-x gomoku</k>
-        <f/>
-        <d>Gomoku</d>
+        <k/>
+        <f>blackbox</f>
+        <d>The object of the game is to find four hidden balls by
+        shooting rays into the black box. There are four
+        possibilities: 1) the ray will pass thru the box undisturbed,
+        2) it will hit a ball and be absorbed, 3) it will be deflected
+        and exit the box, or 4) be deflected immediately, not even
+        being allowed entry into the box.</d>
       </it>
 
       <it>
-        <k>M-x landmark</k>
-        <f/>
-        <d>Robot game</d>
+        <k/>
+        <f>bubbles</f>
+        <d>You must clear out as many “bubbles” as you can in as few
+        moves as possible. When you remove bubbles the other bubbles
+        drop and stick together. You can configure the difficulty of
+        the game by calling <kbd>M-x
+        bubbles-set-game-&lt;difficulty&gt;</kbd> where
+        &lt;difficulty&gt; is one of: <kbd>easy</kbd>,
+        <kbd>medium</kbd>, <kbd>difficult</kbd>, <kbd>hard</kbd>, or
+        <kbd>userdefined</kbd>. Furthermore, you can alter the
+        graphics, grid size and colors using Customize: <kbd>M-x
+        customize-group bubbles</kbd>.</d>
       </it>
 
       <it>
-        <k>M-x snake</k>
-        <f/>
-        <d>The snake game</d>
+        <k/>
+        <f>decipher</f>
+        <d>It’s a (very complex) package to help you break simple
+        substitution ciphers (like cryptogram puzzles) using a helpful
+        user interface.</d>
       </it>
 
       <it>
-        <k>M-x solitaire</k>
-        <f/>
-        <d>Peg solitaire</d>
+        <k/>
+        <f>dissociated-press</f>
+        <d>It's a semi-randomizing algorithm that takes your buffer,
+        runs it through a blender, and displays the result.</d>
       </it>
+
+      <it>
+        <k/>
+        <f>doctor</f>
+        <d>Based on the original <em>ELIZA</em>, the “Doctor” tries to
+        psychoanalyze what you say and attempts to repeat the question
+        back to you. It simulates a Rogerian psychotherapist and uses
+        rules, dictated into a script, to respond with non-directional
+        questions to user inputs.</d>
+      </it>
+
+      <it>
+        <k/>
+        <f>dunnet</f>
+        <d>Emacs’s very own Zork-like text adventure game.</d>
+      </it>
+
+      <it>
+        <k/>
+        <f>gomoku</f>
+        <d>You have to connect 5 squares, tic-tac-toe style. You can
+        customize the group <kbd>gomoku</kbd> to adjust the size of
+        the grid.</d>
+      </it>
+
+      <it>
+        <k/>
+        <f>life</f>
+        <d>Conway’s Game of Life is a famous example of cellular
+        automata. The Emacs version comes with a handful of starting
+        patterns that you can (programmatically with elisp) alter by
+        adjusting the <kbd>life-patterns</kbd> variable.</d>
+      </it>
+
+      <it>
+        <k/>
+        <f>pong | snake | tetris</f>
+        <d>These classic games are all implemented using the Emacs
+        package gamegrid, a generic framework for building grid-based
+        games like Tetris and Snake.</d>
+      </it>
+
+      <it>
+        <k/>
+        <f>solitaire</f>
+        <d>It is a peg-based game where you have to end up with just
+        one stone on the board, by taking a stone (the <kbd>o</kbd>)
+        and “jumping” over an adjacent stone into the hole (the
+        <kbd>.</kbd>), removing the stone you jumped over in the
+        process. Rinse and repeat until the board is empty. There is a
+        handy solver built in called <kbd>M-x solitaire-solve</kbd> if
+        you get stuck.</d>
+      </it>
+
+      <it>
+        <k/>
+        <f>zone</f>
+        <d>A series of screensavers. Type <kbd>M-x zone</kbd> and
+        watch what happens to your screen! You can configure a
+        screensaver idle time by running <kbd>M-x zone-when-idle</kbd>
+        (or calling it from elisp) with an idle time in seconds. You
+        can turn it off with <kbd>M-x zone-leave-me-alone</kbd>.</d>
+      </it>
+
+      <it>
+        <k/>
+        <f>mpuz</f>
+        <d>A multiplication puzzle where you have to replace the
+        letters with numbers and ensure the numbers add (multiply?)
+        up. You can run <kbd>M-x mpuz-show-solution</kbd> to solve the
+        puzzle if you get stuck.</d>
+      </it>
+
+      <it>
+        <k/>
+        <f>morse-region</f>
+        <d>Translates a region into morse code. Undo
+        (<kbd>C-S-_</kbd>) or <kbd>M-x unmorse-region</kbd> to
+        unmorse.</d>
+      </it>     
     </chapter>
 
   </body>
@@ -1068,4 +1547,3 @@
   <d>   =   <description>
 
 -->
-

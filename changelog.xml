@@ -1,9 +1,27 @@
 <?xml version='1.0' encoding='utf-8'?>
 
 <changelog>
-  <release n="5" date="2017.11.11" author="Pete Za Sayari" email="petezasayari@gmail.com">
-    <version>0.4</version>
+  <release n="6" date="##########"
+           author="Pete Za Sayari" email="petezasayari@gmail.com"
+           ver="0.5">
+    <added>
+      <i file="emcsh.xml">Sixth installement.</i>
+      <i file="README.md">A subtitle; section "Aknowledgment".</i>
+      <i file="todo.xml">Added the attribute "n" (number) to the tag
+      "task".</i>
+    </added>
 
+    <changed>
+      <i file="emcsh.xml">Rewritten the section about the Emacs
+      games. Solved task #4</i>
+      <i file="changelog.xml">Deleted the tag "version", replaced by
+      the attribute "ver".</i>
+    </changed>
+  </release>
+  
+  <release n="5" date="2017.11.11"
+           author="Pete Za Sayari" email="petezasayari@gmail.com"
+           ver="0.4">
     <added>
       <i file="emcsh.xml">A better dictionary.</i>
       <i file="README.md">Better explanations.</i>
@@ -14,15 +32,17 @@
     </changed>
 
     <fixed>
-      <i file="tohtml.xsl">HTML code into the "d" tag now transforms properly.</i>
-      <i file="emcsh.xml">Enclosed keyboard commands into "d" tags between "kbd" tags.</i>
+      <i file="tohtml.xsl">HTML code into the "d" tag now transforms
+      properly.</i>
+      <i file="emcsh.xml">Enclosed keyboard commands into "d" tags
+      between "kbd" tags.</i>
       <i file="emcsh.xml">Minor changes.</i>
     </fixed>
   </release>
 
-  <release n="4" date="2017.11.05" author="Pete Za Sayari" email="petezasayari@gmail.com">
-    <version>0.3</version>
-
+  <release n="4" date="2017.11.05"
+           author="Pete Za Sayari" email="petezasayari@gmail.com"
+           ver="0.3">
     <added>
       <i file="emcsh.xml">IBM course, 5th module.</i>
       <i file="changelog.xml">Attribute "email" into the tag "release"</i>
@@ -34,9 +54,9 @@
     </changed>
   </release>
 
-  <release n="3" date="2017.11.04" author="Pete Za Sayari" email="petezasayari@gmail.com">
-    <version>0.2</version>
-
+  <release n="3" date="2017.11.04"
+           author="Pete Za Sayari" email="petezasayari@gmail.com"
+           ver="0.2">
     <added>
       <i file="TODO.xml">Attribute "file" into the "i" tag.</i>
       <i file="emcsh.xml">"Things you shuld never know about", a good
@@ -51,9 +71,9 @@
     </changed>
   </release>
 
-  <release n="2" date="2017.10.31" author="Pete Za Sayari" email="petezasayari@gmail.com">
-    <version>0.1</version>
-
+  <release n="2" date="2017.10.31"
+           author="Pete Za Sayari" email="petezasayari@gmail.com"
+           ver="0.1">
     <added>
       <i>Added the footer;</i>
       <i>Added the Caslon fonts;</i>
@@ -70,9 +90,9 @@
     </changed>
   </release>
 
-  <release n="1" date="2017.10.29" author="Pete Za Sayari" email="petezasayari@gmail.com">
-    <version>0.0</version>
-
+  <release n="1" date="2017.10.29"
+           author="Pete Za Sayari" email="petezasayari@gmail.com"
+           ver="0.0">
     <added>
       <i>Created the project;</i>
     </added>
@@ -84,8 +104,7 @@
 <!-- TEMPLATE
 
 <changelog>
-  <release n="NUM" date="DATE" author="STRING" email="EMAIL">
-    <version>n.n</version>
+  <release n="NUM" date="DATE" author="STRING" email="EM@IL" ver="n.n">
 
     <added>
       <i file="">new features.</i>

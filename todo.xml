@@ -1,26 +1,29 @@
 <?xml version='1.0' encoding='utf-8'?>
 
 <TODO>
-  <task created="2017.11.05" priority="B" status="open">
+  <task n="4" created="2017.11.05" priority="B"
+        status="resolved" solved="2017.11.11">
     "Games" section: a more complete list and a better description of
     every function.
   </task>
 
-  <task created="2017.11.04" priority="B" status="open">
+  <task n="3" created="2017.11.04" priority="B" status="open">
     The descriptions for the nXML mode are too long. Shorten them.
   </task>
 
-  <task created="2017.11.04" priority="B" status="open">
+  <task n="2" created="2017.11.04" priority="B" status="open">
     Split the .xsl file into two files: one for the screen and one for
     the printer.
   </task>
 
-  <task created="2017.11.04" priority="A" status="resolved" solved="2017.11.04">
+  <task n="1" created="2017.11.04" priority="A"
+        status="resolved" solved="2017.11.04">
     Ask at stackoverflow about the problem of the fonts.
     Solved by myself!.
   </task>
 
-  <task created="2017.10.29" priority="B" status="resolved" solved="2017.11.05">
+  <task n="0" created="2017.10.29" priority="B"
+        status="resolved" solved="2017.11.05">
     A README file. It needs instructions to read the cheat sheet on a
     web browser and to print it on paper.
   </task>
@@ -30,7 +33,8 @@
 <!-- TEMPLATE
 
 <TODO>
-  <task created="DATE"
+  <task n="NUM"
+        created="DATE"
         priority="A (major)|B (minor)|C (trivial)"
         status="open|resolved|won't do"
         due="DATE"
