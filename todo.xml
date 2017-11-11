@@ -1,6 +1,10 @@
 <?xml version='1.0' encoding='utf-8'?>
 
 <TODO>
+  <task n="5" created="2017.11.11" priority="B" status="open">
+    Find a better font for the "kbd" tag.
+  </task>
+  
   <task n="4" created="2017.11.05" priority="B"
         status="resolved" solved="2017.11.11">
     "Games" section: a more complete list and a better description of
@@ -35,7 +39,7 @@
 <TODO>
   <task n="NUM"
         created="DATE"
-        priority="A (major)|B (minor)|C (trivial)"
+        priority="A (major)|B (normal)|C (trivial)"
         status="open|resolved|won't do"
         due="DATE"
         solved="DATE">

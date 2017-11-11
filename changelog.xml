@@ -1,12 +1,13 @@
 <?xml version='1.0' encoding='utf-8'?>
 
 <changelog>
-  <release n="6" date="##########"
+  <release n="6" date="2017.11.11"
            author="Pete Za Sayari" email="petezasayari@gmail.com"
            ver="0.5">
     <added>
       <i file="emcsh.xml">Sixth installement.</i>
-      <i file="README.md">A subtitle; section "Aknowledgment".</i>
+      <i file="emcsh.xml">Seventh (last) installement.</i>
+      <i file="README.md">A subtitle; section "Aknowledgments".</i>
       <i file="todo.xml">Added the attribute "n" (number) to the tag
       "task".</i>
     </added>
@@ -18,7 +19,7 @@
       the attribute "ver".</i>
     </changed>
   </release>
-  
+
   <release n="5" date="2017.11.11"
            author="Pete Za Sayari" email="petezasayari@gmail.com"
            ver="0.4">
@@ -45,7 +46,8 @@
            ver="0.3">
     <added>
       <i file="emcsh.xml">IBM course, 5th module.</i>
-      <i file="changelog.xml">Attribute "email" into the tag "release"</i>
+      <i file="changelog.xml">Attribute "email" into the tag
+      "release"</i>
       <i file="README.md">Added the readme file.</i>
     </added>
 

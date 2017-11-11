@@ -56,21 +56,25 @@
     <chapter title="Prefixes">
       <it>
         <k>C-c</k>
+        <f/>
         <d>Commands particular to the current editing mode</d>
       </it>
 
       <it>
         <k>C-x</k>
+        <f/>
         <d>Commands for files and buffers</d>
       </it>
 
       <it>
         <k>C-h</k>
+        <f/>
         <d>Help commands</d>
       </it>
 
       <it>
         <k>M-x</k>
+        <f/>
         <d>Literal function name</d>
       </it>
     </chapter>
@@ -1366,6 +1370,265 @@
       </it>
     </chapter>
 
+    <chapter title="Help commands">
+      <it>
+        <k>Tab</k>
+        <f/>
+        <d>This command performs command completion if given as part
+        of a command, showing all possible input values for the given
+        command.</d>
+      </it>
+
+      <it>
+        <k>&lt;command prefix&gt; or &lt;keystroke&gt; C-h</k>
+        <f/>
+        <d>This command describes all the possible commands and
+        functions available for the given <kbd>&lt;command
+        prefix&gt;</kbd> or <kbd>&lt;keystroke&gt;</kbd>.</d>
+      </it>
+
+      <it>
+        <k>C-h c &lt;keystroke&gt;</k>
+        <f>describe-key-briefly</f>
+        <d>This command reports in the minibuffer the name of function
+        that <kbd>&lt;keystroke&gt;</kbd>is bound to.</d>
+      </it>
+
+      <it>
+        <k>C-h k &lt;keystroke&gt;</k>
+        <f>describe-key</f>
+        <d>This command opens a new help-buffer window that describes
+        the function that <kbd>&lt;keystroke&gt;</kbd> is bound
+        to.</d>
+      </it>
+
+      <it>
+        <k>C-h l</k>
+        <f>view-lossage</f>
+        <d>This command opens a new buffer and displays the last 100
+        characters typed.</d>
+      </it>
+
+      <it>
+        <k/>
+        <f>open-dribble-file</f>
+        <d>This command opens a specified file and dribbles a copy of
+        all keyboard input to that file.</d>
+      </it>
+
+      <it>
+        <k/>
+        <f>apropos</f>
+        <d>This command gives a list of apropos commands and variables
+        to a given <kbd>regexp</kbd>.</d>
+      </it>
+
+      <it>
+        <k>C-h a &lt;regexp&gt;</k>
+        <f>command-apropos</f>
+        <d>This command gives a list of apropos commands to
+        regexp.</d>
+      </it>
+
+      <it>
+        <k>C-h b</k>
+        <f>describe-bindings</f>
+        <d>This command describes all the valid key bindings for the
+        current major mode in a new help buffer window.</d>
+      </it>
+
+      <it>
+        <k>C-h f &lt;function&gt;</k>
+        <f>describe-function</f>
+        <d>This command describes the purpose of
+        <kbd>&lt;function&gt;</kbd> in a new help buffer window.</d>
+      </it>
+
+      <it>
+        <k>C-h v &lt;variable&gt;</k>
+        <f>describe-variable</f>
+        <d>This command describes the purpose of
+        <kbd>&lt;variable&gt;</kbd> in a new help buffer window.</d>
+      </it>
+
+      <it>
+        <k>C-h w &lt;function&gt;</k>
+        <f>where-is</f>
+        <d>This command describes which keyboard binding (if any) a
+        particular <kbd>&lt;function&gt;</kbd> is bound to.</d>
+      </it>
+    </chapter>
+
+    <chapter title="INFO commands">
+      <it>
+        <k>H</k>
+        <f>Info-help</f>
+        <d>This command opens a hands-on <kbd>Info</kbd> tutorial in a
+        new buffer.</d>
+      </it>
+
+      <it>
+        <k>Q</k>
+        <f>Info-exit</f>
+        <d>This command moves to the last buffer you visited, putting
+        the <kbd>*info*</kbd> buffer in the end of the buffer
+        list.</d>
+      </it>
+
+      <it>
+        <k>&lt;Enter&gt;</k>
+        <f/>
+        <d>This command follows the cross reference at or near
+        point.</d>
+      </it>
+
+      <it>
+        <k>N</k>
+        <f>Info-next</f>
+        <d>This command moves to the current node's <kbd>Next</kbd>
+        node.</d>
+      </it>
+
+      <it>
+        <k>P</k>
+        <f>Info-prev</f>
+        <d>This command moves to the current node's
+        <kbd>Previous</kbd> node.</d>
+      </it>
+
+      <it>
+        <k>U</k>
+        <f>Info-up</f>
+        <d>This command moves to the current node's <kbd>Up</kbd>
+        node.</d>
+      </it>
+
+      <it>
+        <k>D</k>
+        <f>Info-directory</f>
+        <d>This command moves to the <kbd>Directory</kbd> node.</d>
+      </it>
+
+      <it>
+        <k>L</k>
+        <f>Info-last</f>
+        <d>This command moves to the last node you visited.</d>
+      </it>
+
+      <it>
+        <k>T</k>
+        <f>Info-top-node</f>
+        <d>This command moves to the <kbd>Top</kbd> node of the
+        current document.</d>
+      </it>
+
+      <it>
+        <k>&gt;</k>
+        <f>Info-final-node</f>
+        <d>This command moves to the final node pointed to in the
+        current document.</d>
+      </it>
+
+      <it>
+        <k>&lt;Spacebar&gt;</k>
+        <f>Info-scroll-up</f>
+        <d>This command moves forward in the current node by a single
+        screen; if at the end of the node, then move to the Next
+        node.</d>
+      </it>
+
+      <it>
+        <k>&lt;Backspace&gt;</k>
+        <f>Info-scroll-down</f>
+        <d>This command moves backward in the current node by a single
+        screen; if at the beginning of the node, then move to the
+        Previous node.</d>
+      </it>
+
+      <it>
+        <k>B</k>
+        <f>beginning-of-buffer</f>
+        <d>This command goes to the beginning of the current node.</d>
+      </it>
+
+      <it>
+        <k>S</k>
+        <f>Info-search</f>
+        <d>This command searches forward in the current
+        <kbd>Info</kbd> document for a given <kbd>regexp</kbd>.</d>
+      </it>
+
+      <it>
+        <k>Tab</k>
+        <f>Info-next-reference</f>
+        <d>This command moves the cursor forward to the first cross
+        reference.</d>
+      </it>
+
+      <it>
+        <k>M-Tab</k>
+        <f>Info-prev-reference</f>
+        <d>This command moves the cursor backward to the last cross
+        reference.</d>
+      </it>
+    </chapter>
+
+    <chapter title="Documentation files">
+      <it>
+        <k>C-h C-d</k>
+        <f>describe-distribution</f>
+        <d><kbd>DISTRIB</kbd> Information on obtaining a copy of the
+        latest distribution of the Emacs software</d>
+      </it>
+
+      <it>
+        <k>C-h F</k>
+        <f>view-emacs-faq</f>
+        <d><kbd>/usr/share/info/</kbd>;
+        <kbd>emacs-mainversion/efaq.gz</kbd> Emacs FAQ</d>
+      </it>
+
+      <it>
+        <k>C-h C-c</k>
+        <f>describe-copying</f>
+        <d><kbd>COPYING</kbd> GNU General Public License (GNU GPL)</d>
+      </it>
+
+      <it>
+        <k>C-h C-w</k>
+        <f>describe-no-warranty</f>
+        <d><kbd>COPYING</kbd> Section "NO WARRANTY" of the GNU General
+        Public License (GNU GPL)</d>
+      </it>
+
+      <it>
+        <k>C-h n</k>
+        <f>view-emacs-news</f>
+        <d><kbd>NEWS</kbd> News concerning the latest changes in the
+        current version of Emacs</d>
+      </it>
+
+      <it>
+        <k>C-h P</k>
+        <f>view-emacs-problems</f>
+        <d><kbd>PROBLEMS</kbd> Emacs problems file</d>
+      </it>
+
+      <it>
+        <k>C-h C-p</k>
+        <f>describe-project</f>
+        <d><kbd>THE-GNU-PROJECT</kbd> Essay by Richard Stallman
+        concerning the founding of the GNU Project</d>
+      </it>
+
+      <it>
+        <k>C-h t</k>
+        <f>help-with-tutorial</f>
+        <d><kbd>TUTORIAL</kbd> Hands-on tutorial for learning the
+        basics of Emacs</d>
+      </it>
+    </chapter>
+
     <chapter title="Things you should never know about">
       <it>
         <k/>
@@ -1528,7 +1791,8 @@
     <line>Copyright (C) 2017 Pete Za Sayari</line>
     <line>&lt;petezasayari@gmail.com&gt;</line>
     <line></line>
-    <line>Released under the terms of the GNU General Public License</line>
+    <line>Released under the terms of the GNU General Public
+    License</line>
     <line>version 3 or later.</line>
     <line></line>
     <line>For more Emacs documentation see the Emacs distribution or
