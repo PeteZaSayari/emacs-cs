@@ -13,32 +13,32 @@
       <it>
         <k>--visit=&lt;filespec&gt; | --file=&lt;filespec&gt; |
         &lt;filespec&gt;</k>
-        <f></f>
+        <f/>
         <d>Open filespec into individual buffers for editing.</d>
       </it>
 
       <it>
         <k>+row[:column]</k>
-        <f></f>
+        <f/>
         <d>Move point to line number row and (optional) horizontal
         position column in the file (default is +1:1).</d>
       </it>
 
       <it>
         <k>--insert &lt;file&gt;</k>
-        <f></f>
+        <f/>
         <d>Insert file at the beginning of the buffer.</d>
       </it>
 
       <it>
         <k>--load &lt;file&gt; | -l &lt;file&gt;</k>
-        <f></f>
+        <f/>
         <d>Execute the Emacs Lisp instructions in file.</d>
       </it>
 
       <it>
         <k>--g &lt;dimensions&gt; | --geometry &lt;dimensions&gt;</k>
-        <f></f>
+        <f/>
         <d>Set the window's width, height, and position according to
         the given X window dimensions (the default is to make the
         window 80x40 characters).</d>
@@ -46,7 +46,7 @@
 
       <it>
         <k>-nw | --no-windows</k>
-        <f></f>
+        <f/>
         <d>In X, don't use an X client window, but open in the current
         terminal window instead. This option doesn't affect console
         sessions.</d>
@@ -324,26 +324,26 @@
     <chapter title="Text mode key bindings">
       <it>
         <k>Esc</k>
-        <f></f>
+        <f/>
         <d>Prefix for mode-specific commands</d>
       </it>
 
       <it>
         <k>Esc Tab | M-Tab</k>
         <f>ispell-complete-word</f>
-        <d></d>
+        <d/>
       </it>
 
       <it>
         <k>Esc S | M-S</k>
         <f>center-paragraph</f>
-        <d></d>
+        <d/>
       </it>
 
       <it>
         <k>Esc s | M-s</k>
         <f>center-line</f>
-        <d></d>
+        <d/>
       </it>
     </chapter>
 
@@ -355,7 +355,7 @@
       </it>
 
       <it>
-        <k></k>
+        <k/>
         <f>fill-region</f>
         <d>This command fills all paragraphs in the region.</d>
       </it>
@@ -405,8 +405,8 @@
         <k>M-^</k>
         <f>delete-indentation</f>
         <d>This command joins the line at point with the previous
-        line. Preface with C-1 to join the line at point with the
-        next line.</d>
+        line. Preface with <kbd>C-1</kbd> to join the line at point
+        with the next line.</d>
       </it>
 
       <it>
@@ -441,19 +441,20 @@
         <k>C-s [STRING] [C-w] [C-y]</k>
         <f>isearch-forward</f>
         <d>Incrementally search forward through the buffer for string
-        (default is the last search string you gave, if any); C-w
-        uses the text from point forward to the end of the word and
-        C-y uses everything from point to the end of the line.</d>
+        (default is the last search string you gave, if any);
+        <kbd>C-w</kbd> uses the text from point forward to the end of
+        the word and <kbd>C-y</kbd> uses everything from point to the
+        end of the line.</d>
       </it>
 
       <it>
         <k>C-r [STRING] [C-w] [C-y]</k>
         <f>isearch-backward</f>
         <d>Incrementally search backward through the buffer for string
-        (default is the last search string you gave, if any); C-w
-        uses the text from point forward to the end of the word,
-        and C-y uses everything from point to the end of the
-        line.</d>
+        (default is the last search string you gave, if any);
+        <kbd>C-w</kbd> uses the text from point forward to the end of
+        the word, and <kbd>C-y</kbd> uses everything from point to the
+        end of the line.</d>
       </it>
 
       <it>
@@ -485,14 +486,14 @@
       </it>
 
       <it>
-        <k></k>
+        <k/>
         <f>replace-string</f>
         <d>Search for a given string from point to the end of the
         buffer and replace it with a given string.</d>
       </it>
 
       <it>
-        <k></k>
+        <k/>
         <f>replace-regexp</f>
         <d>Search for a given regular expression from point to the end
         of the buffer and replace it with a given string.</d>
@@ -533,7 +534,8 @@
       <it>
         <k>C-x r d</k>
         <f>delete-rectangle</f>
-        <d>Deletes the current rectangle and doesn't save it for yanking.</d>
+        <d>Deletes the current rectangle and doesn't save it for
+        yanking.</d>
       </it>
 
       <it>
@@ -575,7 +577,8 @@
       <it>
         <k>M-@</k>
         <f>mark-word</f>
-        <d>Marks all text from point to the end of the current word.</d>
+        <d>Marks all text from point to the end of the current
+        word.</d>
       </it>
 
       <it>
@@ -586,7 +589,7 @@
       </it>
 
       <it>
-        <k></k>
+        <k/>
         <f>transient-mark-mode</f>
         <d>Toggles Transient Mark mode.</d>
       </it>
@@ -594,7 +597,8 @@
       <it>
         <k>C-x h</k>
         <f>mark-whole-buffer</f>
-        <d>Marks the entire buffer, regardless of the location of point.</d>
+        <d>Marks the entire buffer, regardless of the location of
+        point.</d>
       </it>
     </chapter>
 
@@ -652,7 +656,7 @@
       </it>
 
       <it>
-        <k></k>
+        <k/>
         <f>view-register</f>
         <d>View the contents of a given register.</d>
       </it>
@@ -684,7 +688,7 @@
       </it>
 
       <it>
-        <k></k>
+        <k/>
         <f>bookmark-delete</f>
         <d>Delete a bookmark.</d>
       </it>
@@ -692,11 +696,12 @@
       <it>
         <k>C-x r b Bookmark</k>
         <f>bookmark-jump</f>
-        <d>Jump to the location set in the bookmark named Bookmark.</d>
+        <d>Jump to the location set in the bookmark named
+        Bookmark.</d>
       </it>
 
       <it>
-        <k></k>
+        <k/>
         <f>bookmark-save</f>
         <d>Save all bookmarks to the bookmark file, ~/.emacs.bmk.</d>
       </it>
@@ -745,11 +750,11 @@
         <k>C-M-v</k>
         <f>scroll-other-window</f>
         <d>Scroll to the window that would be the next one to switch
-        to with C-x o.</d>
+        to with <kbd>C-x o</kbd>.</d>
       </it>
 
       <it>
-        <k></k>
+        <k/>
         <f>scroll-all</f>
         <d>Toggle the scroll-all minor mode. When it's on, all windows
         displaying the buffer in the current window are scrolled
@@ -767,7 +772,8 @@
         <k>C-x 0</k>
         <f>delete-window</f>
         <d>Delete the current window, and move the cursor to the
-        window that would be the next one to switch to with C-x o.</d>
+        window that would be the next one to switch to with
+        <kbd>C-x o</kbd>.</d>
       </it>
 
       <it>
@@ -790,7 +796,7 @@
       </it>
 
       <it>
-        <k></k>
+        <k/>
         <f>follow-mode</f>
         <d>Toggle follow, a minor mode. When it's on in a buffer, all
         windows displaying the buffer are connected into a large
@@ -814,7 +820,8 @@
       <it>
         <k>C-x {</k>
         <f>enlarge-window-horizontally</f>
-        <d>Make the current active window wider by a single column.</d>
+        <d>Make the current active window wider by a single
+        column.</d>
       </it>
 
       <it>
@@ -832,7 +839,7 @@
       </it>
 
       <it>
-        <k></k>
+        <k/>
         <f>compare-windows</f>
         <d>Compare the current window with the next window, beginning
         with point in both windows and moving point in both buffers to
@@ -852,10 +859,10 @@
         document is valid from the cursor to the end of the file, the
         message “No more errors” appears in the minibuffer. To
         validate the entire document, move to the top of the document
-        with M-&lt; and then use this key sequence. If it says “No
-        more errors” with point at the top of the file, the entire
-        file is valid; otherwise it will jump the cursor to the next
-        invalid content.</d>
+        with <kbd>M-&lt;</kbd> and then use this key sequence. If it
+        says “No more errors” with point at the top of the file, the
+        entire file is valid; otherwise it will jump the cursor to the
+        next invalid content.</d>
       </it>
 
       <it>
@@ -904,7 +911,7 @@
       <it>
         <k>C-c C-b</k>
         <f>nxml-balanced-close-start-tag-block</f>
-        <d>Like C-c C-i, but used with block elements. The
+        <d>Like <kbd>C-c C-i</kbd>, but used with block elements. The
         command adds the closing “&gt;”, then a blank line, then an
         end tag on yet another separate line. The cursor is left
         indented at the proper level on the central blank line.</d>
@@ -981,57 +988,57 @@
       <it>
         <k>C-c C-o C-s</k>
         <f>nxml-hide-subheadings</f>
-        <d>Reverses the action of C-c C-o C-d, revealing the children
-        of the current element.</d>
+        <d>Reverses the action of <kbd>C-c C-o C-d</kbd>, revealing
+        the children of the current element.</d>
       </it>
     </chapter>
 
     <chapter title="Things you should never know about">
       <it>
         <k>M-x dunnet</k>
-        <f></f>
+        <f/>
         <d>Dungeon</d>
       </it>
 
       <it>
         <k>M-x tetris</k>
-        <f></f>
+        <f/>
         <d>Tetris</d>
       </it>
 
       <it>
         <k>M-x blackbox</k>
-        <f></f>
+        <f/>
         <d>Hide &amp; seek</d>
       </it>
 
       <it>
         <k>M-x doctor</k>
-        <f></f>
+        <f/>
         <d>Psychotherapy</d>
       </it>
 
       <it>
         <k>M-x gomoku</k>
-        <f></f>
+        <f/>
         <d>Gomoku</d>
       </it>
 
       <it>
         <k>M-x landmark</k>
-        <f></f>
+        <f/>
         <d>Robot game</d>
       </it>
 
       <it>
         <k>M-x snake</k>
-        <f></f>
+        <f/>
         <d>The snake game</d>
       </it>
 
       <it>
         <k>M-x solitaire</k>
-        <f></f>
+        <f/>
         <d>Peg solitaire</d>
       </it>
     </chapter>

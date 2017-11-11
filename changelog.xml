@@ -1,13 +1,23 @@
 <?xml version='1.0' encoding='utf-8'?>
 
 <changelog>
-  <release n="5" date="######" author="Pete Za Sayari" email="petezasayari@gmail.com">
+  <release n="5" date="2017.11.11" author="Pete Za Sayari" email="petezasayari@gmail.com">
     <version>0.4</version>
 
     <added>
       <i file="emcsh.xml">A better dictionary.</i>
       <i file="README.md">Better explanations.</i>
     </added>
+
+    <changed>
+      <i file="TODO.xsl">Now the name is "todo.xml".</i>
+    </changed>
+
+    <fixed>
+      <i file="tohtml.xsl">HTML code into the "d" tag now transforms properly.</i>
+      <i file="emcsh.xml">Enclosed keyboard commands into "d" tags between "kbd" tags.</i>
+      <i file="emcsh.xml">Minor changes.</i>
+    </fixed>
   </release>
 
   <release n="4" date="2017.11.05" author="Pete Za Sayari" email="petezasayari@gmail.com">

@@ -70,6 +70,15 @@
     </p>
   </xsl:template>
 
+  <!-- 2017-11-11T09.36
+    As suggested by JLRishe on stackoverflow.com/questions/47222575
+  -->
+  <xsl:template match="d//*">
+    <xsl:element name="{local-name()}" namespace="http://www.w3.org/1999/xhtml">
+      <xsl:apply-templates select="node() | @*" />
+    </xsl:element>
+  </xsl:template>
+
   <xsl:template match="body">
     <xsl:for-each select="chapter">
       <div style="padding-bottom: .5em;">
@@ -110,7 +119,7 @@
           </table>
           <xsl:if test="d">
             <div class="onecol" align="justify">
-              <xsl:value-of select="d"/>
+        <xsl:apply-templates select="d"/>
             </div>
           </xsl:if>
         </div>
@@ -122,21 +131,21 @@
   <xsl:template match="footer">
     <div style="page-break-inside: avoid; font-size: .75em">
       <div style="page-break-inside: avoid;
-		  padding-top: .3em; padding-bottom: .3em;">
+      padding-top: .3em; padding-bottom: .3em;">
         <hr />
       </div>
 
       <div align="center">
-	<xsl:for-each select="line">
-	  <xsl:choose>
-	    <xsl:when test=". !=''">
-	      <xsl:value-of select="."/><br/>
-	    </xsl:when>
+  <xsl:for-each select="line">
+    <xsl:choose>
+      <xsl:when test=". !=''">
+        <xsl:value-of select="."/><br/>
+      </xsl:when>
             <xsl:otherwise>
               <div style="padding-bottom: .75em"></div>
             </xsl:otherwise>
           </xsl:choose>
-	</xsl:for-each>
+  </xsl:for-each>
       </div>
     </div>
   </xsl:template>
