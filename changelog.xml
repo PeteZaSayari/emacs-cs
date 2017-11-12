@@ -1,6 +1,16 @@
 <?xml version='1.0' encoding='utf-8'?>
 
 <changelog>
+  <release n="7" date="##########"
+           author="Pete Za Sayari" email="petezasayari@gmail.com"
+           ver="1.0">
+    <added>
+      <i file="emcsh.xml">Matching parentheses and shell
+      commands. Solved tasks #6 and #7</i>
+      <i file="README.md">New aknowledgments".</i>
+    </added>
+  </release>
+  
   <release n="6" date="2017.11.11"
            author="Pete Za Sayari" email="petezasayari@gmail.com"
            ver="0.5">

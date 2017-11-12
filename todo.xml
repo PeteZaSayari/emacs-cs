@@ -1,10 +1,20 @@
 <?xml version='1.0' encoding='utf-8'?>
 
 <TODO>
-  <task n="5" created="2017.11.11" priority="B" status="open">
+  <task n="7" created="2017.11.12" priority="B"
+        status="resolved" solved="2017.11.12">
+    Refine using new material.
+  </task>
+
+  <task n="6" created="2017.11.12" priority="B"
+        status="resolved" solved="2017.11.12">
+    Add some commands for the shell and for parentheses.
+  </task>
+
+  <task n="5" created="2017.11.11" priority="B"status="open">
     Find a better font for the "kbd" tag.
   </task>
-  
+
   <task n="4" created="2017.11.05" priority="B"
         status="resolved" solved="2017.11.11">
     "Games" section: a more complete list and a better description of

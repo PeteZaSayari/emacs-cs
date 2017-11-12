@@ -6,8 +6,6 @@ I'm studying the IBM Emacs tutorial (you can read the first module at
 the [IBM Developer Works][1]) and I feel the need of taking note of
 what I'm reading. So I started to write this cheat sheet.
 
-[1]: https://www.ibm.com/developerworks/aix/tutorials/au-emacs1/index.html
-
 I'm studyng XML and XSLT too, so I preferred to use XML to track down
 my Emacs commands.
 
@@ -33,8 +31,14 @@ sides of sheets in A3 format (portrait).
 
 ## Acknowledgements
 
-* [IBM tutorial][ibmt]
-* The section about the Emacs games is taken mostly from the Mickey Petersen's blog [Mastering Emacs][mastemcs].
+* Stephen Gildea (TeX source for his card is distributed with Emacs in
+  `etc/refcards/`
+* The [IBM tutorial][2]
+* The section about the Emacs games is taken mostly from the Mickey
+  Petersen's blog [Mastering Emacs][3].
+* [Emacs Wiki][4]
 
-[ibmt]: https://www.ibm.com/developerworks/aix/tutorials/au-emacs1/index.html
-[mastemcs]: https://www.masteringemacs.org/article/fun-games-in-emacs
+[1]: https://www.ibm.com/developerworks/aix/tutorials/au-emacs1/index.html
+[2]: https://www.ibm.com/developerworks/aix/tutorials/au-emacs1/index.html
+[3]: https://www.masteringemacs.org/article/fun-games-in-emacs
+[4]: https://www.emacswiki.org

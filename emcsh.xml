@@ -77,6 +77,24 @@
         <f/>
         <d>Literal function name</d>
       </it>
+
+      <it>
+        <k>M-!</k>
+        <f>shell-command</f>
+        <d>Execute external shell command from within Emacs.The output
+        from the shell command is displayed in the minibuffer or in a
+        separate buffer, depending on the output size. When used with
+        a prefix argument (e.g, <cbd>C-u M-!</cbd>), the shell-command
+        output is inserted in the current buffer at point.</d>
+      </it>
+
+      <it>
+        <k>M-|</k>
+        <f>shell-command-on-region</f>
+        <d>Provide the region text to the shell command as input. If
+        you want the shell to replace the region text with the output
+        from the shell command, use <kbd>C-u M-|</kbd>.</d>
+      </it>
     </chapter>
 
     <chapter title="Buffer and files functions">
@@ -239,6 +257,44 @@
       </it>
     </chapter>
 
+    <chapter title="Navigating over balanced expressions">
+      <it>
+        <k>C-M-n</k>
+        <f>forward-list</f>
+        <d>Move forward over a parenthetical group.</d>
+      </it>
+
+      <it>
+        <k>C-M-p</k>
+        <f>backward-list</f>
+        <d>Move backward over a parenthetical group.</d>
+      </it>
+
+      <it>
+        <k>C-M-f</k>
+        <f>forward-sexp</f>
+        <d>Move forward over a balanced expression.</d>
+      </it>
+
+      <it>
+        <k>C-M-b</k>
+        <f>backward-sexp</f>
+        <d>Move backward over a balanced expression.</d>
+      </it>
+
+      <it>
+        <k>C-M-k</k>
+        <f>kill-sexp</f>
+        <d>Kill balanced expression forward.</d>
+      </it>
+
+      <it>
+        <k>C-M-SPC</k>
+        <f>mark-sexp</f>
+        <d>Put the mark at the end of the sexp.</d>
+      </it>
+    </chapter>
+      
     <chapter title="Common editing commands">
       <it>
         <k>Ins</k>
@@ -852,6 +908,44 @@
       </it>
     </chapter>
 
+    <chapter title="Shell commands">
+      <it>
+        <k>M-! &lt;cmd&gt;</k>
+        <f>shell-command</f>
+        <d>Run the shell command line <kbd>cmd</kbd> and display the
+        output.</d>
+      </it>
+
+      <it>
+        <k>M-| &lt;cmd&gt;</k>
+        <f>shell-command-on-region</f>
+        <d>Run the shell command line <kbd>cmd</kbd> with region
+        contents as input; optionally replace the region with the
+        output.</d>
+      </it>
+
+      <it>
+        <k/>
+        <f>shell</f>
+        <d>Run a subshell with input and output through an Emacs
+        buffer. You can then give commands interactively.</d>
+      </it>
+
+      <it>
+        <k/>
+        <f>term</f>
+        <d>Run a subshell with input and output through an Emacs
+        buffer. You can then give commands interactively. Full
+        terminal emulation is available.</d>
+      </it>
+
+      <it>
+        <k/>
+        <f>eshell</f>
+        <d>Start the Emacs shell.</d>
+      </it>
+    </chapter>
+
     <chapter title="nXML mode">
       <it>
         <k>C-c C-n</k>
@@ -1293,6 +1387,14 @@
       </it>
 
       <it>
+        <k/>
+        <f>show-paren-mode</f>
+        <d>Allows one to see matching pairs of parentheses and other
+        characters. When point is on one of the paired characters, the
+        other is highlighted.</d>
+      </it>
+
+      <it>
 	<k/>
 	<f>menu-bar-mode</f>
 	<d>Toggle the display of the Emacs menu bar. The default value
@@ -1456,6 +1558,13 @@
         <f>where-is</f>
         <d>This command describes which keyboard binding (if any) a
         particular <kbd>&lt;function&gt;</kbd> is bound to.</d>
+      </it>
+
+      <it>
+        <k>C-h s | F1 s</k>
+        <f>describe-syntax</f>
+        <d>Display the <em>Emacs Syntax Table</em> for the current
+        mode (useful for the matching parentheses commands).</d>
       </it>
     </chapter>
 
@@ -1782,7 +1891,7 @@
         <d>Translates a region into morse code. Undo
         (<kbd>C-S-_</kbd>) or <kbd>M-x unmorse-region</kbd> to
         unmorse.</d>
-      </it>     
+      </it>
     </chapter>
 
   </body>
@@ -1790,11 +1899,11 @@
   <footer>
     <line>Copyright (C) 2017 Pete Za Sayari</line>
     <line>&lt;petezasayari@gmail.com&gt;</line>
-    <line></line>
+    <line/>
     <line>Released under the terms of the GNU General Public
     License</line>
     <line>version 3 or later.</line>
-    <line></line>
+    <line/>
     <line>For more Emacs documentation see the Emacs distribution or
     http://www.gnu.org/software/emacs</line>
     <line>For the XML-XSLT source for this cheat sheet see
