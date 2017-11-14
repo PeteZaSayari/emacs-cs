@@ -294,7 +294,7 @@
         <d>Put the mark at the end of the sexp.</d>
       </it>
     </chapter>
-      
+
     <chapter title="Common editing commands">
       <it>
         <k>Ins</k>
@@ -1093,297 +1093,298 @@
 
     <chapter title="Managing variables">
       <it>
-	<k/>
-	<f>set-variable</f>
-	<d>Ask for a variable to change and for the needed value.</d>
+	      <k/>
+	      <f>set-variable</f>
+	      <d>Ask for a variable to change and for the needed value.</d>
       </it>
 
       <it>
-	<k/>
-	<f>auto-mode-alist</f>
-	<d>If set to <em>nil</em>, automatic selection of major mode
-	based on file name extension is turned off. Its default value
-	is a list of file name extensions and corresponding modes.</d>
+	      <k/>
+	      <f>auto-mode-alist</f>
+	      <d>If set to <em>nil</em>, automatic selection of major mode
+	      based on file name extension is turned off. Its default value
+	      is a list of file name extensions and corresponding modes.</d>
       </it>
 
       <it>
-	<k/>
-	<f>auto-save-default</f>
-	<d>If not set to <em>nil</em>, Emacs automatically saves a
-	changed buffer to its corresponding file at preset
-	intervals. Its default value is t.</d>
+	      <k/>
+	      <f>auto-save-default</f>
+	      <d>If not set to <em>nil</em>, Emacs automatically saves a
+	      changed buffer to its corresponding file at preset
+	      intervals. Its default value is t.</d>
       </it>
 
       <it>
-	<k/>
-	<f>auto-save-interval</f>
-	<d>Contains the number of character changes after which
-	Auto-save mode, if true, is invoked; the default value is
-	300.</d>
+	      <k/>
+	      <f>auto-save-interval</f>
+	      <d>Contains the number of character changes after which
+	      Auto-save mode, if true, is invoked; the default value is
+	      300.</d>
       </it>
 
       <it>
-	<k/>
-	<f>calendar-latitude</f>
-	<d>Contains the latitude value for the location of the user's
-	workstation, in degrees; the default value is
-	<em>nil</em>.</d>
+	      <k/>
+	      <f>calendar-latitude</f>
+	      <d>Contains the latitude value for the location of the user's
+	      workstation, in degrees; the default value is
+	      <em>nil</em>.</d>
       </it>
 
       <it>
-	<k/>
-	<f>calendar-longitude</f>
-	<d>Contains the longitude value for the location of the user's
-	workstation, in degrees; the default value is
-	<em>nil</em>.</d>
+	      <k/>
+	      <f>calendar-longitude</f>
+	      <d>Contains the longitude value for the location of the user's
+	      workstation, in degrees; the default value is
+	      <em>nil</em>.</d>
       </it>
 
       <it>
-	<k/>
-	<f>calendar-location-name</f>
-	<d>Contains the value for the location name (such as city,
-	state, and country) for the location of the user's
-	workstation; the default value is <em>nil</em>.</d>
+	      <k/>
+	      <f>calendar-location-name</f>
+	      <d>Contains the value for the location name (such as city,
+	      state, and country) for the location of the user's
+	      workstation; the default value is <em>nil</em>.</d>
       </it>
 
       <it>
-	<k/>
-	<f>colon-double-space</f>
-	<d>If not set to <em>nil</em>, commands for filling text
-	insert two spaces after a colon instead of one. The default
-	value is nil.</d>
+	      <k/>
+	      <f>colon-double-space</f>
+	      <d>If not set to <em>nil</em>, commands for filling text
+	      insert two spaces after a colon instead of one. The default
+	      value is nil.</d>
       </it>
 
       <it>
-	<k/>
-	<f>command-line-args</f>
-	<d>Contains the list of arguments used in the command line
-	that executed the current Emacs session.</d>
+	      <k/>
+	      <f>command-line-args</f>
+	      <d>Contains the list of arguments used in the command line
+	      that executed the current Emacs session.</d>
       </it>
 
       <it>
-	<k/>
-	<f>command-line-default-directory</f>
-	<d>Contains the path name of the directory from which the
-	current Emacs session was executed.</d>
+	      <k/>
+	      <f>command-line-default-directory</f>
+	      <d>Contains the path name of the directory from which the
+	      current Emacs session was executed.</d>
       </it>
 
       <it>
-	<k/>
-	<f>compare-ignore-case</f>
-	<d>If not set to <em>nil</em>, Emacs ignores differences in
-	uppercase and lowercase letters when running the
-	compare-windows function, as described in fifth installment of
-	this series (see Resources). The default value is
-	<em>nil</em>.</d>
+	      <k/>
+	      <f>compare-ignore-case</f>
+	      <d>If not set to <em>nil</em>, Emacs ignores differences in
+	      uppercase and lowercase letters when running the
+	      compare-windows function, as described in fifth installment of
+	      this series (see Resources). The default value is
+	      <em>nil</em>.</d>
       </it>
 
       <it>
-	<k/>
-	<f>confirm-kill-emacs</f>
-	<d>If set to <em>nil</em>, Emacs doesn't ask for a
-	confirmation when exiting; otherwise, the exit verification
-	might be customized as an Emacs Lisp function such as
-	<em>y-or-n-p</em>. The default value is <em>nil</em>.</d>
+	      <k/>
+	      <f>confirm-kill-emacs</f>
+	      <d>If set to <em>nil</em>, Emacs doesn't ask for a
+	      confirmation when exiting; otherwise, the exit verification
+	      might be customized as an Emacs Lisp function such as
+	      <em>y-or-n-p</em>. The default value is <em>nil</em>.</d>
       </it>
 
       <it>
-	<k/>
-	<f>default-justification</f>
-	<d>Sets the default justification style. The value can be one
-	of left, right, center, full, or none. The default value is
-	left.</d>
+	      <k/>
+	      <f>default-justification</f>
+	      <d>Sets the default justification style. The value can be one
+	      of left, right, center, full, or none. The default value is
+	      left.</d>
       </it>
 
       <it>
-	<k/>
-	<f>default-major-mode</f>
-	<d>Selects the default major mode for new files or
-	buffers. The default value is <em>fundamental-mode</em>.</d>
+	      <k/>
+	      <f>default-major-mode</f>
+	      <d>Selects the default major mode for new files or
+	      buffers. The default value is <em>fundamental-mode</em>.</d>
       </it>
 
       <it>
-	<k/>
-	<f>display-time-24hr-format</f>
-	<d>If set to t, Emacs displays time in 24-hour military
-	format, instead of the standard 12-hour format with AM or PM
-	suffix. The default value is <em>nil</em>.</d>
+	      <k/>
+	      <f>display-time-24hr-format</f>
+	      <d>If set to t, Emacs displays time in 24-hour military
+	      format, instead of the standard 12-hour format with AM or PM
+	      suffix. The default value is <em>nil</em>.</d>
       </it>
 
       <it>
-	<k/>
-	<f>display-time-day-and-date</f>
-	<d>If not set to <em>nil</em>, Emacs displays time with the
-	current day of the week, current month, and current day of the
-	month, instead of just the hour and minute. The default value
-	is <em>nil</em>.</d>
+	      <k/>
+	      <f>display-time-day-and-date</f>
+	      <d>If not set to <em>nil</em>, Emacs displays time with the
+	      current day of the week, current month, and current day of the
+	      month, instead of just the hour and minute. The default value
+	      is <em>nil</em>.</d>
       </it>
 
       <it>
-	<k/>
-	<f>fill-column</f>
-	<d>Contains the number for the column on each line where text
-	begins to be filled to the next line. The default value is
-	70.</d>
+	      <k/>
+	      <f>fill-column</f>
+	      <d>Contains the number for the column on each line where text
+	      begins to be filled to the next line. The default value is
+	      70.</d>
       </it>
 
       <it>
-	<k/>
-	<f>initial-major-mode</f>
-	<d>Specifies the major mode to use for the <em>*scratch*</em>
-	buffer on startup. The default value is
-	<em>lisp-interaction-mode</em>.</d>
+	      <k/>
+	      <f>initial-major-mode</f>
+	      <d>Specifies the major mode to use for the <em>*scratch*</em>
+	      buffer on startup. The default value is
+	      <em>lisp-interaction-mode</em>.</d>
       </it>
 
       <it>
-	<k/>
-	<f>inverse-video</f>
-	<d>If not set to <em>nil</em>, Emacs inverts the display
-	colors, if possible. The default value is <em>nil</em>.</d>
+	      <k/>
+	      <f>inverse-video</f>
+	      <d>If not set to <em>nil</em>, Emacs inverts the display
+	      colors, if possible. The default value is <em>nil</em>.</d>
       </it>
 
       <it>
-	<k/>
-	<f>kill-ring</f>
-	<d>Contains the contents of the Emacs kill ring.</d>
+	      <k/>
+	      <f>kill-ring</f>
+	      <d>Contains the contents of the Emacs kill ring.</d>
       </it>
 
       <it>
-	<k/>
-	<f>kill-ring-max</f>
-	<d>Sets the number of allowable entries in the Emacs kill
-	ring. The default value is 60.</d>
+	      <k/>
+	      <f>kill-ring-max</f>
+	      <d>Sets the number of allowable entries in the Emacs kill
+	      ring. The default value is 60.</d>
       </it>
 
       <it>
-	<k/>
-	<f>kill-whole-line</f>
-	<d>If not set to <em>nil</em>, the kill-line function (bound
-	to <kbd>C-k</kbd>) kills the current line and its trailing
-	newline character, if the function is executed at the very
-	beginning of the line. The default value is <em>nil</em>.</d>
+	      <k/>
+	      <f>kill-whole-line</f>
+	      <d>If not set to <em>nil</em>, the kill-line function (bound
+	      to <kbd>C-k</kbd>) kills the current line and its trailing
+	      newline character, if the function is executed at the very
+	      beginning of the line. The default value is <em>nil</em>.</d>
       </it>
 
       <it>
-	<k/>
-	<f>make-backup-files</f>
-	<d>If not set to <em>nil</em>, Emacs saves a backup of a
-	buffer before any changes are made to a file of the same name
-	but with a tilde character (<kbd>~</kbd>) appended to the
-	end.</d>
+	      <k/>
+	      <f>make-backup-files</f>
+	      <d>If not set to <em>nil</em>, Emacs saves a backup of a
+	      buffer before any changes are made to a file of the same name
+	      but with a tilde character (<kbd>~</kbd>) appended to the
+	      end.</d>
       </it>
 
       <it>
-	<k/>
-	<f>mark-ring</f>
-	<d>Contains the contents of the current mark ring of the buffer.</d>
+	      <k/>
+	      <f>mark-ring</f>
+	      <d>Contains the contents of the current mark ring of the
+	      buffer.</d>
       </it>
 
       <it>
-	<k/>
-	<f>mark-ring-max</f>
-	<d>Contains the number of allowable entries in the mark
-	ring. The default value is 16.</d>
+	      <k/>
+	      <f>mark-ring-max</f>
+	      <d>Contains the number of allowable entries in the mark
+	      ring. The default value is 16.</d>
       </it>
 
       <it>
-	<k/>
-	<f>mouse-avoidance-mode</f>
-	<d>Contains a value describing the type of mouse-avoidance
-	mode. The default value is <em>nil</em>.</d>
+	      <k/>
+	      <f>mouse-avoidance-mode</f>
+	      <d>Contains a value describing the type of mouse-avoidance
+	      mode. The default value is <em>nil</em>.</d>
       </it>
 
       <it>
-	<k/>
-	<f>next-line-add-newline</f>
-	<d>If not set to <em>nil</em>, Emacs adds a new line whenever
-	the down arrow is pressed at the end of the buffer. The
-	default value is <em>nil</em> (in more recent versions of
-	Emacs).</d>
+	      <k/>
+	      <f>next-line-add-newline</f>
+	      <d>If not set to <em>nil</em>, Emacs adds a new line whenever
+	      the down arrow is pressed at the end of the buffer. The
+	      default value is <em>nil</em> (in more recent versions of
+	      Emacs).</d>
       </it>
 
       <it>
-	<k/>
-	<f>scroll-bar-mode</f>
-	<d>Contains the value for the side of the Emacs frame on which
-	to place the scroll bar: right or left. If set to
-	<em>nil</em>, the scroll bar is turned off.  The default value
-	is left.</d>
+	      <k/>
+	      <f>scroll-bar-mode</f>
+	      <d>Contains the value for the side of the Emacs frame on which
+	      to place the scroll bar: right or left. If set to
+	      <em>nil</em>, the scroll bar is turned off.  The default value
+	      is left.</d>
       </it>
 
       <it>
-	<k/>
-	<f>scroll-step</f>
-	<d>Contains the number of lines to move through the buffer
-	lines with the <em>scroll-down</em> and <em>scroll-up</em>
-	functions (which are bound to the <kbd>PgDn</kbd> and
-	<kbd>PgUp</kbd> keys by default). If set to 0, Emacs centers
-	point in the middle of the window when scrolling.</d>
+	      <k/>
+	      <f>scroll-step</f>
+	      <d>Contains the number of lines to move through the buffer
+	      lines with the <em>scroll-down</em> and <em>scroll-up</em>
+	      functions (which are bound to the <kbd>PgDn</kbd> and
+	      <kbd>PgUp</kbd> keys by default). If set to 0, Emacs centers
+	      point in the middle of the window when scrolling.</d>
       </it>
 
       <it>
-	<k/>
-	<f>show-trailing-whitespace</f>
-	<d>If not set to <em>nil</em>, Emacs makes any whitespace at
-	the end of lines in the current buffer visible. The default
-	value is <em>nil</em>.</d>
+	      <k/>
+	      <f>show-trailing-whitespace</f>
+	      <d>If not set to <em>nil</em>, Emacs makes any whitespace at
+	      the end of lines in the current buffer visible. The default
+	      value is <em>nil</em>.</d>
       </it>
 
       <it>
-	<k/>
-	<f>visible-bell</f>
-	<d>If not set to <em>nil</em>, Emacs makes the frame blink
-	instead of ringing the audible system bell. The default value
-	is <em>nil</em>.</d>
+	      <k/>
+	      <f>visible-bell</f>
+	      <d>If not set to <em>nil</em>, Emacs makes the frame blink
+	      instead of ringing the audible system bell. The default value
+	      is <em>nil</em>.</d>
       </it>
 
       <it>
-	<k/>
-	<f>x-cut-buffer-max</f>
-	<d>Sets the maximum number of characters from the kill ring
-	that are also stored in the X Window System cut buffer. The
-	default value is 20000.</d>
+	      <k/>
+	      <f>x-cut-buffer-max</f>
+	      <d>Sets the maximum number of characters from the kill ring
+	      that are also stored in the X Window System cut buffer. The
+	      default value is 20000.</d>
       </it>
     </chapter>
 
     <chapter title="Interface functions">
       <it>
-	<k/>
-	<f>column-number-mode</f>
-	<d>Toggle the display, in the mode line, of the current column
-	the cursor is at, preceded by a <kbd>C</kbd>. The default
-	value is <em>nil</em>.</d>
+	      <k/>
+	      <f>column-number-mode</f>
+	      <d>Toggle the display, in the mode line, of the current column
+	      the cursor is at, preceded by a <kbd>C</kbd>. The default
+	      value is <em>nil</em>.</d>
       </it>
 
       <it>
-	<k/>
-	<f>display-time</f>
-	<d>Toggle the display of the current time in the mode
-	line. The default value is <em>nil</em>.</d>
+	      <k/>
+	      <f>display-time</f>
+	      <d>Toggle the display of the current time in the mode
+	      line. The default value is <em>nil</em>.</d>
       </it>
 
       <it>
-	<k/>
-	<f>font-lock-mode</f>
-	<d>If not set to <em>nil</em>, Emacs turns on the Font Lock
-	mode automatically for the current buffer. The default value
-	is <em>nil</em>.</d>
+	      <k/>
+	      <f>font-lock-mode</f>
+	      <d>If not set to <em>nil</em>, Emacs turns on the Font Lock
+	      mode automatically for the current buffer. The default value
+	      is <em>nil</em>.</d>
       </it>
 
       <it>
-	<k/>
-	<f>global-font-lock-mode</f>
-	<d>If not set to <em>nil</em>, Emacs turns on the Font Lock
-	mode automatically for all buffers. The default value is
-	<em>nil</em>.</d>
+	      <k/>
+	      <f>global-font-lock-mode</f>
+	      <d>If not set to <em>nil</em>, Emacs turns on the Font Lock
+	      mode automatically for all buffers. The default value is
+	      <em>nil</em>.</d>
       </it>
 
       <it>
-	<k/>
-	<f>line-number-mode</f>
-	<d>Toggle the display, in the mode line, of the current line
-	the cursor is at, preceded by an <kbd>L</kbd>. The default
-	value is <em>t</em>.</d>
+	      <k/>
+	      <f>line-number-mode</f>
+	      <d>Toggle the display, in the mode line, of the current line
+	      the cursor is at, preceded by an <kbd>L</kbd>. The default
+	      value is <em>t</em>.</d>
       </it>
 
       <it>
@@ -1395,26 +1396,26 @@
       </it>
 
       <it>
-	<k/>
-	<f>menu-bar-mode</f>
-	<d>Toggle the display of the Emacs menu bar. The default value
-	is <em>t</em>.</d>
+	      <k/>
+	      <f>menu-bar-mode</f>
+	      <d>Toggle the display of the Emacs menu bar. The default value
+	      is <em>t</em>.</d>
       </it>
 
       <it>
-	<k/>
-	<f>sunrise-sunset</f>
-	<d>Display the time of today's sunrise and sunset for the
-	current geographic location. If preceded with the
-	<kbd>universal-argument</kbd>, this function prompts for a
-	specific day.</d>
+	      <k/>
+	      <f>sunrise-sunset</f>
+	      <d>Display the time of today's sunrise and sunset for the
+	      current geographic location. If preceded with the
+	      <kbd>universal-argument</kbd>, this function prompts for a
+	      specific day.</d>
       </it>
 
       <it>
-	<k/>
-	<f>tool-bar-mode</f>
-	<d>Toggle the display of the Emacs toolbar. The default value
-	is <em>t</em>.</d>
+	      <k/>
+	      <f>tool-bar-mode</f>
+	      <d>Toggle the display of the Emacs toolbar. The default value
+	      is <em>t</em>.</d>
       </it>
     </chapter>
 
@@ -1437,31 +1438,31 @@
 
       <it>
         <k/>
-        <f>customize-face</f>
-        <d>Enter regexp Open a new customization buffer for all the
-        face, option, or groups relevant to the regular expression
-        given by regexp.</d>
+        <f>customize-face &lt;Enter&gt; &lt;regexp&gt;</f>
+        <d>Open a new customization buffer for all the face, option,
+        or groups relevant to the regular expression given by
+        <kbd>&lt;regexp&gt;</kbd>.</d>
       </it>
 
       <it>
         <k/>
-        <f>customize-face</f>
-        <d>Enter face Open a new customization buffer for the face
-        name given by face.</d>
+        <f>customize-face &lt;Enter&gt; &lt;face&gt;</f>
+        <d>Open a new customization buffer for the face name given by
+        <kbd>&lt;face&gt;</kbd>.</d>
       </it>
 
       <it>
         <k/>
-        <f>customize-group</f>
-        <d>Enter group Open a new customization buffer for the group
-        name given by group.</d>
+        <f>customize-group &lt;Enter&gt; &lt;group&gt;</f>
+        <d>Open a new customization buffer for the group name given by
+        <kbd>&lt;group&gt;</kbd>.</d>
       </it>
 
       <it>
         <k/>
-        <f>customize-option</f>
-        <d>Enter option Open a new customization buffer for the option
-        name given by option.</d>
+        <f>customize-option &lt;Enter&gt; &lt;option&gt;</f>
+        <d>Open a new customization buffer for the option name given
+        by <kbd>&lt;option&gt;</kbd>.</d>
       </it>
 
       <it>

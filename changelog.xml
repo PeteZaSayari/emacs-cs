@@ -1,7 +1,33 @@
 <?xml version='1.0' encoding='utf-8'?>
 
 <changelog>
-  <release n="7" date="##########"
+  <release n="8" date="2017.11.14"
+           author="Pete Za Sayari" email="petezasayari@gmail.com"
+           ver="1.1">
+    <added>
+      <i file="emacs-sf.pdf">Added this pdf to the repo as a
+      dowloadable example.</i>
+      <i file="README.md">Some lines about the newly added
+      file "emacs-cs.pdf"</i>
+    </added>
+
+    <changed>
+      <i file="emcsh.xml">Now the name of the file is
+      "emacs-cs.xml"</i>
+      <i file="tohtml.xsl">Field "description" (&lt;d&gt;) now setted
+      with "page-break-inside: auto".</i>
+      <i file="tohtml.xsl">Field "function" (&lt;f&gt;) now is
+      right-justifyed.</i>
+      <i file="tohtml.xsl">The tag &lt;kbd&gt; now now is formatted
+      with the MathJax_Typewriter font. Solved task #5.</i>
+    </changed>
+
+    <fixed>
+      <i file="emacs-cs.xml">Fixed the indentation.</i>
+    </fixed>
+  </release>
+
+  <release n="7" date="2017.11.12"
            author="Pete Za Sayari" email="petezasayari@gmail.com"
            ver="1.0">
     <added>
@@ -10,7 +36,7 @@
       <i file="README.md">New aknowledgments".</i>
     </added>
   </release>
-  
+
   <release n="6" date="2017.11.11"
            author="Pete Za Sayari" email="petezasayari@gmail.com"
            ver="0.5">
@@ -116,7 +142,8 @@
 <!-- TEMPLATE
 
 <changelog>
-  <release n="NUM" date="DATE" author="STRING" email="EM@IL" ver="n.n">
+  <release n="NUM" date="DATE" author="STRING"
+           email="EM@IL" ver="n.n">
 
     <added>
       <i file="">new features.</i>
@@ -127,7 +154,8 @@
     </changed>
 
     <deprecated>
-      <i file="">once-stable features removed in upcoming releases.</i>
+      <i file="">once-stable features removed in upcoming
+      releases.</i>
     </deprecated>
 
     <removed>

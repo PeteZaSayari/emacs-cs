@@ -27,6 +27,12 @@
                  local('ACaslonPro-Italic');
             font-weight: normal;
             font-style: italic;}
+          @font-face {
+            font-family: 'typewriter';
+            src: local('MathJax_Typewriter'),
+                 local('MathJax_Typewriter-Regular');
+            font-weight: normal;
+            font-style: normal;}
           @page {
             size: 297mm 210mm;
             margin: 10mm;
@@ -40,6 +46,8 @@
             column-fill: balance;
             font-size: .75em;
             font-family: Adobe Caslon Pro;}
+          kbd {
+            font-family: typewriter;}
           table {
             font-size: 1em;
             border: 0;
@@ -105,7 +113,7 @@
 
               <xsl:choose>
                 <xsl:when test="f">
-                  <td>
+                  <td align="right">
                     <em><xsl:value-of select="f"/></em>
                   </td>
                 </xsl:when>
@@ -118,8 +126,9 @@
             </tr>
           </table>
           <xsl:if test="d">
-            <div class="onecol" align="justify">
-        <xsl:apply-templates select="d"/>
+            <div class="onecol" align="justify"
+                 style="page-break-inside: auto;">
+              <xsl:apply-templates select="d"/>
             </div>
           </xsl:if>
         </div>

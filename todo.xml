@@ -11,7 +11,8 @@
     Add some commands for the shell and for parentheses.
   </task>
 
-  <task n="5" created="2017.11.11" priority="B"status="open">
+  <task n="5" created="2017.11.11" priority="B"
+        status="resolved" solved="2017.11.14">
     Find a better font for the "kbd" tag.
   </task>
 
