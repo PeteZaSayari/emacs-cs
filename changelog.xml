@@ -1,11 +1,29 @@
 <?xml version='1.0' encoding='utf-8'?>
 
 <changelog>
+  <release n="9" date="2017.11.18"
+           author="Pete Za Sayari" email="petezasayari@gmail.com"
+           ver="2.0">
+    <added>
+      <i file="cheatsheet.dtd">Formalized the structure of
+      "emacs-cs.xml".</i>
+      <i file="emacs-cs.xml">New "Abbreviations" chapter. Solved
+      task #8.</i>
+      <i file="README.md">A new aknowledgement.</i>
+    </added>
+
+    <changed>
+      <i file="tohtml.xsl">Deleted many "page-break" directives.</i>
+      <i file="emacs-cs.pdf">Updated the sample file with the new
+      addings.</i>
+    </changed>
+  </release>
+  
   <release n="8" date="2017.11.14"
            author="Pete Za Sayari" email="petezasayari@gmail.com"
            ver="1.1">
     <added>
-      <i file="emacs-sf.pdf">Added this pdf to the repo as a
+      <i file="emacs-cs.pdf">Added this pdf to the repo as a
       dowloadable example.</i>
       <i file="README.md">Some lines about the newly added
       file "emacs-cs.pdf"</i>

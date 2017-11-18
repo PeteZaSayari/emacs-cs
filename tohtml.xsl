@@ -39,11 +39,10 @@
             orphans: 2;
             widows: 2;}
           .onecol {column-count: 1;}
-          .solid {page-break-inside: avoid;}
+          .solid {}
           body {
             column-count: 4;
             column-gap: 10px;
-            column-fill: balance;
             font-size: .75em;
             font-family: Adobe Caslon Pro;}
           kbd {
@@ -126,8 +125,7 @@
             </tr>
           </table>
           <xsl:if test="d">
-            <div class="onecol" align="justify"
-                 style="page-break-inside: auto;">
+            <div class="onecol" align="justify">
               <xsl:apply-templates select="d"/>
             </div>
           </xsl:if>

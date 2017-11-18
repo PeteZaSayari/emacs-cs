@@ -1,6 +1,22 @@
 <?xml version='1.0' encoding='utf-8'?>
 
 <TODO>
+  <task n="10" created="2017.11.18" priority="B" status="open">
+    Rewrite, in "tohtml.xsl", the logic of "page-break"s to improve
+    the formatting of the cheatsheet, mainly for the printing.
+  </task>
+  
+  <task n="9" created="2017.11.18" priority="B" status="open">
+    Add HTML-like formatting features into "cheatsheet.dtd".
+  </task>
+  
+  <task n="8" created="2017.11.18" priority="B"
+        status="resolved" solved="2017.11.18">
+    Add chapter "Abbreviation" in emacs-cs.xml about the "abbrev"
+    block of commands. See
+    https://www.gnu.org/software/emacs/manual/html_node/emacs/Abbrevs.html
+  </task>
+  
   <task n="7" created="2017.11.12" priority="B"
         status="resolved" solved="2017.11.12">
     Refine using new material.

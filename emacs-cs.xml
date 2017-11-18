@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE cheatsheet SYSTEM "cheatsheet.dtd">
 <?xml-stylesheet type="text/xsl" href="tohtml.xsl"?>
 
 <cheatsheet version="1.0" lang="en" created="2017-09-29">
@@ -731,6 +732,97 @@
         <k>C-x r i X</k>
         <f>insert-register</f>
         <d>Insert the contents of register X at point.</d>
+      </it>
+    </chapter>
+
+    <chapter title="Abbreviations">
+      <it>
+        <k>(setq-default abbrev-mode t)</k>
+        <f/>
+        <d>Write this into <kbd>.emacs</kbd> to switch <em>abbrev</em>
+        minor mode on at start-up.</d>
+      </it>
+
+      <it>
+        <k/>
+        <f>abbrev-mode</f>
+        <d>Toggles <em>Abbrev</em> mode; with a numeric argument, it
+        turns <em>Abbrev</em> mode on if the argument is positive, off
+        otherwise.</d>
+      </it>
+
+      <it>
+        <k>C-x a g</k>
+        <f>add-global-abbrev</f>
+        <d>Define an abbrev, using one or more words before point as
+        its expansion.</d>
+      </it>
+
+      <it>
+        <k>C-x a l</k>
+        <f>add-mode-abbrev</f>
+        <d>Similar, but define an abbrev specific to the current major
+        mode.</d>
+      </it>
+
+      <it>
+        <k>C-x a i g</k>
+        <f>inverse-add-global-abbrev</f>
+        <d>Define a word in the buffer as an abbrev.</d>
+      </it>
+
+      <it>
+        <k>C-x a i l</k>
+        <f>inverse-add-mode-abbrev</f>
+        <d>Define a word in the buffer as a mode-specific abbrev.</d>
+      </it>
+
+      <it>
+        <k>M-'</k>
+        <f>abbrev-prefix-mark</f>
+        <d>Separate a prefix from a following abbrev to be
+        expanded.</d>
+      </it>
+
+      <it>
+        <k>C-x a e</k>
+        <f>expand-abbrev</f>
+        <d>Expand the abbrev before point. This is effective even when
+        <em>Abbrev</em> mode is not enabled.</d>
+      </it>
+
+      <it>
+        <k/>
+        <f>expand-region-abbrevs</f>
+        <d>Expand some or all abbrevs found in the region.</d>
+      </it>
+
+      <it>
+        <k/>
+        <f>list-abbrevs</f>
+        <d>Display a list of all abbrev definitions. With a numeric
+        argument, list only local abbrevs.</d>
+      </it>
+
+      <it>
+        <k/>
+        <f>edit-abbrevs</f>
+        <d>Edit a list of abbrevs; you can add, alter or remove
+        definitions.</d>
+      </it>
+
+      <it>
+        <k>M-/</k>
+        <f>dabbrev-expand</f>
+        <d>Expand the word in the buffer before point as a dynamic
+        abbrev, by searching for words starting with that
+        abbreviation.</d>
+      </it>
+
+      <it>
+        <k>C-M-/</k>
+        <f>dabbrev-completion</f>
+        <d>Complete the word before point as a dynamic abbrev.</d>
       </it>
     </chapter>
 

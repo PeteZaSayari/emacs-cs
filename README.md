@@ -50,11 +50,14 @@ It takes six sides of A4 sheets.
   Stephen Gildea. The TeX source for his card is distributed with
   Emacs in `etc/refcards/`
 * The [IBM tutorial][2]
-* The section about the Emacs games is taken mostly from the Mickey
-  Petersen's blog [Mastering Emacs][3].
+* The section about the Emacs games is taken mostly from the
+  Mickey Petersen's blog [Mastering Emacs][3].
 * [Emacs Wiki][4]
+* The section about abbreviations/abbrev mode is taken and adapted
+  from the [Emacs manual][5]
 
 
 [2]: https://www.ibm.com/developerworks/aix/tutorials/au-emacs1/index.html
 [3]: https://www.masteringemacs.org/article/fun-games-in-emacs
 [4]: https://www.emacswiki.org
+[5]: https://www.gnu.org/software/emacs/manual/

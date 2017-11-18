@@ -1,0 +1,26 @@
+
+<!ELEMENT cheatsheet (header, body, footer)>
+<!ATTLIST cheatsheet
+          version CDATA #FIXED "1.0"
+          lang CDATA #IMPLIED
+          created CDATA #IMPLIED
+          author CDATA #IMPLIED>
+
+<!ELEMENT header (title, subtitle, text?)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT subtitle (#PCDATA)>
+<!ELEMENT text (#PCDATA)>
+
+<!ELEMENT body (chapter*)>
+<!ELEMENT chapter (it+)>
+<!ATTLIST chapter
+          title CDATA #REQUIRED>
+<!ELEMENT it (k, f, d)>
+<!ELEMENT k (#PCDATA)>
+<!ELEMENT f (#PCDATA)>
+<!ELEMENT d (#PCDATA)>
+
+<!ELEMENT footer (line*)>
+<!ELEMENT line (#PCDATA)>
+
+
