@@ -12,2004 +12,2464 @@
   <body>
     <chapter title="Command line options">
       <it>
-        <k>--visit=&lt;filespec&gt; | --file=&lt;filespec&gt; |
-        &lt;filespec&gt;</k>
-        <f/>
-        <d>Open filespec into individual buffers for editing.</d>
+        <key>--visit=&lt;filespec&gt; | --file=&lt;filespec&gt; |
+        &lt;filespec&gt;</key>
+        <func/>
+        <descr>Open filespec into individual buffers for
+        editing.</descr>
       </it>
 
       <it>
-        <k>+row[:column]</k>
-        <f/>
-        <d>Move point to line number row and (optional) horizontal
-        position column in the file (default is +1:1).</d>
+        <key>+row[:column]</key>
+        <func/>
+        <descr>Move point to line number row and (optional) horizontal
+        position column in the file (default is +1:1).</descr>
       </it>
 
       <it>
-        <k>--insert &lt;file&gt;</k>
-        <f/>
-        <d>Insert file at the beginning of the buffer.</d>
+        <key>--insert &lt;file&gt;</key>
+        <func/>
+        <descr>Insert file at the beginning of the buffer.</descr>
       </it>
 
       <it>
-        <k>--load &lt;file&gt; | -l &lt;file&gt;</k>
-        <f/>
-        <d>Execute the Emacs Lisp instructions in file.</d>
+        <key>--load &lt;file&gt; | -l &lt;file&gt;</key>
+        <func/>
+        <descr>Execute the Emacs Lisp instructions in file.</descr>
       </it>
 
       <it>
-        <k>--g &lt;dimensions&gt; | --geometry &lt;dimensions&gt;</k>
-        <f/>
-        <d>Set the window's width, height, and position according to
-        the given X window dimensions (the default is to make the
-        window 80x40 characters).</d>
+        <key>--g &lt;dimensions&gt; | --geometry
+        &lt;dimensions&gt;</key>
+        <func/>
+        <descr>Set the window's width, height, and position according
+        to the given X window dimensions (the default is to make the
+        window 80x40 characters).</descr>
       </it>
 
       <it>
-        <k>-nw | --no-windows</k>
-        <f/>
-        <d>In X, don't use an X client window, but open in the current
-        terminal window instead. This option doesn't affect console
-        sessions.</d>
+        <key>-nw | --no-windows</key>
+        <func/>
+        <descr>In X, don't use an X client window, but open in the
+        current terminal window instead. This option doesn't affect
+        console sessions.</descr>
       </it>
     </chapter>
 
     <chapter title="Prefixes">
       <it>
-        <k>C-c</k>
-        <f/>
-        <d>Commands particular to the current editing mode</d>
+        <key>C-c</key>
+        <func/>
+        <descr>Commands particular to the current editing mode</descr>
       </it>
 
       <it>
-        <k>C-x</k>
-        <f/>
-        <d>Commands for files and buffers</d>
+        <key>C-x</key>
+        <func/>
+        <descr>Commands for files and buffers</descr>
       </it>
 
       <it>
-        <k>C-h</k>
-        <f/>
-        <d>Help commands</d>
+        <key>C-h</key>
+        <func/>
+        <descr>Help commands</descr>
       </it>
 
       <it>
-        <k>M-x</k>
-        <f/>
-        <d>Literal function name</d>
+        <key>M-x</key>
+        <func/>
+        <descr>Literal function name</descr>
       </it>
 
       <it>
-        <k>M-!</k>
-        <f>shell-command</f>
-        <d>Execute external shell command from within Emacs.The output
+        <key>M-!</key>
+        <func>shell-command</func>
+        <descr>Execute external shell command from within Emacs.The output
         from the shell command is displayed in the minibuffer or in a
         separate buffer, depending on the output size. When used with
-        a prefix argument (e.g, <cbd>C-u M-!</cbd>), the shell-command
-        output is inserted in the current buffer at point.</d>
+        a prefix argument (e.g, <kbd>C-u M-!</kbd>), the shell-command
+        output is inserted in the current buffer at point.</descr>
       </it>
 
       <it>
-        <k>M-|</k>
-        <f>shell-command-on-region</f>
-        <d>Provide the region text to the shell command as input. If
+        <key>M-|</key>
+        <func>shell-command-on-region</func>
+        <descr>Provide the region text to the shell command as input. If
         you want the shell to replace the region text with the output
-        from the shell command, use <kbd>C-u M-|</kbd>.</d>
+        from the shell command, use <kbd>C-u M-|</kbd>.</descr>
       </it>
     </chapter>
 
     <chapter title="Buffer and files functions">
       <it>
-        <k>C-x C-f</k>
-        <f>find-file</f>
-        <d>Visit a file.</d>
-      </it>
-      <it>
-        <k>C-x C-s</k>
-        <f>save-buffer</f>
-        <d>Save current buffer to disk.</d>
+        <key>C-x C-f</key>
+        <func>find-file</func>
+        <descr>Visit a file.</descr>
       </it>
 
       <it>
-        <k>C-x s</k>
-        <f>save-some-buffers</f>
-        <d>Ask about saving all unsaved buffers to disk.</d>
+        <key>C-x C-s</key>
+        <func>save-buffer</func>
+        <descr>Save current buffer to disk.</descr>
       </it>
 
       <it>
-        <k>C-x C-c</k>
-        <f>save-buffers-kill-emacs</f>
-        <d>Ask about saving all unsaved buffers to disk and exit
-        Emacs.</d>
+        <key>C-x C-w</key>
+        <func>write-file</func>
+        <descr>Ask for a filename and write the current buffer with that
+        name. Like the command "Save as ..." on other editors.</descr>
       </it>
 
       <it>
-        <k>C-x C-z | C-z</k>
-        <f>suspend-emacs</f>
-        <d>Suspend Emacs and make it a background process (press
-        <kbd>fg | fg %emacs</kbd> to <i>awake</i> it back.</d>
+        <key>C-x s</key>
+        <func>save-some-buffers</func>
+        <descr>Ask about saving all unsaved buffers to disk.</descr>
       </it>
 
       <it>
-        <k>C-x C-b</k>
-        <f>list-buffers</f>
-        <d>List all buffers.</d>
+        <key>C-x C-c</key>
+        <func>save-buffers-kill-emacs</func>
+        <descr>Ask about saving all unsaved buffers to disk and exit
+        Emacs.</descr>
       </it>
 
       <it>
-        <k>C-x k</k>
-        <f>kill-buffer</f>
-        <d>Kill a buffer (the current buffer, by default).</d>
+        <key>C-x C-z | C-z</key>
+        <func>suspend-emacs</func>
+        <descr>Suspend Emacs and make it a background process (press
+        <kbd>fg | fg %emacs</kbd> to <em>awake</em> it back.</descr>
       </it>
 
       <it>
-        <k>C-x C-q</k>
-        <f>vc-toggle-read-only</f>
-        <d>Toggle read-only status on the current buffer (and perform
-        version control if applicable).</d>
+        <key>C-x C-b</key>
+        <func>list-buffers</func>
+        <descr>List all buffers.</descr>
       </it>
 
       <it>
-        <k>C-x i</k>
-        <f>insert-file</f>
-        <d>Insert the contents of a file at point.</d>
+        <key>C-x k</key>
+        <func>kill-buffer</func>
+        <descr>Kill a buffer (the current buffer, by default).</descr>
+      </it>
+
+      <it>
+        <key>C-x C-q</key>
+        <func>vc-toggle-read-only</func>
+        <descr>Toggle read-only status on the current buffer (and perform
+        version control if applicable).</descr>
+      </it>
+
+      <it>
+        <key>C-x i</key>
+        <func>insert-file</func>
+        <descr>Insert the contents of a file at point.</descr>
+      </it>
+
+      <it>
+        <key>C-x z</key>
+        <func>repeat</func>
+        <descr>Repeat most recently executed command.</descr>
+      </it>
+
+      <it>
+        <key>C-x M-: | C-x M-ESC</key>
+        <func>repeat-complex-command</func>
+        <descr>Edit and re-evaluate last complex command. A complex
+        command is one which used the minibuffer. The command is
+        placed in the minibuffer as a Lisp form for editing. The
+        result is executed, repeating the command as changed.</descr>
       </it>
     </chapter>
 
     <chapter title="Movement and navigation">
       <it>
-        <k>C-p | UpArrow</k>
-        <f>previous-line</f>
-        <d>Move point up to the previous line.</d>
+        <key>C-p | UpArrow</key>
+        <func>previous-line</func>
+        <descr>Move point up to the previous line.</descr>
       </it>
 
       <it>
-        <k>C-n | DownArrow</k>
-        <f>next-line</f>
-        <d>Move point down to the next line.</d>
+        <key>C-n | DownArrow</key>
+        <func>next-line</func>
+        <descr>Move point down to the next line.</descr>
       </it>
 
       <it>
-        <k>C-f | RightArrow</k>
-        <f>forward-char</f>
-        <d>Move point forward to the next character.</d>
+        <key>C-f | RightArrow</key>
+        <func>forward-char</func>
+        <descr>Move point forward to the next character.</descr>
       </it>
 
       <it>
-        <k>C-b | LeftArrow</k>
-        <f>back-char</f>
-        <d>Move point backward to the previous character.</d>
+        <key>C-b | LeftArrow</key>
+        <func>back-char</func>
+        <descr>Move point backward to the previous character.</descr>
       </it>
 
       <it>
-        <k>M-f | C-RightArrow</k>
-        <f>forward-word</f>
-        <d>Move point forward to the next word.</d>
+        <key>M-f | C-RightArrow</key>
+        <func>forward-word</func>
+        <descr>Move point forward to the next word.</descr>
       </it>
 
       <it>
-        <k>M-b | C-LeftArrow</k>
-        <f>backward-word</f>
-        <d>Move point backward to the previous word.</d>
+        <key>M-b | C-LeftArrow</key>
+        <func>backward-word</func>
+        <descr>Move point backward to the previous word.</descr>
       </it>
 
       <it>
-        <k>C-v | PgDn</k>
-        <f>scroll-up</f>
-        <d>Scroll the text upward by a screen.</d>
+        <key>C-v | PgDn</key>
+        <func>scroll-up</func>
+        <descr>Scroll the text upward by a screen.</descr>
       </it>
 
       <it>
-        <k>M-v | PgUp</k>
-        <f>scroll-down</f>
-        <d>Scroll the text downward by a screen.</d>
+        <key>M-v | PgUp</key>
+        <func>scroll-down</func>
+        <descr>Scroll the text downward by a screen.</descr>
       </it>
 
       <it>
-        <k>C-Home</k>
-        <f>beginning-of-buffer</f>
-        <d>Move point to the beginning of the buffer. (On some
+        <key>C-Home</key>
+        <func>beginning-of-buffer</func>
+        <descr>Move point to the beginning of the buffer. (On some
         versions, this key is defined by default to move to the
-        beginning of the current line.)</d>
+        beginning of the current line.)</descr>
       </it>
 
       <it>
-        <k>C-End</k>
-        <f>end-of-buffer</f>
-        <d>Move point to the end of the buffer. (On some versions,
+        <key>C-End</key>
+        <func>end-of-buffer</func>
+        <descr>Move point to the end of the buffer. (On some versions,
         this key is defined by default to move to the end of the
-        current line.)</d>
+        current line.)</descr>
       </it>
 
       <it>
-        <k>Home | C-a</k>
-        <f>beginning-of-line</f>
-        <d>Move point to the beginning of the line.</d>
+        <key>Home | C-a</key>
+        <func>beginning-of-line</func>
+        <descr>Move point to the beginning of the line.</descr>
       </it>
 
       <it>
-        <k>End | C-e</k>
-        <f>end-of-line</f>
-        <d>Move point to the end of the line.</d>
+        <key>End | C-e</key>
+        <func>end-of-line</func>
+        <descr>Move point to the end of the line.</descr>
       </it>
 
       <it>
-        <k>M-a</k>
-        <f>beginning-of-sentence</f>
-        <d>Move point to the beginning of the sentence.</d>
+        <key>M-a</key>
+        <func>beginning-of-sentence</func>
+        <descr>Move point to the beginning of the sentence.</descr>
       </it>
 
       <it>
-        <k>M-e</k>
-        <f>end-of-sentence</f>
-        <d>Move point to the end of the sentence.</d>
+        <key>M-e</key>
+        <func>end-of-sentence</func>
+        <descr>Move point to the end of the sentence.</descr>
       </it>
 
       <it>
-        <k>C-{</k>
-        <f>beginning-of-paragraph</f>
-        <d>Move point to the beginning of the paragraph.</d>
+        <key>C-{</key>
+        <func>beginning-of-paragraph</func>
+        <descr>Move point to the beginning of the paragraph.</descr>
       </it>
 
       <it>
-        <k>C-}</k>
-        <f>end-of-paragraph</f>
-        <d>Move point to the end of the paragraph.</d>
+        <key>C-}</key>
+        <func>end-of-paragraph</func>
+        <descr>Move point to the end of the paragraph.</descr>
       </it>
     </chapter>
 
     <chapter title="Navigating over balanced expressions">
       <it>
-        <k>C-M-n</k>
-        <f>forward-list</f>
-        <d>Move forward over a parenthetical group.</d>
+        <key>C-M-n</key>
+        <func>forward-list</func>
+        <descr>Move forward over a parenthetical group.</descr>
       </it>
 
       <it>
-        <k>C-M-p</k>
-        <f>backward-list</f>
-        <d>Move backward over a parenthetical group.</d>
+        <key>C-M-p</key>
+        <func>backward-list</func>
+        <descr>Move backward over a parenthetical group.</descr>
       </it>
 
       <it>
-        <k>C-M-f</k>
-        <f>forward-sexp</f>
-        <d>Move forward over a balanced expression.</d>
+        <key>C-M-f</key>
+        <func>forward-sexp</func>
+        <descr>Move forward over a balanced expression.</descr>
       </it>
 
       <it>
-        <k>C-M-b</k>
-        <f>backward-sexp</f>
-        <d>Move backward over a balanced expression.</d>
+        <key>C-M-b</key>
+        <func>backward-sexp</func>
+        <descr>Move backward over a balanced expression.</descr>
       </it>
 
       <it>
-        <k>C-M-k</k>
-        <f>kill-sexp</f>
-        <d>Kill balanced expression forward.</d>
+        <key>C-M-k</key>
+        <func>kill-sexp</func>
+        <descr>Kill balanced expression forward.</descr>
       </it>
 
       <it>
-        <k>C-M-SPC</k>
-        <f>mark-sexp</f>
-        <d>Put the mark at the end of the sexp.</d>
+        <key>C-M-SPC</key>
+        <func>mark-sexp</func>
+        <descr>Put the mark at the end of the sexp.</descr>
       </it>
     </chapter>
 
     <chapter title="Common editing commands">
       <it>
-        <k>Ins</k>
-        <f>overwrite-mode</f>
-        <d>Toggle overwrite mode (default is off).</d>
+        <key>Ins</key>
+        <func>overwrite-mode</func>
+        <descr>Toggle overwrite mode (default is off).</descr>
       </it>
 
       <it>
-        <k>Backspace | Del</k>
-        <f>delete-backward-char</f>
-        <d>Delete the character before point.</d>
+        <key>Backspace | Del</key>
+        <func>delete-backward-char</func>
+        <descr>Delete the character before point.</descr>
       </it>
 
       <it>
-        <k>C-d</k>
-        <f>delete-char</f>
-        <d>Delete the character at point.</d>
+        <key>C-d</key>
+        <func>delete-char</func>
+        <descr>Delete the character at point.</descr>
       </it>
 
       <it>
-        <k>M-d</k>
-        <f>kill-word</f>
-        <d>Delete the characters from point forward to the end of the
-        word.</d>
+        <key>M-d</key>
+        <func>kill-word</func>
+        <descr>Delete the characters from point forward to the end of the
+        word.</descr>
       </it>
 
       <it>
-        <k>M-Backspace | M-Del</k>
-        <f>backward-kill-word</f>
-        <d>Delete the characters from point backward to the beginning
-        of the word.</d>
+        <key>M-Backspace | M-Del</key>
+        <func>backward-kill-word</func>
+        <descr>Delete the characters from point backward to the beginning
+        of the word.</descr>
       </it>
 
       <it>
-        <k>C-_</k>
-        <f>undo</f>
-        <d>Undo your last typing or action.</d>
+        <key>C-_</key>
+        <func>undo</func>
+        <descr>Undo your last typing or action.</descr>
       </it>
 
       <it>
-        <k>C-q[CHAR] or [NUM]</k>
-        <f>quoted-insert</f>
-        <d>Insert, at point, the literal character keypress or the
-        character whose octal value is XXX.</d>
+        <key>C-q[CHAR] or [NUM]</key>
+        <func>quoted-insert</func>
+        <descr>Insert, at point, the literal character keypress or the
+        character whose octal value is XXX.</descr>
       </it>
 
       <it>
-        <k>C-u[NUM][COMMAND]</k>
-        <f>universal-argument</f>
-        <d>Execute command a total of number (default 4) times in
-        succession.</d>
+        <key>C-u[NUM][COMMAND]</key>
+        <func>universal-argument</func>
+        <descr>Execute command a total of number (default 4) times in
+        succession.</descr>
       </it>
     </chapter>
 
     <chapter title="Functions for marking and killing text">
       <it>
-        <k>C-Space</k>
-        <f>set-mark-command</f>
-        <d>Set the mark at point.</d>
+        <key>C-Space</key>
+        <func>set-mark-command</func>
+        <descr>Set the mark at point.</descr>
       </it>
 
       <it>
-        <k>C-k</k>
-        <f>kill-line</f>
-        <d>Kill all text from point to the end of the line.</d>
+        <key>C-k</key>
+        <func>kill-line</func>
+        <descr>Kill all text from point to the end of the
+        line.</descr>
       </it>
 
       <it>
-        <k>C-w</k>
-        <f>kill-region</f>
-        <d>Kill the region.</d>
+        <key>C-w</key>
+        <func>kill-region</func>
+        <descr>Kill the region.</descr>
       </it>
 
       <it>
-        <k>M-w</k>
-        <f>kill-ring-save</f>
-        <d>Save the region in the kill ring, but don't kill it.</d>
+        <key>M-w</key>
+        <func>kill-ring-save</func>
+        <descr>Save the region in the kill ring, but don't kill
+        it.</descr>
       </it>
 
       <it>
-        <k>C-y</k>
-        <f>yank</f>
-        <d>Yank text from the kill ring.</d>
-      </it>
-    </chapter>
-
-    <chapter title="Text mode key bindings">
-      <it>
-        <k>Esc</k>
-        <f/>
-        <d>Prefix for mode-specific commands</d>
-      </it>
-
-      <it>
-        <k>Esc Tab | M-Tab</k>
-        <f>ispell-complete-word</f>
-        <d/>
-      </it>
-
-      <it>
-        <k>Esc S | M-S</k>
-        <f>center-paragraph</f>
-        <d/>
-      </it>
-
-      <it>
-        <k>Esc s | M-s</k>
-        <f>center-line</f>
-        <d/>
-      </it>
-    </chapter>
-
-    <chapter title="Text manipulation commands">
-      <it>
-        <k>C-x C-i | C-x Tab</k>
-        <f>indent-rigidly</f>
-        <d>This command indents lines in the region (or at point).</d>
-      </it>
-
-      <it>
-        <k/>
-        <f>fill-region</f>
-        <d>This command fills all paragraphs in the region.</d>
-      </it>
-
-      <it>
-        <k>M-q</k>
-        <f>fill-paragraph</f>
-        <d>This command fills the single paragraph at point.</d>
-      </it>
-
-      <it>
-        <k>M-\</k>
-        <f>delete-horizontal-space</f>
-        <d>This command removes any horizontal space to the right and
-        left of point.</d>
-      </it>
-
-      <it>
-        <k>C-o</k>
-        <f>open-line</f>
-        <d>This command opens a new line of vertical space below
-        point, without moving point.</d>
-      </it>
-
-      <it>
-        <k>C-t</k>
-        <f>transpose-chars</f>
-        <d>This command transposes the single characters to the right
-        and left of point.</d>
-      </it>
-
-      <it>
-        <k>M-t</k>
-        <f>transpose-words</f>
-        <d>This command transposes the single words to the right and
-        left of point.</d>
-      </it>
-
-      <it>
-        <k>C-x C-t</k>
-        <f>transpose-lines</f>
-        <d>This command transposes the line at point with the line
-        before it.</d>
-      </it>
-
-      <it>
-        <k>M-^</k>
-        <f>delete-indentation</f>
-        <d>This command joins the line at point with the previous
-        line. Preface with <kbd>C-1</kbd> to join the line at point
-        with the next line.</d>
-      </it>
-
-      <it>
-        <k>M-u</k>
-        <f>uppercase-word</f>
-        <d>This command converts the text at point to the end of the
-        word to uppercase letters.</d>
-      </it>
-
-      <it>
-        <k>M-l</k>
-        <f>downcase-word</f>
-        <d>This command converts the text at point to the end of the
-        word to lowercase letters.</d>
-      </it>
-
-      <it>
-        <k>C-x C-l</k>
-        <f>downcase-region</f>
-        <d>This command converts the region to lowercase letters.</d>
-      </it>
-
-      <it>
-        <k>C-x C-u</k>
-        <f>upcase-region</f>
-        <d>This command converts the region to uppercase letters.</d>
-      </it>
-    </chapter>
-
-    <chapter title="Search and replace commands">
-      <it>
-        <k>C-s [STRING] [C-w] [C-y]</k>
-        <f>isearch-forward</f>
-        <d>Incrementally search forward through the buffer for string
-        (default is the last search string you gave, if any);
-        <kbd>C-w</kbd> uses the text from point forward to the end of
-        the word and <kbd>C-y</kbd> uses everything from point to the
-        end of the line.</d>
-      </it>
-
-      <it>
-        <k>C-r [STRING] [C-w] [C-y]</k>
-        <f>isearch-backward</f>
-        <d>Incrementally search backward through the buffer for string
-        (default is the last search string you gave, if any);
-        <kbd>C-w</kbd> uses the text from point forward to the end of
-        the word, and <kbd>C-y</kbd> uses everything from point to the
-        end of the line.</d>
-      </it>
-
-      <it>
-        <k>C-s Enter C-w [WORD OR PHRASE]</k>
-        <f>word-search-forward</f>
-        <d>Search forward through the buffer for the given word or
-        phrase, regardless of spacing.</d>
-      </it>
-
-      <it>
-        <k>C-r Enter C-w [WORD OR PHRASE]</k>
-        <f>word-search-backward</f>
-        <d>Search backward through the buffer for the given word or
-        phrase, regardless of spacing.</d>
-      </it>
-
-      <it>
-        <k>C-M-s</k>
-        <f>isearch-forward-regexp</f>
-        <d>Incrementally search forward through the buffer for a given
-        regular expression.</d>
-      </it>
-
-      <it>
-        <k>C-M-r</k>
-        <f>isearch-backward-regexp</f>
-        <d>Incrementally search backward through the buffer for a
-        given regular expression.</d>
-      </it>
-
-      <it>
-        <k/>
-        <f>replace-string</f>
-        <d>Search for a given string from point to the end of the
-        buffer and replace it with a given string.</d>
-      </it>
-
-      <it>
-        <k/>
-        <f>replace-regexp</f>
-        <d>Search for a given regular expression from point to the end
-        of the buffer and replace it with a given string.</d>
-      </it>
-
-      <it>
-        <k>M-%</k>
-        <f>query-replace</f>
-        <d>Search for a given string from point to the end of the
-        buffer and, in each instance, query to replace it with a
-        given string.</d>
-      </it>
-
-      <it>
-        <k>C-M-%</k>
-        <f>query-replace-regexp</f>
-        <d>Search for a given regular expression from point to the end
-        of the buffer and, in each instance, query to replace it
-        with a given string.</d>
+        <key>C-y</key>
+        <func>yank</func>
+        <descr>Yank text from the kill ring.</descr>
       </it>
     </chapter>
 
     <chapter title="Commands for using rectangles">
       <it>
-        <k>C-space</k>
-        <f>set-mark-command</f>
-        <d>Marks one corner of a rectangle (point marks the opposite
-        corner).</d>
+        <key>C-space</key>
+        <func>set-mark-command</func>
+        <descr>Marks one corner of a rectangle (point marks the
+        opposite corner).</descr>
       </it>
 
       <it>
-        <k>C-x r k</k>
-        <f>kill-rectangle</f>
-        <d>Kills the current rectangle and saves it in a special
-        rectangle buffer.</d>
+        <key>C-x r k</key>
+        <func>kill-rectangle</func>
+        <descr>Kills the current rectangle and saves it in a special
+        rectangle buffer.</descr>
       </it>
 
       <it>
-        <k>C-x r d</k>
-        <f>delete-rectangle</f>
-        <d>Deletes the current rectangle and doesn't save it for
-        yanking.</d>
+        <key>C-x r d</key>
+        <func>delete-rectangle</func>
+        <descr>Deletes the current rectangle and doesn't save it for
+        yanking.</descr>
       </it>
 
       <it>
-        <k>C-x r c</k>
-        <f>clear-rectangle</f>
-        <d>Clears the current rectangle, replacing the entire area
-        with whitespace.</d>
+        <key>C-x r c</key>
+        <func>clear-rectangle</func>
+        <descr>Clears the current rectangle, replacing the entire area
+        with whitespace.</descr>
       </it>
 
       <it>
-        <k>C-x r o</k>
-        <f>open-rectangle</f>
-        <d>Opens the current rectangle, filling the entire area with
-        whitespace and moving all text from the rectangle to the
-        right.</d>
+        <key>C-x r o</key>
+        <func>open-rectangle</func>
+        <descr>Opens the current rectangle, filling the entire area
+        with whitespace and moving all text from the rectangle to the
+        right.</descr>
       </it>
 
       <it>
-        <k>C-x r y</k>
-        <f>yank-rectangle</f>
-        <d>Yanks the contents of the last-killed rectangle at point,
-        moving all existing text to the right.</d>
+        <key>C-x r y</key>
+        <func>yank-rectangle</func>
+        <descr>Yanks the contents of the last-killed rectangle at
+        point, moving all existing text to the right.</descr>
       </it>
     </chapter>
 
     <chapter title="Advanced mark and selection commands">
       <it>
-        <k>C-u C-space</k>
-        <f>pop-to-mark-command</f>
-        <d>Moves to the previous mark in the mark ring.</d>
+        <key>C-u C-space</key>
+        <func>pop-to-mark-command</func>
+        <descr>Moves to the previous mark in the mark ring.</descr>
       </it>
 
       <it>
-        <k>C-x C-x</k>
-        <f>exchange-point-and-mark</f>
-        <d>Swaps the location of point and the mark.</d>
+        <key>C-x C-x</key>
+        <func>exchange-point-and-mark</func>
+        <descr>Swaps the location of point and the mark.</descr>
       </it>
 
       <it>
-        <k>M-@</k>
-        <f>mark-word</f>
-        <d>Marks all text from point to the end of the current
-        word.</d>
+        <key>M-@</key>
+        <func>mark-word</func>
+        <descr>Marks all text from point to the end of the current
+        word.</descr>
       </it>
 
       <it>
-        <k>M-h</k>
-        <f>mark-paragraph</f>
-        <d>Marks the current paragraph, regardless of the location of
-        point.</d>
+        <key>M-h</key>
+        <func>mark-paragraph</func>
+        <descr>Marks the current paragraph, regardless of the location
+        of point.</descr>
       </it>
 
       <it>
-        <k/>
-        <f>transient-mark-mode</f>
-        <d>Toggles Transient Mark mode.</d>
+        <key/>
+        <func>transient-mark-mode</func>
+        <descr>Toggles Transient Mark mode.</descr>
       </it>
 
       <it>
-        <k>C-x h</k>
-        <f>mark-whole-buffer</f>
-        <d>Marks the entire buffer, regardless of the location of
-        point.</d>
+        <key>C-x h</key>
+        <func>mark-whole-buffer</func>
+        <descr>Marks the entire buffer, regardless of the location of
+        point.</descr>
       </it>
     </chapter>
 
     <chapter title="Advanced kill and yank commands">
       <it>
-        <k>[NUM] C-k</k>
-        <f>kill-line</f>
-        <d>Kills integer number of lines. If 0, kills from point to
-        the beginning of the line; if negative, kills in reverse (not
-        sure for version 25).</d>
+        <key>[NUM] C-k</key>
+        <func>kill-line</func>
+        <descr>Kills integer number of lines. If 0, kills from point
+        to the beginning of the line; if negative, kills in reverse
+        (not sure for version 25).</descr>
       </it>
 
       <it>
-        <k>M-k</k>
-        <f>kill-sentence</f>
-        <d>Kills from point to the end of the sentence.</d>
+        <key>M-k</key>
+        <func>kill-sentence</func>
+        <descr>Kills from point to the end of the sentence.</descr>
       </it>
 
       <it>
-        <k>M-z</k>
-        <f>zap-to-char</f>
-        <d>Zaps all text from point to the specified character.</d>
+        <key>M-z</key>
+        <func>zap-to-char</func>
+        <descr>Zaps all text from point to the specified
+        character.</descr>
       </it>
 
       <it>
-        <k>M-y</k>
-        <f>yank-pop</f>
-        <d>Moves to the next slot in the kill ring.</d>
+        <key>M-y</key>
+        <func>yank-pop</func>
+        <descr>Moves to the next slot in the kill ring.</descr>
       </it>
 
       <it>
-        <k>[NUM] C-y</k>
-        <f>yank</f>
-        <d>Yanks the specified slot in the kill ring.</d>
+        <key>[NUM] C-y</key>
+        <func>yank</func>
+        <descr>Yanks the specified slot in the kill ring.</descr>
+      </it>
+    </chapter>
+
+    <chapter title="Text mode key bindings">
+      <it>
+        <key>Esc</key>
+        <func/>
+        <descr>Prefix for mode-specific commands</descr>
+      </it>
+
+      <it>
+        <key>Esc Tab | M-Tab</key>
+        <func>ispell-complete-word</func>
+        <descr/>
+      </it>
+
+      <it>
+        <key>Esc S | M-S</key>
+        <func>center-paragraph</func>
+        <descr/>
+      </it>
+
+      <it>
+        <key>Esc s | M-s</key>
+        <func>center-line</func>
+        <descr/>
+      </it>
+    </chapter>
+
+    <chapter title="Text manipulation commands">
+      <it>
+        <key>C-x C-i | C-x Tab</key>
+        <func>indent-rigidly</func>
+        <descr>This command indents lines in the region (or at point).</descr>
+      </it>
+
+      <it>
+        <key/>
+        <func>fill-region</func>
+        <descr>This command fills all paragraphs in the region.</descr>
+      </it>
+
+      <it>
+        <key>M-q</key>
+        <func>fill-paragraph</func>
+        <descr>This command fills the single paragraph at point.</descr>
+      </it>
+
+      <it>
+        <key>M-\</key>
+        <func>delete-horizontal-space</func>
+        <descr>This command removes any horizontal space to the right and
+        left of point.</descr>
+      </it>
+
+      <it>
+        <key>C-o</key>
+        <func>open-line</func>
+        <descr>This command opens a new line of vertical space below
+        point, without moving point.</descr>
+      </it>
+
+      <it>
+        <key>C-t</key>
+        <func>transpose-chars</func>
+        <descr>This command transposes the single characters to the
+        right and left of point.</descr>
+      </it>
+
+      <it>
+        <key>M-t</key>
+        <func>transpose-words</func>
+        <descr>This command transposes the single words to the right
+        and left of point.</descr>
+      </it>
+
+      <it>
+        <key>C-x C-t</key>
+        <func>transpose-lines</func>
+        <descr>This command transposes the line at point with the line
+        before it.</descr>
+      </it>
+
+      <it>
+        <key>M-^</key>
+        <func>delete-indentation</func>
+        <descr>This command joins the line at point with the previous
+        line. Preface with <kbd>C-1</kbd> to join the line at point
+        with the next line.</descr>
+      </it>
+
+      <it>
+        <key>M-u</key>
+        <func>uppercase-word</func>
+        <descr>This command converts the text at point to the end of
+        the word to uppercase letters.</descr>
+      </it>
+
+      <it>
+        <key>M-l</key>
+        <func>downcase-word</func>
+        <descr>This command converts the text at point to the end of
+        the word to lowercase letters.</descr>
+      </it>
+
+      <it>
+        <key>C-x C-l</key>
+        <func>downcase-region</func>
+        <descr>This command converts the region to lowercase
+        letters.</descr>
+      </it>
+
+      <it>
+        <key>C-x C-u</key>
+        <func>upcase-region</func>
+        <descr>This command converts the region to uppercase
+        letters.</descr>
+      </it>
+    </chapter>
+
+    <chapter title="Search and replace commands">
+      <it>
+        <key>C-s [STRING] [C-w] [C-y]</key>
+        <func>isearch-forward</func>
+        <descr>Incrementally search forward through the buffer for
+        string (default is the last search string you gave, if any);
+        <kbd>C-w</kbd> uses the text from point forward to the end of
+        the word and <kbd>C-y</kbd> uses everything from point to the
+        end of the line.</descr>
+      </it>
+
+      <it>
+        <key>C-r [STRING] [C-w] [C-y]</key>
+        <func>isearch-backward</func>
+        <descr>Incrementally search backward through the buffer for
+        string (default is the last search string you gave, if any);
+        <kbd>C-w</kbd> uses the text from point forward to the end of
+        the word, and <kbd>C-y</kbd> uses everything from point to the
+        end of the line.</descr>
+      </it>
+
+      <it>
+        <key>C-s Enter C-w [WORD OR PHRASE]</key>
+        <func>word-search-forward</func>
+        <descr>Search forward through the buffer for the given word or
+        phrase, regardless of spacing.</descr>
+      </it>
+
+      <it>
+        <key>C-r Enter C-w [WORD OR PHRASE]</key>
+        <func>word-search-backward</func>
+        <descr>Search backward through the buffer for the given word
+        or phrase, regardless of spacing.</descr>
+      </it>
+
+      <it>
+        <key>C-M-s</key>
+        <func>isearch-forward-regexp</func>
+        <descr>Incrementally search forward through the buffer for a
+        given regular expression.</descr>
+      </it>
+
+      <it>
+        <key>C-M-r</key>
+        <func>isearch-backward-regexp</func>
+        <descr>Incrementally search backward through the buffer for a
+        given regular expression.</descr>
+      </it>
+
+      <it>
+        <key/>
+        <func>replace-string</func>
+        <descr>Search for a given string from point to the end of the
+        buffer and replace it with a given string.</descr>
+      </it>
+
+      <it>
+        <key/>
+        <func>replace-regexp</func>
+        <descr>Search for a given regular expression from point to the
+        end of the buffer and replace it with a given string.</descr>
+      </it>
+
+      <it>
+        <key>M-%</key>
+        <func>query-replace</func>
+        <descr>Search for a given string from point to the end of the
+        buffer and, in each instance, query to replace it with a given
+        string.</descr>
+      </it>
+
+      <it>
+        <key>C-M-%</key>
+        <func>query-replace-regexp</func>
+        <descr>Search for a given regular expression from point to the
+        end of the buffer and, in each instance, query to replace it
+        with a given string.</descr>
+      </it>
+    </chapter>
+
+    <chapter title="Regular expressions">
+      <it>
+        <key>.</key>
+        <func>any character (but newline)</func>
+        <descr/>
+      </it>
+
+      <it>
+        <key>*</key>
+        <func>previous character or group, repeated 0 or more
+        time</func>
+        <descr/>
+      </it>
+
+      <it>
+        <key>+</key>
+        <func>previous character or group, repeated 1 or more
+        time</func>
+        <descr/>
+      </it>
+
+      <it>
+        <key>?</key>
+        <func>previous character or group, repeated 0 or 1 time</func>
+        <descr/>
+      </it>
+
+      <it>
+        <key>^</key>
+        <func>start of line</func>
+        <descr/>
+      </it>
+
+      <it>
+        <key>$</key>
+        <func>end of line</func>
+        <descr/>
+      </it>
+
+      <it>
+        <key>[...]</key>
+        <func>any character between brackets</func>
+        <descr/>
+      </it>
+
+      <it>
+        <key>[^..]</key>
+        <func>any character not in the brackets</func>
+        <descr/>
+      </it>
+
+      <it>
+        <key>[a-z]</key>
+        <func>any character between a and z</func>
+        <descr/>
+      </it>
+
+      <it>
+        <key>\</key>
+        <func>prevents interpretation of following special char</func>
+        <descr/>
+      </it>
+
+      <it>
+        <key>\| or \w</key>
+        <func>word constituent</func>
+        <descr/>
+      </it>
+
+      <it>
+        <key>\b</key>
+        <func>word boundary</func>
+        <descr/>
+      </it>
+
+      <it>
+        <key>\sc</key>
+        <func>character with c syntax (e.g. \s- for whitespace
+        char)</func>
+        <descr/>
+      </it>
+
+      <it>
+        <key>\( \)</key>
+        <func>start\end of group</func>
+        <descr/>
+      </it>
+
+      <it>
+        <key>\&lt; \&gt;</key>
+        <func>start\end of word (faulty rendering: backslash +
+        less-than and backslash + greater-than)</func>
+        <descr/>
+      </it>
+
+      <it>
+        <key>\_&lt; \_&gt;</key>
+        <func>start\end of symbol</func>
+        <descr/>
+      </it>
+
+      <it>
+        <key>\` \'</key>
+        <func>start\end of buffer\string</func>
+        <descr/>
+      </it>
+
+      <it>
+        <key>\1</key>
+        <func>string matched by the first group</func>
+        <descr/>
+      </it>
+
+      <it>
+        <key>\n</key>
+        <func>string matched by the nth group</func>
+        <descr/>
+      </it>
+
+      <it>
+        <key>\{3\}</key>
+        <func>previous character or group, repeated 3 times</func>
+        <descr/>
+      </it>
+
+      <it>
+        <key>\{3,\}</key>
+        <func>previous character or group, repeated 3 or more
+        times</func>
+        <descr/>
+      </it>
+
+      <it>
+        <key>\{3,6\}</key>
+        <func>previous character or group, repeated 3 to 6
+        times</func>
+        <descr/>
+      </it>
+
+      <it>
+        <key>\=</key>
+        <func>match succeeds if it is located at point</func>
+        <descr/>
+      </it>
+
+      <it>
+        <key>*?, +?, and ??</key>
+        <func>non-greedy versions of *, +, and ?</func>
+        <descr/>
+      </it>
+
+      <it>
+        <key>\ca</key>
+        <func>ascii character</func>
+        <descr/>
+      </it>
+
+      <it>
+        <key>\Ca</key>
+        <func>non-ascii character (newline included)</func>
+        <descr/>
+      </it>
+
+      <it>
+        <key>\cl</key>
+        <func>latin character</func>
+        <descr/>
+      </it>
+
+      <it>
+        <key>\cg</key>
+        <func>greek character</func>
+        <descr/>
+      </it>
+
+      <it>
+        <key>[:digit:]</key>
+        <func>a digit, same as [0-9] (\d is not supported)</func>
+        <descr/>
+      </it>
+
+      <it>
+        <key>[:alpha:]</key>
+        <func>a letter (an alphabetic character)</func>
+        <descr/>
+      </it>
+
+      <it>
+        <key>[:alnum:]</key>
+        <func>a letter or a digit (an alphanumeric character)</func>
+        <descr/>
+      </it>
+
+      <it>
+        <key>[:upper:]</key>
+        <func>a letter in uppercase</func>
+        <descr/>
+      </it>
+
+      <it>
+        <key>[:lower:]</key>
+        <func>a letter in lowercase</func>
+        <descr/>
+      </it>
+
+      <it>
+        <key>[:graph:]</key>
+        <func>a visible character</func>
+        <descr/>
+      </it>
+
+      <it>
+        <key>[:print:]</key>
+        <func>a visible character plus the space character</func>
+        <descr/>
+      </it>
+
+      <it>
+        <key>[:space:]</key>
+        <func>a whitespace character, as defined by the syntax table,
+        but typically [ \t\r\n\v\f], which includes the newline
+        character</func>
+        <descr/>
+      </it>
+
+      <it>
+        <key>[:blank:]</key>
+        <func>a space or tab character</func>
+        <descr/>
+      </it>
+
+      <it>
+        <key>[:xdigit:]</key>
+        <func>an hexadecimal digit</func>
+        <descr/>
+      </it>
+
+      <it>
+        <key>[:cntrl:]</key>
+        <func>a control character</func>
+        <descr/>
+      </it>
+
+      <it>
+        <key>[:ascii:]</key>
+        <func>an ascii character</func>
+        <descr/>
+      </it>
+
+      <it>
+        <key>\s-</key>
+        <func>whitespace character</func>
+        <descr/>
+      </it>
+
+      <it>
+        <key>\sw</key>
+        <func>word constituent</func>
+        <descr/>
+      </it>
+
+      <it>
+        <key>\s_</key>
+        <func>symbol constituent</func>
+        <descr/>
+      </it>
+
+      <it>
+        <key>\s.</key>
+        <func>punctuation character</func>
+        <descr/>
+      </it>
+
+      <it>
+        <key>\s(</key>
+        <func>open delimiter character</func>
+        <descr/>
+      </it>
+
+      <it>
+        <key>\s)</key>
+        <func>close delimiter character</func>
+        <descr/>
+      </it>
+
+      <it>
+        <key>\s"</key>
+        <func>string quote character</func>
+        <descr/>
+      </it>
+
+      <it>
+        <key>\s\</key>
+        <func>escape character</func>
+        <descr/>
+      </it>
+
+      <it>
+        <key>\s/</key>
+        <func>character quote character</func>
+        <descr/>
+      </it>
+
+      <it>
+        <key>\s$</key>
+        <func>paired delimiter</func>
+        <descr/>
+      </it>
+
+      <it>
+        <key>\s'</key>
+        <func>expression prefix</func>
+        <descr/>
+      </it>
+
+      <it>
+        <key>\s&lt;</key>
+        <func>comment starter</func>
+        <descr/>
+      </it>
+
+      <it>
+        <key>\s&gt;</key>
+        <func>comment ender</func>
+        <descr/>
+      </it>
+
+      <it>
+        <key>\s!</key>
+        <func>generic comment delimiter</func>
+        <descr/>
+      </it>
+
+      <it>
+        <key>\s|</key>
+        <func>generic string delimiter</func>
+        <descr/>
+      </it>
+    </chapter>
+
+    <chapter title="Regex examples">
+      <it>
+        <key>[-+[:digit:]]</key>
+        <func>digit or + or - sign</func>
+        <descr/>
+      </it>
+
+      <it>
+        <key>\(\+\|-\)?[0-9]+\(\.[0-9]+\)?</key>
+        <func>decimal number (-2 or 1.5 but not .2 or 1.)</func>
+        <descr/>
+      </it>
+
+      <it>
+        <key>\&lt;\(\w+\) +\1\&gt;</key>
+        <func>two consecutive, identical words</func>
+        <descr/>
+      </it>
+
+      <it>
+        <key>\&lt;[[:upper:]]\w*</key>
+        <func>word starting with an uppercase letter</func>
+        <descr/>
+      </it>
+
+      <it>
+        <key> +$</key>
+        <func>trailing whitespaces (note the starting SPC)</func>
+        <descr/>
+      </it>
+
+      <it>
+        <key>\w\{20,\}</key>
+        <func>word with 20 letters or more</func>
+        <descr/>
+      </it>
+
+      <it>
+        <key>\w+phony\&gt;</key>
+        <func>word ending by phony</func>
+        <descr/>
+      </it>
+
+      <it>
+        <key>\(19\|20\)[0-9]\{2\}</key>
+        <func>year 1900-2099</func>
+        <descr/>
+      </it>
+
+      <it>
+        <key>^.\{6,\}</key>
+        <func>at least 6 symbols</func>
+        <descr/>
+      </it>
+
+      <it>
+        <key>^[a-zA-Z0-9_]\{3,16\}$</key>
+        <func>decent string for a user name</func>
+        <descr/>
+      </it>
+
+      <it>
+        <key>&lt;tag[^> C-q C-j ]*>\(.*?\)&lt;/tag></key>
+        <func>html tag</func>
+        <descr/>
       </it>
     </chapter>
 
     <chapter title="Registers commands">
       <it>
-        <k>C-x r space X</k>
-        <f>point-to-register</f>
-        <d>Save point to register X.</d>
+        <key>C-x r space X</key>
+        <func>point-to-register</func>
+        <descr>Save point to register X.</descr>
       </it>
 
       <it>
-        <k>C-x r s X</k>
-        <f>copy-to-register</f>
-        <d>Save the region to register X.</d>
+        <key>C-x r s X</key>
+        <func>copy-to-register</func>
+        <descr>Save the region to register X.</descr>
       </it>
 
       <it>
-        <k>C-x r r X</k>
-        <f>copy-rectangle-to-register</f>
-        <d>Save the selected rectangle to register X.</d>
+        <key>C-x r r X</key>
+        <func>copy-rectangle-to-register</func>
+        <descr>Save the selected rectangle to register X.</descr>
       </it>
 
       <it>
-        <k/>
-        <f>view-register</f>
-        <d>View the contents of a given register.</d>
+        <key/>
+        <func>view-register</func>
+        <descr>View the contents of a given register.</descr>
       </it>
 
       <it>
-        <k>C-x r j X</k>
-        <f>jump-to-register</f>
-        <d>Move point to the location given in register X.</d>
+        <key>C-x r j X</key>
+        <func>jump-to-register</func>
+        <descr>Move point to the location given in register X.</descr>
       </it>
 
       <it>
-        <k>C-x r i X</k>
-        <f>insert-register</f>
-        <d>Insert the contents of register X at point.</d>
+        <key>C-x r i X</key>
+        <func>insert-register</func>
+        <descr>Insert the contents of register X at point.</descr>
       </it>
     </chapter>
 
     <chapter title="Abbreviations">
       <it>
-        <k>(setq-default abbrev-mode t)</k>
-        <f/>
-        <d>Write this into <kbd>.emacs</kbd> to switch <em>abbrev</em>
-        minor mode on at start-up.</d>
+        <key>(setq-default abbrev-mode t)</key>
+        <func/>
+        <descr>Write this into <kbd>.emacs</kbd> to switch
+        <em>abbrev</em> minor mode on at start-up.</descr>
       </it>
 
       <it>
-        <k/>
-        <f>abbrev-mode</f>
-        <d>Toggles <em>Abbrev</em> mode; with a numeric argument, it
-        turns <em>Abbrev</em> mode on if the argument is positive, off
-        otherwise.</d>
+        <key/>
+        <func>abbrev-mode</func>
+        <descr>Toggles <em>Abbrev</em> mode; with a numeric argument,
+        it turns <em>Abbrev</em> mode on if the argument is positive,
+        off otherwise.</descr>
       </it>
 
       <it>
-        <k>C-x a g</k>
-        <f>add-global-abbrev</f>
-        <d>Define an abbrev, using one or more words before point as
-        its expansion.</d>
+        <key>C-x a g</key>
+        <func>add-global-abbrev</func>
+        <descr>Define an abbrev, using one or more words before point
+        as its expansion.</descr>
       </it>
 
       <it>
-        <k>C-x a l</k>
-        <f>add-mode-abbrev</f>
-        <d>Similar, but define an abbrev specific to the current major
-        mode.</d>
+        <key>C-x a l</key>
+        <func>add-mode-abbrev</func>
+        <descr>Similar, but define an abbrev specific to the current
+        major mode.</descr>
       </it>
 
       <it>
-        <k>C-x a i g</k>
-        <f>inverse-add-global-abbrev</f>
-        <d>Define a word in the buffer as an abbrev.</d>
+        <key>C-x a i g</key>
+        <func>inverse-add-global-abbrev</func>
+        <descr>Define a word in the buffer as an abbrev.</descr>
       </it>
 
       <it>
-        <k>C-x a i l</k>
-        <f>inverse-add-mode-abbrev</f>
-        <d>Define a word in the buffer as a mode-specific abbrev.</d>
+        <key>C-x a i l</key>
+        <func>inverse-add-mode-abbrev</func>
+        <descr>Define a word in the buffer as a mode-specific
+        abbrev.</descr>
       </it>
 
       <it>
-        <k>M-'</k>
-        <f>abbrev-prefix-mark</f>
-        <d>Separate a prefix from a following abbrev to be
-        expanded.</d>
+        <key>M-'</key>
+        <func>abbrev-prefix-mark</func>
+        <descr>Separate a prefix from a following abbrev to be
+        expanded.</descr>
       </it>
 
       <it>
-        <k>C-x a e</k>
-        <f>expand-abbrev</f>
-        <d>Expand the abbrev before point. This is effective even when
-        <em>Abbrev</em> mode is not enabled.</d>
+        <key>C-x a e</key>
+        <func>expand-abbrev</func>
+        <descr>Expand the abbrev before point. This is effective even
+        when <em>Abbrev</em> mode is not enabled.</descr>
       </it>
 
       <it>
-        <k/>
-        <f>expand-region-abbrevs</f>
-        <d>Expand some or all abbrevs found in the region.</d>
+        <key/>
+        <func>expand-region-abbrevs</func>
+        <descr>Expand some or all abbrevs found in the region.</descr>
       </it>
 
       <it>
-        <k/>
-        <f>list-abbrevs</f>
-        <d>Display a list of all abbrev definitions. With a numeric
-        argument, list only local abbrevs.</d>
+        <key/>
+        <func>list-abbrevs</func>
+        <descr>Display a list of all abbrev definitions. With a
+        numeric argument, list only local abbrevs.</descr>
       </it>
 
       <it>
-        <k/>
-        <f>edit-abbrevs</f>
-        <d>Edit a list of abbrevs; you can add, alter or remove
-        definitions.</d>
+        <key/>
+        <func>edit-abbrevs</func>
+        <descr>Edit a list of abbrevs; you can add, alter or remove
+        definitions.</descr>
       </it>
 
       <it>
-        <k>M-/</k>
-        <f>dabbrev-expand</f>
-        <d>Expand the word in the buffer before point as a dynamic
+        <key>M-/</key>
+        <func>dabbrev-expand</func>
+        <descr>Expand the word in the buffer before point as a dynamic
         abbrev, by searching for words starting with that
-        abbreviation.</d>
+        abbreviation.</descr>
       </it>
 
       <it>
-        <k>C-M-/</k>
-        <f>dabbrev-completion</f>
-        <d>Complete the word before point as a dynamic abbrev.</d>
+        <key>C-M-/</key>
+        <func>dabbrev-completion</func>
+        <descr>Complete the word before point as a dynamic
+        abbrev.</descr>
       </it>
     </chapter>
 
     <chapter title="Bookmarks commands">
       <it>
-        <k>C-x r m Bookmark</k>
-        <f>bookmark-set</f>
-        <d>Set a bookmark named Bookmark.</d>
+        <key>C-x r m Bookmark</key>
+        <func>bookmark-set</func>
+        <descr>Set a bookmark named Bookmark.</descr>
       </it>
 
       <it>
-        <k>C-x r l</k>
-        <f>bookmarks-bmenu-list</f>
-        <d>List all saved bookmarks.</d>
+        <key>C-x r l</key>
+        <func>bookmarks-bmenu-list</func>
+        <descr>List all saved bookmarks.</descr>
       </it>
 
       <it>
-        <k/>
-        <f>bookmark-delete</f>
-        <d>Delete a bookmark.</d>
+        <key/>
+        <func>bookmark-delete</func>
+        <descr>Delete a bookmark.</descr>
       </it>
 
       <it>
-        <k>C-x r b Bookmark</k>
-        <f>bookmark-jump</f>
-        <d>Jump to the location set in the bookmark named
-        Bookmark.</d>
+        <key>C-x r b Bookmark</key>
+        <func>bookmark-jump</func>
+        <descr>Jump to the location set in the bookmark named
+        Bookmark.</descr>
       </it>
 
       <it>
-        <k/>
-        <f>bookmark-save</f>
-        <d>Save all bookmarks to the bookmark file, ~/.emacs.bmk.</d>
+        <key/>
+        <func>bookmark-save</func>
+        <descr>Save all bookmarks to the bookmark file,
+        ~/.emacs.bmk.</descr>
       </it>
     </chapter>
 
     <chapter title="Window-manipulation commands">
       <it>
-        <k>C-x 2</k>
-        <f>split-window-vertically</f>
-        <d>Split the current window in half across the middle,
-        stacking the new buffers vertically.</d>
+        <key>C-x 2</key>
+        <func>split-window-vertically</func>
+        <descr>Split the current window in half across the middle,
+        stacking the new buffers vertically.</descr>
       </it>
 
       <it>
-        <k>C-x 4 b</k>
-        <f>switch-to-buffer-other-window</f>
-        <d>Split the current window in half vertically, prompting for
-        the buffer to use the bottom window and making that the active
-        window.</d>
+        <key>C-x 4 b</key>
+        <func>switch-to-buffer-other-window</func>
+        <descr>Split the current window in half vertically, prompting
+        for the buffer to use the bottom window and making that the
+        active window.</descr>
       </it>
 
       <it>
-        <k>C-x 4 C-o</k>
-        <f>display-buffer</f>
-        <d>Display a buffer in another window, prompting for the
+        <key>C-x 4 C-o</key>
+        <func>display-buffer</func>
+        <descr>Display a buffer in another window, prompting for the
         buffer to use the other window but keeping the current window
         active. (If only one window exists, then split the window
-        vertically to display the other buffer.)</d>
+        vertically to display the other buffer.)</descr>
       </it>
 
       <it>
-        <k>C-x 4 f</k>
-        <f>find-file-other-window</f>
-        <d>Open a new file in a new buffer, drawing it in a new
-        vertical window.</d>
+        <key>C-x 4 f</key>
+        <func>find-file-other-window</func>
+        <descr>Open a new file in a new buffer, drawing it in a new
+        vertical window.</descr>
       </it>
 
       <it>
-        <k>C-x 4 r</k>
-        <f>find-file-read-only-other-window</f>
-        <d>Open a new file in a new read-only buffer, drawing it in a
-        new vertical window.</d>
+        <key>C-x 4 r</key>
+        <func>find-file-read-only-other-window</func>
+        <descr>Open a new file in a new read-only buffer, drawing it
+        in a new vertical window.</descr>
       </it>
 
       <it>
-        <k>C-M-v</k>
-        <f>scroll-other-window</f>
-        <d>Scroll to the window that would be the next one to switch
-        to with <kbd>C-x o</kbd>.</d>
+        <key>C-M-v</key>
+        <func>scroll-other-window</func>
+        <descr>Scroll to the window that would be the next one to
+        switch to with <kbd>C-x o</kbd>.</descr>
       </it>
 
       <it>
-        <k/>
-        <f>scroll-all</f>
-        <d>Toggle the scroll-all minor mode. When it's on, all windows
-        displaying the buffer in the current window are scrolled
-        simultaneously and in equal, relative amounts.</d>
+        <key/>
+        <func>scroll-all</func>
+        <descr>Toggle the scroll-all minor mode. When it's on, all
+        windows displaying the buffer in the current window are
+        scrolled simultaneously and in equal, relative
+        amounts.</descr>
       </it>
 
       <it>
-        <k>C-x o</k>
-        <f>other-window</f>
-        <d>Move the cursor to the next window, and make it the active
-        window.</d>
+        <key>C-x o</key>
+        <func>other-window</func>
+        <descr>Move the cursor to the next window, and make it the
+        active window.</descr>
       </it>
 
       <it>
-        <k>C-x 0</k>
-        <f>delete-window</f>
-        <d>Delete the current window, and move the cursor to the
+        <key>C-x 0</key>
+        <func>delete-window</func>
+        <descr>Delete the current window, and move the cursor to the
         window that would be the next one to switch to with
-        <kbd>C-x o</kbd>.</d>
+        <kbd>C-x o</kbd>.</descr>
       </it>
 
       <it>
-        <k>C-x 1</k>
-        <f>delete-other-windows</f>
-        <d>Delete all windows except the current window.</d>
+        <key>C-x 1</key>
+        <func>delete-other-windows</func>
+        <descr>Delete all windows except the current window.</descr>
       </it>
 
       <it>
-        <k>C-x 4 0</k>
-        <f>kill-buffer-and-window</f>
-        <d>Delete the current window, and kill its buffer.</d>
+        <key>C-x 4 0</key>
+        <func>kill-buffer-and-window</func>
+        <descr>Delete the current window, and kill its buffer.</descr>
       </it>
 
       <it>
-        <k>C-x 3</k>
-        <f>split-window-horizontally</f>
-        <d>Split the current window in half down the middle, stacking
-        the new buffers horizontally.</d>
+        <key>C-x 3</key>
+        <func>split-window-horizontally</func>
+        <descr>Split the current window in half down the middle,
+        stacking the new buffers horizontally.</descr>
       </it>
 
       <it>
-        <k/>
-        <f>follow-mode</f>
-        <d>Toggle follow, a minor mode. When it's on in a buffer, all
-        windows displaying the buffer are connected into a large
-        virtual window.</d>
+        <key/>
+        <func>follow-mode</func>
+        <descr>Toggle follow, a minor mode. When it's on in a buffer,
+        all windows displaying the buffer are connected into a large
+        virtual window.</descr>
       </it>
 
       <it>
-        <k>C-x ^</k>
-        <f>enlarge-window</f>
-        <d>Make the current window taller by a line; preceded by a
-        negative, this makes the current window shorter by a line.</d>
+        <key>C-x ^</key>
+        <func>enlarge-window</func>
+        <descr>Make the current window taller by a line; preceded by a
+        negative, this makes the current window shorter by a
+        line.</descr>
       </it>
 
       <it>
-        <k>C-x }</k>
-        <f>shrink-window-horizontally</f>
-        <d>Make the current active window thinner by a single
-        column.</d>
+        <key>C-x }</key>
+        <func>shrink-window-horizontally</func>
+        <descr>Make the current active window thinner by a single
+        column.</descr>
       </it>
 
       <it>
-        <k>C-x {</k>
-        <f>enlarge-window-horizontally</f>
-        <d>Make the current active window wider by a single
-        column.</d>
+        <key>C-x {</key>
+        <func>enlarge-window-horizontally</func>
+        <descr>Make the current active window wider by a single
+        column.</descr>
       </it>
 
       <it>
-        <k>C-x -</k>
-        <f>shrink-window-if-larger-than-buffer</f>
-        <d>Reduce the current active window to the smallest possible
-        size for the buffer it contains.</d>
+        <key>C-x -</key>
+        <func>shrink-window-if-larger-than-buffer</func>
+        <descr>Reduce the current active window to the smallest
+        possible size for the buffer it contains.</descr>
       </it>
 
       <it>
-        <k>C-x +</k>
-        <f>balance-windows</f>
-        <d>Balance the size of all windows, making them approximately
-        equal.</d>
+        <key>C-x +</key>
+        <func>balance-windows</func>
+        <descr>Balance the size of all windows, making them
+        approximately equal.</descr>
       </it>
 
       <it>
-        <k/>
-        <f>compare-windows</f>
-        <d>Compare the current window with the next window, beginning
-        with point in both windows and moving point in both buffers to
-        the first character that differs until reaching the end of the
-        buffer.</d>
+        <key/>
+        <func>compare-windows</func>
+        <descr>Compare the current window with the next window,
+        beginning with point in both windows and moving point in both
+        buffers to the first character that differs until reaching the
+        end of the buffer.</descr>
       </it>
     </chapter>
 
     <chapter title="Shell commands">
       <it>
-        <k>M-! &lt;cmd&gt;</k>
-        <f>shell-command</f>
-        <d>Run the shell command line <kbd>cmd</kbd> and display the
-        output.</d>
+        <key>M-! &lt;cmd&gt;</key>
+        <func>shell-command</func>
+        <descr>Run the shell command line <kbd>cmd</kbd> and display
+        the output.</descr>
       </it>
 
       <it>
-        <k>M-| &lt;cmd&gt;</k>
-        <f>shell-command-on-region</f>
-        <d>Run the shell command line <kbd>cmd</kbd> with region
+        <key>M-| &lt;cmd&gt;</key>
+        <func>shell-command-on-region</func>
+        <descr>Run the shell command line <kbd>cmd</kbd> with region
         contents as input; optionally replace the region with the
-        output.</d>
+        output.</descr>
       </it>
 
       <it>
-        <k/>
-        <f>shell</f>
-        <d>Run a subshell with input and output through an Emacs
-        buffer. You can then give commands interactively.</d>
+        <key/>
+        <func>shell</func>
+        <descr>Run a subshell with input and output through an Emacs
+        buffer. You can then give commands interactively.</descr>
       </it>
 
       <it>
-        <k/>
-        <f>term</f>
-        <d>Run a subshell with input and output through an Emacs
+        <key/>
+        <func>term</func>
+        <descr>Run a subshell with input and output through an Emacs
         buffer. You can then give commands interactively. Full
-        terminal emulation is available.</d>
+        terminal emulation is available.</descr>
       </it>
 
       <it>
-        <k/>
-        <f>eshell</f>
-        <d>Start the Emacs shell.</d>
+        <key/>
+        <func>eshell</func>
+        <descr>Start the Emacs shell.</descr>
+      </it>
+    </chapter>
+
+    <chapter title="Interactive Highlighting">
+      <it>
+        <key>C-x w h [regexp] &lt;RET&gt; [face] &lt;RET&gt;</key>
+        <func>highlight-regexp</func>
+        <descr>Highlight text that matches regexp using
+        <kbd>face</kbd> face. The highlighting will remain as long as
+        the buffer is loaded.</descr>
+      </it>
+
+      <it>
+        <key>C-x w r [regexp] &lt;RET&gt;</key>
+        <func>unhighlight-regexp</func>
+        <descr>Unhighlight regexp.</descr>
+      </it>
+
+      <it>
+        <key>C-x w l [regexp] &lt;RET&gt; [face] &lt;RET&gt;</key>
+        <func>highlight-lines-matching-regexp</func>
+        <descr>Highlight entire lines containing a match for regexp,
+        using <kbd>face</kbd> face.</descr>
       </it>
     </chapter>
 
     <chapter title="nXML mode">
       <it>
-        <k>C-c C-n</k>
-        <f>rng-next-error</f>
-        <d>Move to the next location where the document
-        structure is not valid. If the document isn't valid, the
-        cursor will jump to the probable error, and display a message
-        in the minibuffer explaining what it doesn't like. If the
-        document is valid from the cursor to the end of the file, the
-        message “No more errors” appears in the minibuffer. To
-        validate the entire document, move to the top of the document
-        with <kbd>M-&lt;</kbd> and then use this key sequence. If it
-        says “No more errors” with point at the top of the file, the
-        entire file is valid; otherwise it will jump the cursor to the
-        next invalid content.</d>
+        <key>C-c C-n</key>
+        <func>rng-next-error</func>
+        <descr>Move to the next location where the document structure
+        is not valid.</descr>
       </it>
 
       <it>
-        <k>C-c C-v</k>
-        <f>rng-validate-mode</f>
-        <d>Turn validation on or off. If validation is turned on, in
-        the status line's mode area you will see either “nXML Valid”
-        or “nXML Invalid”. If validation is turned off, neither word
-        will appear after “nXML” in the mode line. You may want to
-        turn validation off during serious document surgery, then turn
-        it back on when you think it's valid again.</d>
+        <key>C-c C-v</key>
+        <func>rng-validate-mode</func>
+        <descr>Turn validation on or off. If validation is turned on,
+        in the status line's mode area you will see either “nXML
+        Valid” or “nXML Invalid”. If validation is turned off, neither
+        word will appear after “nXML” in the mode line.</descr>
       </it>
 
       <it>
-        <k>tab</k>
-        <f>indent-for-tab-command</f>
-        <d>Indent the current line according to the level of nested
-        block tags. The indentation is two spaces per level.</d>
+        <key>tab</key>
+        <func>indent-for-tab-command</func>
+        <descr>Indent the current line according to the level of
+        nested block tags. The indentation is two spaces per
+        level.</descr>
       </it>
 
       <it>
-        <k>M-C-\</k>
-        <f>indent-region</f>
-        <d>Indent all the lines in the region using the same process
-        as for tab.</d>
+        <key>M-C-\</key>
+        <func>indent-region</func>
+        <descr>Indent all the lines in the region using the same
+        process as for tab.</descr>
       </it>
 
       <it>
-        <k>C-c C-f</k>
-        <f>nxml-finish-element</f>
-        <d>Insert an end tag for whatever element the cursor is
-        in. This works whether you are still inside the start tag or
-        in the content.</d>
+        <key>C-c C-f</key>
+        <func>nxml-finish-element</func>
+        <descr>Insert an end tag for whatever element the cursor is
+        in.</descr>
       </it>
 
       <it>
-        <k>C-c C-i</k>
-        <f>nxml-balanced-close-start-tag-inline</f>
-        <d>Used when you have finished the start tag of an
-        inline element, up to but not including the closing
-        “&gt;”. This command adds the closing “&gt;” and an end tag,
-        and then places the cursor between the tags so you can type
-        the content.</d>
+        <key>C-c C-i</key>
+        <func>nxml-balanced-close-start-tag-inline</func> <descr>This
+        command adds the closing “&gt;” and an end tag, and then
+        places the cursor between the tags so you can type the
+        content.</descr>
       </it>
 
       <it>
-        <k>C-c C-b</k>
-        <f>nxml-balanced-close-start-tag-block</f>
-        <d>Like <kbd>C-c C-i</kbd>, but used with block elements. The
-        command adds the closing “&gt;”, then a blank line, then an
-        end tag on yet another separate line. The cursor is left
-        indented at the proper level on the central blank line.</d>
+        <key>C-c C-b</key>
+        <func>nxml-balanced-close-start-tag-block</func> <descr>Adds
+        the closing “&gt;”, then a blank line, then an end tag on yet
+        another separate line. The cursor is left indented at the
+        proper level on the central blank line.</descr>
       </it>
 
       <it>
-        <k>M-q</k>
-        <f>fill-paragraph</f>
-        <d>Reformat the paragraph containing the cursor. This works
-        best if the content does not start on the same line as the
-        start tag.</d>
+        <key>M-q</key>
+        <func>fill-paragraph</func>
+        <descr>Reformat the paragraph containing the cursor.</descr>
       </it>
 
       <it>
-        <k>C-c C-x</k>
-        <f>nxml-insert-xml-declaration</f>
-        <d>Inserts an XML processing instruction at the top of the
-        file.</d>
+        <key>C-c C-x</key>
+        <func>nxml-insert-xml-declaration</func>
+        <descr>Inserts an XML processing instruction at the top of the
+        file.</descr>
       </it>
 
       <it>
-        <k>M-C-f</k>
-        <f>forward-sexp</f>
-        <d>Move forward over tag. If point is not inside a
-        tag, it moves to a position just before the next tag. If point
-        is inside a start tag, it jumps to a position just before the
-        closing “&gt;”. If point is inside an end tag, it moves just
-        past the end tag.</d>
+        <key>M-C-f</key>
+        <func>forward-sexp</func>
+        <descr>Move forward over tag.</descr>
       </it>
 
       <it>
-        <k>M-C-b</k>
-        <f>backward-sexp</f>
-        <d>Move backward over tag. If point is not inside a
-        tag, it moves just after the previous start tag. If point is
-        inside a start tag, it jumps to a position just after the
-        starting “&lt;”. If point is inside an end tag, it moves just
-        before that tag.</d>
+        <key>M-C-b</key>
+        <func>backward-sexp</func>
+        <descr>Move backward over tag.</descr>
       </it>
 
       <it>
-        <k>M-C-n</k>
-        <f>nxml-forward-element</f>
-        <d>Move the cursor to the end of the next element.</d>
+        <key>M-C-n</key>
+        <func>nxml-forward-element</func>
+        <descr>Move the cursor to the end of the next element.</descr>
       </it>
 
       <it>
-        <k>M-C-p</k>
-        <f>nxml-backward-element</f>
-        <d>Move the cursor before the previous element.</d>
+        <key>M-C-p</key>
+        <func>nxml-backward-element</func>
+        <descr>Move the cursor before the previous element.</descr>
       </it>
 
       <it>
-        <k>M-C-d</k>
-        <f>nxml-down-element</f>
-        <d>Move the cursor to the next included element after point,
-        to a position just after the start tag; d is for “down.”</d>
+        <key>M-C-d</key>
+        <func>nxml-down-element</func>
+        <descr>Move the cursor to the next included element after
+        point, to a position just after the start tag; d is for
+        “down.”</descr>
       </it>
 
       <it>
-        <k>M-C-u</k>
-        <f>nxml-backward-up-element</f>
-        <d>Move the cursor to a position just before the start tag of
-        the element containing point; u is for “up.”</d>
+        <key>M-C-u</key>
+        <func>nxml-backward-up-element</func>
+        <descr>Move the cursor to a position just before the start tag
+        of the element containing point; u is for “up.”</descr>
       </it>
 
       <it>
-        <k>C-c C-o C-d</k>
-        <f>nxml-hide-subheadings</f>
-        <d>Hide the children of the current element, as in emacs
-        outline-mode.</d>
+        <key>C-c C-o C-d</key>
+        <func>nxml-hide-subheadings</func>
+        <descr>Hide the children of the current element, as in emacs
+        outline-mode.</descr>
       </it>
 
       <it>
-        <k>C-c C-o C-s</k>
-        <f>nxml-hide-subheadings</f>
-        <d>Reverses the action of <kbd>C-c C-o C-d</kbd>, revealing
-        the children of the current element.</d>
+        <key>C-c C-o C-s</key>
+        <func>nxml-hide-subheadings</func>
+        <descr>Reverses the action of <kbd>C-c C-o C-d</kbd>,
+        revealing the children of the current element.</descr>
       </it>
     </chapter>
 
     <chapter title="Managing variables">
       <it>
-	      <k/>
-	      <f>set-variable</f>
-	      <d>Ask for a variable to change and for the needed value.</d>
+        <key/>
+        <func>set-variable</func>
+        <descr>Ask for a variable to change and for the needed
+	      value.</descr>
       </it>
 
       <it>
-	      <k/>
-	      <f>auto-mode-alist</f>
-	      <d>If set to <em>nil</em>, automatic selection of major mode
-	      based on file name extension is turned off. Its default value
-	      is a list of file name extensions and corresponding modes.</d>
+        <key/>
+        <func>auto-mode-alist</func>
+        <descr>If set to <em>nil</em>, automatic selection of major
+        mode based on file name extension is turned off. Its default
+        value is a list of file name extensions and corresponding
+        modes.</descr>
       </it>
 
       <it>
-	      <k/>
-	      <f>auto-save-default</f>
-	      <d>If not set to <em>nil</em>, Emacs automatically saves a
+        <key/>
+        <func>auto-save-default</func>
+        <descr>If not set to <em>nil</em>, Emacs automatically saves a
 	      changed buffer to its corresponding file at preset
-	      intervals. Its default value is t.</d>
+	      intervals. Its default value is t.</descr>
       </it>
 
       <it>
-	      <k/>
-	      <f>auto-save-interval</f>
-	      <d>Contains the number of character changes after which
+        <key/>
+        <func>auto-save-interval</func>
+        <descr>Contains the number of character changes after which
 	      Auto-save mode, if true, is invoked; the default value is
-	      300.</d>
+	      300.</descr>
       </it>
 
       <it>
-	      <k/>
-	      <f>calendar-latitude</f>
-	      <d>Contains the latitude value for the location of the user's
-	      workstation, in degrees; the default value is
-	      <em>nil</em>.</d>
+        <key/>
+        <func>calendar-latitude</func>
+        <descr>Contains the latitude value for the location of the
+	      user's workstation, in degrees; the default value is
+	      <em>nil</em>.</descr>
       </it>
 
       <it>
-	      <k/>
-	      <f>calendar-longitude</f>
-	      <d>Contains the longitude value for the location of the user's
-	      workstation, in degrees; the default value is
-	      <em>nil</em>.</d>
+        <key/>
+        <func>calendar-longitude</func>
+        <descr>Contains the longitude value for the location of the
+	      user's workstation, in degrees; the default value is
+	      <em>nil</em>.</descr>
       </it>
 
       <it>
-	      <k/>
-	      <f>calendar-location-name</f>
-	      <d>Contains the value for the location name (such as city,
+        <key/>
+        <func>calendar-location-name</func>
+        <descr>Contains the value for the location name (such as city,
 	      state, and country) for the location of the user's
-	      workstation; the default value is <em>nil</em>.</d>
+	      workstation; the default value is <em>nil</em>.</descr>
       </it>
 
       <it>
-	      <k/>
-	      <f>colon-double-space</f>
-	      <d>If not set to <em>nil</em>, commands for filling text
+        <key/>
+        <func>colon-double-space</func>
+        <descr>If not set to <em>nil</em>, commands for filling text
 	      insert two spaces after a colon instead of one. The default
-	      value is nil.</d>
+	      value is nil.</descr>
       </it>
 
       <it>
-	      <k/>
-	      <f>command-line-args</f>
-	      <d>Contains the list of arguments used in the command line
-	      that executed the current Emacs session.</d>
+        <key/>
+        <func>command-line-args</func>
+        <descr>Contains the list of arguments used in the command line
+	      that executed the current Emacs session.</descr>
       </it>
 
       <it>
-	      <k/>
-	      <f>command-line-default-directory</f>
-	      <d>Contains the path name of the directory from which the
-	      current Emacs session was executed.</d>
+        <key/>
+        <func>command-line-default-directory</func>
+        <descr>Contains the path name of the directory from which the
+	      current Emacs session was executed.</descr>
       </it>
 
       <it>
-	      <k/>
-	      <f>compare-ignore-case</f>
-	      <d>If not set to <em>nil</em>, Emacs ignores differences in
-	      uppercase and lowercase letters when running the
+        <key/>
+        <func>compare-ignore-case</func>
+        <descr>If not set to <em>nil</em>, Emacs ignores differences
+	      in uppercase and lowercase letters when running the
 	      compare-windows function, as described in fifth installment of
 	      this series (see Resources). The default value is
-	      <em>nil</em>.</d>
+	      <em>nil</em>.</descr>
       </it>
 
       <it>
-	      <k/>
-	      <f>confirm-kill-emacs</f>
-	      <d>If set to <em>nil</em>, Emacs doesn't ask for a
+        <key/>
+        <func>confirm-kill-emacs</func>
+        <descr>If set to <em>nil</em>, Emacs doesn't ask for a
 	      confirmation when exiting; otherwise, the exit verification
 	      might be customized as an Emacs Lisp function such as
-	      <em>y-or-n-p</em>. The default value is <em>nil</em>.</d>
+	      <em>y-or-n-p</em>. The default value is <em>nil</em>.</descr>
       </it>
 
       <it>
-	      <k/>
-	      <f>default-justification</f>
-	      <d>Sets the default justification style. The value can be one
-	      of left, right, center, full, or none. The default value is
-	      left.</d>
+        <key/>
+        <func>default-justification</func>
+        <descr>Sets the default justification style. The value can be
+	      one of left, right, center, full, or none. The default value
+	      is left.</descr>
       </it>
 
       <it>
-	      <k/>
-	      <f>default-major-mode</f>
-	      <d>Selects the default major mode for new files or
-	      buffers. The default value is <em>fundamental-mode</em>.</d>
+        <key/>
+        <func>default-major-mode</func>
+        <descr>Selects the default major mode for new files or
+	      buffers. The default value is
+	      <em>fundamental-mode</em>.</descr>
       </it>
 
       <it>
-	      <k/>
-	      <f>display-time-24hr-format</f>
-	      <d>If set to t, Emacs displays time in 24-hour military
+        <key/>
+        <func>display-time-24hr-format</func>
+        <descr>If set to t, Emacs displays time in 24-hour military
 	      format, instead of the standard 12-hour format with AM or PM
-	      suffix. The default value is <em>nil</em>.</d>
+	      suffix. The default value is <em>nil</em>.</descr>
       </it>
 
       <it>
-	      <k/>
-	      <f>display-time-day-and-date</f>
-	      <d>If not set to <em>nil</em>, Emacs displays time with the
-	      current day of the week, current month, and current day of the
-	      month, instead of just the hour and minute. The default value
-	      is <em>nil</em>.</d>
+        <key/>
+        <func>display-time-day-and-date</func>
+        <descr>If not set to <em>nil</em>, Emacs displays time with
+	      the current day of the week, current month, and current day of
+	      the month, instead of just the hour and minute. The default
+	      value is <em>nil</em>.</descr>
       </it>
 
       <it>
-	      <k/>
-	      <f>fill-column</f>
-	      <d>Contains the number for the column on each line where text
-	      begins to be filled to the next line. The default value is
-	      70.</d>
+        <key/>
+        <func>fill-column</func>
+        <descr>Contains the number for the column on each line where
+	      text begins to be filled to the next line. The default value
+	      is 70.</descr>
       </it>
 
       <it>
-	      <k/>
-	      <f>initial-major-mode</f>
-	      <d>Specifies the major mode to use for the <em>*scratch*</em>
-	      buffer on startup. The default value is
-	      <em>lisp-interaction-mode</em>.</d>
+        <key/>
+        <func>initial-major-mode</func>
+        <descr>Specifies the major mode to use for the
+	      <em>*scratch*</em> buffer on startup. The default value is
+	      <em>lisp-interaction-mode</em>.</descr>
       </it>
 
       <it>
-	      <k/>
-	      <f>inverse-video</f>
-	      <d>If not set to <em>nil</em>, Emacs inverts the display
-	      colors, if possible. The default value is <em>nil</em>.</d>
+        <key/>
+        <func>inverse-video</func>
+        <descr>If not set to <em>nil</em>, Emacs inverts the display
+	      colors, if possible. The default value is
+	      <em>nil</em>.</descr>
       </it>
 
       <it>
-	      <k/>
-	      <f>kill-ring</f>
-	      <d>Contains the contents of the Emacs kill ring.</d>
+        <key/>
+        <func>kill-ring</func>
+        <descr>Contains the contents of the Emacs kill ring.</descr>
       </it>
 
       <it>
-	      <k/>
-	      <f>kill-ring-max</f>
-	      <d>Sets the number of allowable entries in the Emacs kill
-	      ring. The default value is 60.</d>
+        <key/>
+        <func>kill-ring-max</func>
+        <descr>Sets the number of allowable entries in the Emacs kill
+	      ring. The default value is 60.</descr>
       </it>
 
       <it>
-	      <k/>
-	      <f>kill-whole-line</f>
-	      <d>If not set to <em>nil</em>, the kill-line function (bound
-	      to <kbd>C-k</kbd>) kills the current line and its trailing
-	      newline character, if the function is executed at the very
-	      beginning of the line. The default value is <em>nil</em>.</d>
+        <key/>
+        <func>kill-whole-line</func>
+        <descr>If not set to <em>nil</em>, the kill-line function
+	      (bound to <kbd>C-k</kbd>) kills the current line and its
+	      trailing newline character, if the function is executed at the
+	      very beginning of the line. The default value is
+	      <em>nil</em>.</descr>
       </it>
 
       <it>
-	      <k/>
-	      <f>make-backup-files</f>
-	      <d>If not set to <em>nil</em>, Emacs saves a backup of a
+        <key/>
+        <func>make-backup-files</func>
+        <descr>If not set to <em>nil</em>, Emacs saves a backup of a
 	      buffer before any changes are made to a file of the same name
 	      but with a tilde character (<kbd>~</kbd>) appended to the
-	      end.</d>
+	      end.</descr>
       </it>
 
       <it>
-	      <k/>
-	      <f>mark-ring</f>
-	      <d>Contains the contents of the current mark ring of the
-	      buffer.</d>
+        <key/>
+        <func>mark-ring</func>
+        <descr>Contains the contents of the current mark ring of the
+	      buffer.</descr>
       </it>
 
       <it>
-	      <k/>
-	      <f>mark-ring-max</f>
-	      <d>Contains the number of allowable entries in the mark
-	      ring. The default value is 16.</d>
+        <key/>
+        <func>mark-ring-max</func>
+        <descr>Contains the number of allowable entries in the mark
+	      ring. The default value is 16.</descr>
       </it>
 
       <it>
-	      <k/>
-	      <f>mouse-avoidance-mode</f>
-	      <d>Contains a value describing the type of mouse-avoidance
-	      mode. The default value is <em>nil</em>.</d>
+        <key/>
+        <func>mouse-avoidance-mode</func>
+        <descr>Contains a value describing the type of mouse-avoidance
+	      mode. The default value is <em>nil</em>.</descr>
       </it>
 
       <it>
-	      <k/>
-	      <f>next-line-add-newline</f>
-	      <d>If not set to <em>nil</em>, Emacs adds a new line whenever
-	      the down arrow is pressed at the end of the buffer. The
-	      default value is <em>nil</em> (in more recent versions of
-	      Emacs).</d>
+        <key/>
+        <func>next-line-add-newline</func>
+        <descr>If not set to <em>nil</em>, Emacs adds a new line
+	      whenever the down arrow is pressed at the end of the
+	      buffer. The default value is <em>nil</em> (in more recent
+	      versions of Emacs).</descr>
       </it>
 
       <it>
-	      <k/>
-	      <f>scroll-bar-mode</f>
-	      <d>Contains the value for the side of the Emacs frame on which
-	      to place the scroll bar: right or left. If set to
+        <key/>
+        <func>scroll-bar-mode</func>
+        <descr>Contains the value for the side of the Emacs frame on
+	      which to place the scroll bar: right or left. If set to
 	      <em>nil</em>, the scroll bar is turned off.  The default value
-	      is left.</d>
+	      is left.</descr>
       </it>
 
       <it>
-	      <k/>
-	      <f>scroll-step</f>
-	      <d>Contains the number of lines to move through the buffer
+        <key/>
+        <func>scroll-step</func>
+        <descr>Contains the number of lines to move through the buffer
 	      lines with the <em>scroll-down</em> and <em>scroll-up</em>
 	      functions (which are bound to the <kbd>PgDn</kbd> and
 	      <kbd>PgUp</kbd> keys by default). If set to 0, Emacs centers
-	      point in the middle of the window when scrolling.</d>
+	      point in the middle of the window when scrolling.</descr>
       </it>
 
       <it>
-	      <k/>
-	      <f>show-trailing-whitespace</f>
-	      <d>If not set to <em>nil</em>, Emacs makes any whitespace at
-	      the end of lines in the current buffer visible. The default
-	      value is <em>nil</em>.</d>
+        <key/>
+        <func>show-trailing-whitespace</func>
+        <descr>If not set to <em>nil</em>, Emacs makes any whitespace
+	      at the end of lines in the current buffer visible. The default
+	      value is <em>nil</em>.</descr>
       </it>
 
       <it>
-	      <k/>
-	      <f>visible-bell</f>
-	      <d>If not set to <em>nil</em>, Emacs makes the frame blink
+        <key/>
+        <func>visible-bell</func>
+        <descr>If not set to <em>nil</em>, Emacs makes the frame blink
 	      instead of ringing the audible system bell. The default value
-	      is <em>nil</em>.</d>
+	      is <em>nil</em>.</descr>
       </it>
 
       <it>
-	      <k/>
-	      <f>x-cut-buffer-max</f>
-	      <d>Sets the maximum number of characters from the kill ring
-	      that are also stored in the X Window System cut buffer. The
-	      default value is 20000.</d>
+        <key/>
+        <func>x-cut-buffer-max</func>
+        <descr>Sets the maximum number of characters from the kill
+	      ring that are also stored in the X Window System cut
+	      buffer. The default value is 20000.</descr>
       </it>
     </chapter>
 
     <chapter title="Interface functions">
       <it>
-	      <k/>
-	      <f>column-number-mode</f>
-	      <d>Toggle the display, in the mode line, of the current column
-	      the cursor is at, preceded by a <kbd>C</kbd>. The default
-	      value is <em>nil</em>.</d>
+        <key/>
+        <func>column-number-mode</func>
+        <descr>Toggle the display, in the mode line, of the current
+	      column the cursor is at, preceded by a <kbd>C</kbd>. The
+	      default value is <em>nil</em>.</descr>
       </it>
 
       <it>
-	      <k/>
-	      <f>display-time</f>
-	      <d>Toggle the display of the current time in the mode
-	      line. The default value is <em>nil</em>.</d>
+        <key/>
+        <func>display-time</func>
+        <descr>Toggle the display of the current time in the mode
+	      line. The default value is <em>nil</em>.</descr>
       </it>
 
       <it>
-	      <k/>
-	      <f>font-lock-mode</f>
-	      <d>If not set to <em>nil</em>, Emacs turns on the Font Lock
-	      mode automatically for the current buffer. The default value
-	      is <em>nil</em>.</d>
+        <key/>
+        <func>font-lock-mode</func>
+        <descr>If not set to <em>nil</em>, Emacs turns on the Font
+	      Lock mode automatically for the current buffer. The default
+	      value is <em>nil</em>.</descr>
       </it>
 
       <it>
-	      <k/>
-	      <f>global-font-lock-mode</f>
-	      <d>If not set to <em>nil</em>, Emacs turns on the Font Lock
-	      mode automatically for all buffers. The default value is
-	      <em>nil</em>.</d>
+        <key/>
+        <func>global-font-lock-mode</func>
+        <descr>If not set to <em>nil</em>, Emacs turns on the Font
+	      Lock mode automatically for all buffers. The default value is
+	      <em>nil</em>.</descr>
       </it>
 
       <it>
-	      <k/>
-	      <f>line-number-mode</f>
-	      <d>Toggle the display, in the mode line, of the current line
-	      the cursor is at, preceded by an <kbd>L</kbd>. The default
-	      value is <em>t</em>.</d>
+        <key/>
+        <func>line-number-mode</func>
+        <descr>Toggle the display, in the mode line, of the current
+	      line the cursor is at, preceded by an <kbd>L</kbd>. The
+	      default value is <em>t</em>.</descr>
       </it>
 
       <it>
-        <k/>
-        <f>show-paren-mode</f>
-        <d>Allows one to see matching pairs of parentheses and other
-        characters. When point is on one of the paired characters, the
-        other is highlighted.</d>
+        <key/>
+        <func>show-paren-mode</func>
+        <descr>Allows one to see matching pairs of parentheses and
+        other characters. When point is on one of the paired
+        characters, the other is highlighted.</descr>
       </it>
 
       <it>
-	      <k/>
-	      <f>menu-bar-mode</f>
-	      <d>Toggle the display of the Emacs menu bar. The default value
-	      is <em>t</em>.</d>
+        <key/>
+        <func>menu-bar-mode</func>
+        <descr>Toggle the display of the Emacs menu bar. The default
+	      value is <em>t</em>.</descr>
       </it>
 
       <it>
-	      <k/>
-	      <f>sunrise-sunset</f>
-	      <d>Display the time of today's sunrise and sunset for the
+        <key/>
+        <func>sunrise-sunset</func>
+        <descr>Display the time of today's sunrise and sunset for the
 	      current geographic location. If preceded with the
 	      <kbd>universal-argument</kbd>, this function prompts for a
-	      specific day.</d>
+	      specific day.</descr>
       </it>
 
       <it>
-	      <k/>
-	      <f>tool-bar-mode</f>
-	      <d>Toggle the display of the Emacs toolbar. The default value
-	      is <em>t</em>.</d>
+        <key/>
+        <func>tool-bar-mode</func>
+        <descr>Toggle the display of the Emacs toolbar. The default
+	      value is <em>t</em>.</descr>
       </it>
     </chapter>
 
     <chapter title="Customize functions">
       <it>
-        <k/>
-        <f>customize-changed-options &lt;Enterversion&gt;</f>
-        <d>Open a new customization buffer for all faces, options, or
-        groups that have been changed since the version of Emacs given
-        by version.</d>
+        <key/>
+        <func>customize-changed-options &lt;Enterversion&gt;</func>
+        <descr>Open a new customization buffer for all faces, options,
+        or groups that have been changed since the version of Emacs
+        given by version.</descr>
       </it>
 
       <it>
-        <k/>
-        <f>customize-customized</f>
-        <d>Open a new customization buffer for all options and faces
-        that have already been customized but haven't been saved to
-        disk.</d>
+        <key/>
+        <func>customize-customized</func>
+        <descr>Open a new customization buffer for all options and
+        faces that have already been customized but haven't been saved
+        to disk.</descr>
       </it>
 
       <it>
-        <k/>
-        <f>customize-face &lt;Enter&gt; &lt;regexp&gt;</f>
-        <d>Open a new customization buffer for all the face, option,
-        or groups relevant to the regular expression given by
-        <kbd>&lt;regexp&gt;</kbd>.</d>
+        <key/>
+        <func>customize-face &lt;Enter&gt; &lt;regexp&gt;</func>
+        <descr>Open a new customization buffer for all the face,
+        option, or groups relevant to the regular expression given by
+        <kbd>&lt;regexp&gt;</kbd>.</descr>
       </it>
 
       <it>
-        <k/>
-        <f>customize-face &lt;Enter&gt; &lt;face&gt;</f>
-        <d>Open a new customization buffer for the face name given by
-        <kbd>&lt;face&gt;</kbd>.</d>
+        <key/>
+        <func>customize-face &lt;Enter&gt; &lt;face&gt;</func>
+        <descr>Open a new customization buffer for the face name given
+        by <kbd>&lt;face&gt;</kbd>.</descr>
       </it>
 
       <it>
-        <k/>
-        <f>customize-group &lt;Enter&gt; &lt;group&gt;</f>
-        <d>Open a new customization buffer for the group name given by
-        <kbd>&lt;group&gt;</kbd>.</d>
+        <key/>
+        <func>customize-group &lt;Enter&gt; &lt;group&gt;</func>
+        <descr>Open a new customization buffer for the group name
+        given by <kbd>&lt;group&gt;</kbd>.</descr>
       </it>
 
       <it>
-        <k/>
-        <f>customize-option &lt;Enter&gt; &lt;option&gt;</f>
-        <d>Open a new customization buffer for the option name given
-        by <kbd>&lt;option&gt;</kbd>.</d>
+        <key/>
+        <func>customize-option &lt;Enter&gt; &lt;option&gt;</func>
+        <descr>Open a new customization buffer for the option name
+        given by <kbd>&lt;option&gt;</kbd>.</descr>
       </it>
 
       <it>
-        <k/>
-        <f>customize-saved</f>
-        <d>Open a new customization buffer for all faces and options
-        that you've changed with the Customize function.</d>
+        <key/>
+        <func>customize-saved</func>
+        <descr>Open a new customization buffer for all faces and
+        options that you've changed with the Customize
+        function.</descr>
       </it>
     </chapter>
 
     <chapter title="Help commands">
       <it>
-        <k>Tab</k>
-        <f/>
-        <d>This command performs command completion if given as part
-        of a command, showing all possible input values for the given
-        command.</d>
+        <key>Tab</key>
+        <func/>
+        <descr>This command performs command completion if given as
+        part of a command, showing all possible input values for the
+        given command.</descr>
       </it>
 
       <it>
-        <k>&lt;command prefix&gt; or &lt;keystroke&gt; C-h</k>
-        <f/>
-        <d>This command describes all the possible commands and
+        <key>&lt;command prefix&gt; or &lt;keystroke&gt; C-h</key>
+        <func/>
+        <descr>This command describes all the possible commands and
         functions available for the given <kbd>&lt;command
-        prefix&gt;</kbd> or <kbd>&lt;keystroke&gt;</kbd>.</d>
+        prefix&gt;</kbd> or <kbd>&lt;keystroke&gt;</kbd>.</descr>
       </it>
 
       <it>
-        <k>C-h c &lt;keystroke&gt;</k>
-        <f>describe-key-briefly</f>
-        <d>This command reports in the minibuffer the name of function
-        that <kbd>&lt;keystroke&gt;</kbd>is bound to.</d>
+        <key>C-h c &lt;keystroke&gt;</key>
+        <func>describe-key-briefly</func>
+        <descr>This command reports in the minibuffer the name of
+        function that <kbd>&lt;keystroke&gt;</kbd>is bound to.</descr>
       </it>
 
       <it>
-        <k>C-h k &lt;keystroke&gt;</k>
-        <f>describe-key</f>
-        <d>This command opens a new help-buffer window that describes
-        the function that <kbd>&lt;keystroke&gt;</kbd> is bound
-        to.</d>
+        <key>C-h k &lt;keystroke&gt;</key>
+        <func>describe-key</func>
+        <descr>This command opens a new help-buffer window that
+        describes the function that <kbd>&lt;keystroke&gt;</kbd> is
+        bound to.</descr>
       </it>
 
       <it>
-        <k>C-h l</k>
-        <f>view-lossage</f>
-        <d>This command opens a new buffer and displays the last 100
-        characters typed.</d>
+        <key>C-h l</key>
+        <func>view-lossage</func>
+        <descr>This command opens a new buffer and displays the last
+        100 characters typed.</descr>
       </it>
 
       <it>
-        <k/>
-        <f>open-dribble-file</f>
-        <d>This command opens a specified file and dribbles a copy of
-        all keyboard input to that file.</d>
+        <key/>
+        <func>open-dribble-file</func>
+        <descr>This command opens a specified file and dribbles a copy
+        of all keyboard input to that file.</descr>
       </it>
 
       <it>
-        <k/>
-        <f>apropos</f>
-        <d>This command gives a list of apropos commands and variables
-        to a given <kbd>regexp</kbd>.</d>
+        <key/>
+        <func>apropos</func>
+        <descr>This command gives a list of apropos commands and
+        variables to a given <kbd>regexp</kbd>.</descr>
       </it>
 
       <it>
-        <k>C-h a &lt;regexp&gt;</k>
-        <f>command-apropos</f>
-        <d>This command gives a list of apropos commands to
-        regexp.</d>
+        <key>C-h a &lt;regexp&gt;</key>
+        <func>command-apropos</func>
+        <descr>This command gives a list of apropos commands to
+        regexp.</descr>
       </it>
 
       <it>
-        <k>C-h b</k>
-        <f>describe-bindings</f>
-        <d>This command describes all the valid key bindings for the
-        current major mode in a new help buffer window.</d>
+        <key>C-h b</key>
+        <func>describe-bindings</func>
+        <descr>This command describes all the valid key bindings for
+        the current major mode in a new help buffer window.</descr>
       </it>
 
       <it>
-        <k>C-h f &lt;function&gt;</k>
-        <f>describe-function</f>
-        <d>This command describes the purpose of
-        <kbd>&lt;function&gt;</kbd> in a new help buffer window.</d>
+        <key>C-h f &lt;function&gt;</key>
+        <func>describe-function</func>
+        <descr>This command describes the purpose of
+        <kbd>&lt;function&gt;</kbd> in a new help buffer
+        window.</descr>
       </it>
 
       <it>
-        <k>C-h v &lt;variable&gt;</k>
-        <f>describe-variable</f>
-        <d>This command describes the purpose of
-        <kbd>&lt;variable&gt;</kbd> in a new help buffer window.</d>
+        <key>C-h v &lt;variable&gt;</key>
+        <func>describe-variable</func>
+        <descr>This command describes the purpose of
+        <kbd>&lt;variable&gt;</kbd> in a new help buffer
+        window.</descr>
       </it>
 
       <it>
-        <k>C-h w &lt;function&gt;</k>
-        <f>where-is</f>
-        <d>This command describes which keyboard binding (if any) a
-        particular <kbd>&lt;function&gt;</kbd> is bound to.</d>
+        <key>C-h w &lt;function&gt;</key>
+        <func>where-is</func>
+        <descr>This command describes which keyboard binding (if any)
+        a particular <kbd>&lt;function&gt;</kbd> is bound to.</descr>
       </it>
 
       <it>
-        <k>C-h s | F1 s</k>
-        <f>describe-syntax</f>
-        <d>Display the <em>Emacs Syntax Table</em> for the current
-        mode (useful for the matching parentheses commands).</d>
+        <key>C-h s | F1 s</key>
+        <func>describe-syntax</func>
+        <descr>Display the <em>Emacs Syntax Table</em> for the current
+        mode (useful for the matching parentheses commands).</descr>
       </it>
     </chapter>
 
     <chapter title="INFO commands">
       <it>
-        <k>H</k>
-        <f>Info-help</f>
-        <d>This command opens a hands-on <kbd>Info</kbd> tutorial in a
-        new buffer.</d>
+        <key>H</key>
+        <func>Info-help</func>
+        <descr>This command opens a hands-on <kbd>Info</kbd> tutorial
+        in a new buffer.</descr>
       </it>
 
       <it>
-        <k>Q</k>
-        <f>Info-exit</f>
-        <d>This command moves to the last buffer you visited, putting
-        the <kbd>*info*</kbd> buffer in the end of the buffer
-        list.</d>
+        <key>Q</key>
+        <func>Info-exit</func>
+        <descr>This command moves to the last buffer you visited,
+        putting the <kbd>*info*</kbd> buffer in the end of the buffer
+        list.</descr>
       </it>
 
       <it>
-        <k>&lt;Enter&gt;</k>
-        <f/>
-        <d>This command follows the cross reference at or near
-        point.</d>
+        <key>&lt;Enter&gt;</key>
+        <func/>
+        <descr>This command follows the cross reference at or near
+        point.</descr>
       </it>
 
       <it>
-        <k>N</k>
-        <f>Info-next</f>
-        <d>This command moves to the current node's <kbd>Next</kbd>
-        node.</d>
+        <key>N</key>
+        <func>Info-next</func>
+        <descr>This command moves to the current node's
+        <kbd>Next</kbd> node.</descr>
       </it>
 
       <it>
-        <k>P</k>
-        <f>Info-prev</f>
-        <d>This command moves to the current node's
-        <kbd>Previous</kbd> node.</d>
+        <key>P</key>
+        <func>Info-prev</func>
+        <descr>This command moves to the current node's
+        <kbd>Previous</kbd> node.</descr>
       </it>
 
       <it>
-        <k>U</k>
-        <f>Info-up</f>
-        <d>This command moves to the current node's <kbd>Up</kbd>
-        node.</d>
+        <key>U</key>
+        <func>Info-up</func>
+        <descr>This command moves to the current node's <kbd>Up</kbd>
+        node.</descr>
       </it>
 
       <it>
-        <k>D</k>
-        <f>Info-directory</f>
-        <d>This command moves to the <kbd>Directory</kbd> node.</d>
+        <key>D</key>
+        <func>Info-directory</func>
+        <descr>This command moves to the <kbd>Directory</kbd>
+        node.</descr>
       </it>
 
       <it>
-        <k>L</k>
-        <f>Info-last</f>
-        <d>This command moves to the last node you visited.</d>
+        <key>L</key>
+        <func>Info-last</func>
+        <descr>This command moves to the last node you
+        visited.</descr>
       </it>
 
       <it>
-        <k>T</k>
-        <f>Info-top-node</f>
-        <d>This command moves to the <kbd>Top</kbd> node of the
-        current document.</d>
+        <key>T</key>
+        <func>Info-top-node</func>
+        <descr>This command moves to the <kbd>Top</kbd> node of the
+        current document.</descr>
       </it>
 
       <it>
-        <k>&gt;</k>
-        <f>Info-final-node</f>
-        <d>This command moves to the final node pointed to in the
-        current document.</d>
+        <key>&gt;</key>
+        <func>Info-final-node</func>
+        <descr>This command moves to the final node pointed to in the
+        current document.</descr>
       </it>
 
       <it>
-        <k>&lt;Spacebar&gt;</k>
-        <f>Info-scroll-up</f>
-        <d>This command moves forward in the current node by a single
-        screen; if at the end of the node, then move to the Next
-        node.</d>
+        <key>&lt;Spacebar&gt;</key>
+        <func>Info-scroll-up</func>
+        <descr>This command moves forward in the current node by a
+        single screen; if at the end of the node, then move to the
+        Next node.</descr>
       </it>
 
       <it>
-        <k>&lt;Backspace&gt;</k>
-        <f>Info-scroll-down</f>
-        <d>This command moves backward in the current node by a single
-        screen; if at the beginning of the node, then move to the
-        Previous node.</d>
+        <key>&lt;Backspace&gt;</key>
+        <func>Info-scroll-down</func>
+        <descr>This command moves backward in the current node by a
+        single screen; if at the beginning of the node, then move to
+        the Previous node.</descr>
       </it>
 
       <it>
-        <k>B</k>
-        <f>beginning-of-buffer</f>
-        <d>This command goes to the beginning of the current node.</d>
+        <key>B</key>
+        <func>beginning-of-buffer</func>
+        <descr>This command goes to the beginning of the current
+        node.</descr>
       </it>
 
       <it>
-        <k>S</k>
-        <f>Info-search</f>
-        <d>This command searches forward in the current
-        <kbd>Info</kbd> document for a given <kbd>regexp</kbd>.</d>
+        <key>S</key>
+        <func>Info-search</func>
+        <descr>This command searches forward in the current
+        <kbd>Info</kbd> document for a given
+        <kbd>regexp</kbd>.</descr>
       </it>
 
       <it>
-        <k>Tab</k>
-        <f>Info-next-reference</f>
-        <d>This command moves the cursor forward to the first cross
-        reference.</d>
+        <key>Tab</key>
+        <func>Info-next-reference</func>
+        <descr>This command moves the cursor forward to the first
+        cross reference.</descr>
       </it>
 
       <it>
-        <k>M-Tab</k>
-        <f>Info-prev-reference</f>
-        <d>This command moves the cursor backward to the last cross
-        reference.</d>
+        <key>M-Tab</key>
+        <func>Info-prev-reference</func>
+        <descr>This command moves the cursor backward to the last
+        cross reference.</descr>
       </it>
     </chapter>
 
     <chapter title="Documentation files">
       <it>
-        <k>C-h C-d</k>
-        <f>describe-distribution</f>
-        <d><kbd>DISTRIB</kbd> Information on obtaining a copy of the
-        latest distribution of the Emacs software</d>
+        <key>C-h C-d</key>
+        <func>describe-distribution</func>
+        <descr>File <kbd>DISTRIB</kbd>: Information on obtaining a
+        copy of the latest distribution of the Emacs software</descr>
       </it>
 
       <it>
-        <k>C-h F</k>
-        <f>view-emacs-faq</f>
-        <d><kbd>/usr/share/info/</kbd>;
-        <kbd>emacs-mainversion/efaq.gz</kbd> Emacs FAQ</d>
+        <key>C-h F</key>
+        <func>view-emacs-faq</func>
+        <descr><kbd>/usr/share/info/</kbd>;
+        <kbd>emacs-mainversion/efaq.gz</kbd> Emacs FAQ</descr>
       </it>
 
       <it>
-        <k>C-h C-c</k>
-        <f>describe-copying</f>
-        <d><kbd>COPYING</kbd> GNU General Public License (GNU GPL)</d>
+        <key>C-h C-c</key>
+        <func>describe-copying</func>
+        <descr>File <kbd>COPYING</kbd>: GNU General Public License
+        (GNU GPL)</descr>
       </it>
 
       <it>
-        <k>C-h C-w</k>
-        <f>describe-no-warranty</f>
-        <d><kbd>COPYING</kbd> Section "NO WARRANTY" of the GNU General
-        Public License (GNU GPL)</d>
+        <key>C-h C-w</key>
+        <func>describe-no-warranty</func>
+        <descr>File <kbd>COPYING</kbd>: Section "NO WARRANTY" of the
+        GNU General Public License (GNU GPL)</descr>
       </it>
 
       <it>
-        <k>C-h n</k>
-        <f>view-emacs-news</f>
-        <d><kbd>NEWS</kbd> News concerning the latest changes in the
-        current version of Emacs</d>
+        <key>C-h n</key>
+        <func>view-emacs-news</func>
+        <descr>File <kbd>NEWS</kbd>: News concerning the latest
+        changes in the current version of Emacs</descr>
       </it>
 
       <it>
-        <k>C-h P</k>
-        <f>view-emacs-problems</f>
-        <d><kbd>PROBLEMS</kbd> Emacs problems file</d>
+        <key>C-h P</key>
+        <func>view-emacs-problems</func>
+        <descr><kbd>File PROBLEMS</kbd>: Emacs problems file</descr>
       </it>
 
       <it>
-        <k>C-h C-p</k>
-        <f>describe-project</f>
-        <d><kbd>THE-GNU-PROJECT</kbd> Essay by Richard Stallman
-        concerning the founding of the GNU Project</d>
+        <key>C-h C-p</key>
+        <func>describe-project</func>
+        <descr>File <kbd>THE-GNU-PROJECT</kbd>: Essay by Richard
+        Stallman concerning the founding of the GNU Project</descr>
       </it>
 
       <it>
-        <k>C-h t</k>
-        <f>help-with-tutorial</f>
-        <d><kbd>TUTORIAL</kbd> Hands-on tutorial for learning the
-        basics of Emacs</d>
+        <key>C-h t</key>
+        <func>help-with-tutorial</func>
+        <descr>File <kbd>TUTORIAL</kbd>: Hands-on tutorial for
+        learning the basics of Emacs</descr>
       </it>
     </chapter>
 
     <chapter title="Things you should never know about">
       <it>
-        <k/>
-        <f>hanoi</f>
-        <d>The hanoi tower, with a default of 3 discs; <kbd>M-x
+        <key/>
+        <func>hanoi</func>
+        <descr>The hanoi tower, with a default of 3 discs; <kbd>M-x
         hanoi-unix</kbd> and <kbd>M-x hanoi-unix-64</kbd> uses the
         unix timestamp, making a move each second in line with the
         clock, and with the latter pretending it uses a 64-bit
-        clock.</d>
+        clock.</descr>
       </it>
 
       <it>
-        <k/>
-        <f>5x5</f>
-        <d>You are given a 5x5 grid with a central cross already
+        <key/>
+        <func>5x5</func>
+        <descr>You are given a 5x5 grid with a central cross already
         filled-in; your goal is to fill all the cells by toggling them
         on and off in the right order to win. With an optional digit
-        argument you can change the size of the grid.</d>
+        argument you can change the size of the grid.</descr>
       </it>
 
       <it>
-        <k/>
-        <f>animate-birthday-present</f>
-        <d>A fancy birthday present animation.</d>
+        <key/>
+        <func>animate-birthday-present</func>
+        <descr>A fancy birthday present animation.</descr>
       </it>
 
       <it>
-        <k/>
-        <f>butterfly</f>
-        <d>The animate package is also used by <kbd>M-x
+        <key/>
+        <func>butterfly</func>
+        <descr>The animate package is also used by <kbd>M-x
         butterfly</kbd> command, a command added to Emacs as an homage
-        to the XKCD strip at <kbd>www.xkcd.com/378/</kbd></d>
+        to the XKCD strip at <kbd>www.xkcd.com/378/</kbd></descr>
       </it>
 
       <it>
-        <k/>
-        <f>blackbox</f>
-        <d>The object of the game is to find four hidden balls by
+        <key/>
+        <func>blackbox</func>
+        <descr>The object of the game is to find four hidden balls by
         shooting rays into the black box. There are four
         possibilities: 1) the ray will pass thru the box undisturbed,
         2) it will hit a ball and be absorbed, 3) it will be deflected
         and exit the box, or 4) be deflected immediately, not even
-        being allowed entry into the box.</d>
+        being allowed entry into the box.</descr>
       </it>
 
       <it>
-        <k/>
-        <f>bubbles</f>
-        <d>You must clear out as many “bubbles” as you can in as few
-        moves as possible. When you remove bubbles the other bubbles
-        drop and stick together. You can configure the difficulty of
-        the game by calling <kbd>M-x
+        <key/>
+        <func>bubbles</func>
+        <descr>You must clear out as many “bubbles” as you can in as
+        few moves as possible. When you remove bubbles the other
+        bubbles drop and stick together. You can configure the
+        difficulty of the game by calling <kbd>M-x
         bubbles-set-game-&lt;difficulty&gt;</kbd> where
         &lt;difficulty&gt; is one of: <kbd>easy</kbd>,
         <kbd>medium</kbd>, <kbd>difficult</kbd>, <kbd>hard</kbd>, or
         <kbd>userdefined</kbd>. Furthermore, you can alter the
         graphics, grid size and colors using Customize: <kbd>M-x
-        customize-group bubbles</kbd>.</d>
+        customize-group bubbles</kbd>.</descr>
       </it>
 
       <it>
-        <k/>
-        <f>decipher</f>
-        <d>It’s a (very complex) package to help you break simple
+        <key/>
+        <func>decipher</func>
+        <descr>It’s a (very complex) package to help you break simple
         substitution ciphers (like cryptogram puzzles) using a helpful
-        user interface.</d>
+        user interface.</descr>
       </it>
 
       <it>
-        <k/>
-        <f>dissociated-press</f>
-        <d>It's a semi-randomizing algorithm that takes your buffer,
-        runs it through a blender, and displays the result.</d>
+        <key/>
+        <func>dissociated-press</func>
+        <descr>It's a semi-randomizing algorithm that takes your
+        buffer, runs it through a blender, and displays the
+        result.</descr>
       </it>
 
       <it>
-        <k/>
-        <f>doctor</f>
-        <d>Based on the original <em>ELIZA</em>, the “Doctor” tries to
-        psychoanalyze what you say and attempts to repeat the question
-        back to you. It simulates a Rogerian psychotherapist and uses
-        rules, dictated into a script, to respond with non-directional
-        questions to user inputs.</d>
+        <key/>
+        <func>doctor</func>
+        <descr>Based on the original <em>ELIZA</em>, the “Doctor”
+        tries to psychoanalyze what you say and attempts to repeat the
+        question back to you. It simulates a Rogerian psychotherapist
+        and uses rules, dictated into a script, to respond with
+        non-directional questions to user inputs.</descr>
       </it>
 
       <it>
-        <k/>
-        <f>dunnet</f>
-        <d>Emacs’s very own Zork-like text adventure game.</d>
+        <key/>
+        <func>dunnet</func>
+        <descr>Emacs’s very own Zork-like text adventure game.</descr>
       </it>
 
       <it>
-        <k/>
-        <f>gomoku</f>
-        <d>You have to connect 5 squares, tic-tac-toe style. You can
-        customize the group <kbd>gomoku</kbd> to adjust the size of
-        the grid.</d>
+        <key/>
+        <func>gomoku</func>
+        <descr>You have to connect 5 squares, tic-tac-toe style. You
+        can customize the group <kbd>gomoku</kbd> to adjust the size
+        of the grid.</descr>
       </it>
 
       <it>
-        <k/>
-        <f>life</f>
-        <d>Conway’s Game of Life is a famous example of cellular
+        <key/>
+        <func>life</func>
+        <descr>Conway’s Game of Life is a famous example of cellular
         automata. The Emacs version comes with a handful of starting
         patterns that you can (programmatically with elisp) alter by
-        adjusting the <kbd>life-patterns</kbd> variable.</d>
+        adjusting the <kbd>life-patterns</kbd> variable.</descr>
       </it>
 
       <it>
-        <k/>
-        <f>pong | snake | tetris</f>
-        <d>These classic games are all implemented using the Emacs
+        <key/>
+        <func>pong | snake | tetris</func>
+        <descr>These classic games are all implemented using the Emacs
         package gamegrid, a generic framework for building grid-based
-        games like Tetris and Snake.</d>
+        games like Tetris and Snake.</descr>
       </it>
 
       <it>
-        <k/>
-        <f>solitaire</f>
-        <d>It is a peg-based game where you have to end up with just
-        one stone on the board, by taking a stone (the <kbd>o</kbd>)
-        and “jumping” over an adjacent stone into the hole (the
-        <kbd>.</kbd>), removing the stone you jumped over in the
-        process. Rinse and repeat until the board is empty. There is a
-        handy solver built in called <kbd>M-x solitaire-solve</kbd> if
-        you get stuck.</d>
+        <key/>
+        <func>solitaire</func>
+        <descr>It is a peg-based game where you have to end up with
+        just one stone on the board, by taking a stone (the
+        <kbd>o</kbd>) and “jumping” over an adjacent stone into the
+        hole (the <kbd>.</kbd>), removing the stone you jumped over in
+        the process. Rinse and repeat until the board is empty. There
+        is a handy solver built in called <kbd>M-x
+        solitaire-solve</kbd> if you get stuck.</descr>
       </it>
 
       <it>
-        <k/>
-        <f>zone</f>
-        <d>A series of screensavers. Type <kbd>M-x zone</kbd> and
+        <key/>
+        <func>zone</func>
+        <descr>A series of screensavers. Type <kbd>M-x zone</kbd> and
         watch what happens to your screen! You can configure a
         screensaver idle time by running <kbd>M-x zone-when-idle</kbd>
         (or calling it from elisp) with an idle time in seconds. You
-        can turn it off with <kbd>M-x zone-leave-me-alone</kbd>.</d>
+        can turn it off with <kbd>M-x
+        zone-leave-me-alone</kbd>.</descr>
       </it>
 
       <it>
-        <k/>
-        <f>mpuz</f>
-        <d>A multiplication puzzle where you have to replace the
+        <key/>
+        <func>mpuz</func>
+        <descr>A multiplication puzzle where you have to replace the
         letters with numbers and ensure the numbers add (multiply?)
         up. You can run <kbd>M-x mpuz-show-solution</kbd> to solve the
-        puzzle if you get stuck.</d>
+        puzzle if you get stuck.</descr>
       </it>
 
       <it>
-        <k/>
-        <f>morse-region</f>
-        <d>Translates a region into morse code. Undo
+        <key/>
+        <func>morse-region</func>
+        <descr>Translates a region into morse code. Undo
         (<kbd>C-S-_</kbd>) or <kbd>M-x unmorse-region</kbd> to
-        unmorse.</d>
+        unmorse.</descr>
       </it>
     </chapter>
 
   </body>
 
   <footer>
-    <line>Copyright (C) 2017 Pete Za Sayari</line>
-    <line>&lt;petezasayari@gmail.com&gt;</line>
-    <line/>
-    <line>Released under the terms of the GNU General Public
-    License</line>
-    <line>version 3 or later.</line>
-    <line/>
-    <line>For more Emacs documentation see the Emacs distribution or
-    http://www.gnu.org/software/emacs</line>
-    <line>For the XML-XSLT source for this cheat sheet see
-    https://github.com/PeteZaSayari/emacs-cs</line>
+    <txline>Copyright (C) 2017 Pete Za Sayari</txline>
+    <txline>&lt;petezasayari@gmail.com&gt;</txline>
+    <txline/>
+    <txline>Released under the terms of the GNU General Public
+    License version 3 or later.</txline>
+    <txline/>
+    <txline>For more Emacs documentation see the Emacs distribution or
+    http://www.gnu.org/software/emacs</txline>
+    <txline>For the XML-XSLT source for this cheat sheet see
+    https://github.com/PeteZaSayari/emacs-cs.</txline>
   </footer>
 
 </cheatsheet>
 
-<!-- Dictionary
+<?C Dictionary
 
-  <it>  =   <item>
-  <k>   =   <key>
-  <f>   =   <function>
-  <d>   =   <description>
+  <it>      =   <item>
+  <key>     =   <key>
+  <func>    =   <function>
+  <descr>   =   <description>
 
--->
+
+  Lint it with: xmllint --noout --valid emacs-cs.xml
+
+?>

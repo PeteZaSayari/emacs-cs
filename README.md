@@ -2,9 +2,9 @@
 
 ## Rationale
 
-I'm studying the IBM Emacs tutorial (you can read the first module at
-the IBM Developer Works) and I feel the need of taking note of
-what I'm reading. So I started to write this cheat sheet.
+I'm studying the IBM Emacs tutorial (to read it follow the link given
+in the following sections) and I feel the need of taking note of what
+I'm reading. So I started to write this cheat sheet.
 
 I'm studyng XML and XSLT too, so I preferred to use XML to track down
 my Emacs commands.
@@ -37,27 +37,35 @@ settings:
 
     Format: A4
     Orientation: landscape
-    Scale: Custom > 110%
+    Scale: Custom > 126%
     Print on file > ~/Desktop/emacs-cs.pdf
-    Options > Header and Footer > Right: Page # of #
+    Options > Header and Footer > Right: Page #
 
-It takes six sides of A4 sheets.
+It takes eight sides of A4 sheets.
 
 
 ## Acknowledgements
 
-* The design style for the card is taken from the famous one of
-  Stephen Gildea. The TeX source for his card is distributed with
-  Emacs in `etc/refcards/`
-* The [IBM tutorial][2]
+* The design style for the card is taken from the [famous one][1] of
+  Stephen Gildea.
+* Most of the material and it's organization is taken from
+  the IBM's [Emacs tutorial][2].
 * The section about the Emacs games is taken mostly from the
   Mickey Petersen's blog [Mastering Emacs][3].
-* [Emacs Wiki][4]
-* The section about abbreviations/abbrev mode is taken and adapted
-  from the [Emacs manual][5]
+* The paragraph about "nXML mode" is taken and adapted from the
+  document "*XML document authoring with emacs nxml-mode*" of the
+  [New Mexico Tech][6].
+* Regular expressions and some other details are taken from
+  the [Emacs Wiki][4].
+* The section about abbreviations (or *abbrev* minor mode) is taken
+  and adapted from the [Emacs manual][5].
 
+All of the above links were active on november 2017.
 
+[1]: https://www.gnu.org/software/emacs/refcards/pdf/refcard.pdf
 [2]: https://www.ibm.com/developerworks/aix/tutorials/au-emacs1/index.html
 [3]: https://www.masteringemacs.org/article/fun-games-in-emacs
 [4]: https://www.emacswiki.org
 [5]: https://www.gnu.org/software/emacs/manual/
+[6]: http://www.nmt.edu/tcc/help/pubs/nxml/
+

@@ -1,6 +1,50 @@
 <?xml version='1.0' encoding='utf-8'?>
 
 <changelog>
+  <release n="10" date="2017.11.25"
+           author="Pete Za Sayari" email="petezasayari@gmail.com"
+           ver="2.1">
+    <added>
+      <i file="README.md">Some aknowledgements.</i>
+      <i file="emacs-cs.xml">Two paragraphs about regular
+      expressions. Closed task #11.</i>
+      <i file="eacs-cs.xml">A paragraph about highlighting.</i>
+      <i file="emacs-cs.xml">Instruction "save as" C-x C-w</i>
+      <i file="cheatsheet.dtd">Added formatting features to the "d"
+      element. Closed task #9.</i>
+      <i file="cheatsheet.dtd">Commented the DTD instructions.</i>
+    </added>
+
+    <changed>
+      <i file="emacs-cs.xml">Shortened some items in the "nXML mode"
+      paragraph. Closed task #3.</i>
+      <i file="emacs-cs.xml">Some strings changed.</i>
+      <i file="emacs-cs.xml">Tags "k", "f" and "d" changed
+      respectively in "key>, "func" and "descr".</i>
+      <i file="emacs-cs.xml">Reordered some paragraphs
+      location. Closed task #12.</i>
+      <i file="todo.xml">The attribute "resolved" now is "closed".</i>
+      <i file="tohtml.xsl">Better formatting.</i>
+      <i file="tohtml.xsl">Formatting of "k" and "f" elements now is
+      more "elastic".</i>
+      <i file="tohtml.xsl">New names of tags according to
+      "cheatsheet.dtd". Closed task #15.</i>
+      <i file="tohtml.xsl">New title of the resulting HTML
+      document.</i>
+      <i file="tohtml.xsl">Rewritten the logic of the "page-brake"
+      directives. Generalized the formatting with some more CSS
+      directives. Closed task #10.</i>
+      <i file="cheatsheet.dtd">More explicit names for tags "k", "f"
+      and "d": "key", "func" and "descr". Closed task #14.</i>
+      <i file="emacs-cs.pdf">Updated with the new features.</i>
+      <i>Renamed some tags into the repo.</i>
+    </changed>
+
+    <fixed>
+      <i file="emacs-cs.xml">Deleted some minor bugs with xmllint.</i>
+    </fixed>
+  </release>
+
   <release n="9" date="2017.11.18"
            author="Pete Za Sayari" email="petezasayari@gmail.com"
            ver="2.0">
@@ -18,7 +62,7 @@
       addings.</i>
     </changed>
   </release>
-  
+
   <release n="8" date="2017.11.14"
            author="Pete Za Sayari" email="petezasayari@gmail.com"
            ver="1.1">
@@ -157,33 +201,43 @@
 </changelog>
 
 <!-- ============================================================= -->
-<!-- TEMPLATE
+<!-- Template
 
 <changelog>
-  <release n="NUM" date="DATE" author="STRING"
-           email="EM@IL" ver="n.n">
-
+  <release
+           n      [ ]  [INCREMENTAL NUM]
+           date   [ ]  [YYYY.MM.DD]
+           author [ ]  [CDATA]
+           email  [ ]  [CDATA]
+           ver    [?]  [NUM.NUM]
+  > [+]
+      // new features
     <added>
-      <i file="">new features.</i>
-    </added>
+        // 'i' means 'item'
+      <i file [?]  [CDATA]> [+]
+    </added> [?]
 
+      // changes in existing functionality
     <changed>
-      <i file="">changes in existing functionality.</i>
-    </changed>
+      <i file [?]  [CDATA]> [+]
+    </changed> [?]
 
+      // once-stable features removed in upcoming releases
     <deprecated>
-      <i file="">once-stable features removed in upcoming
-      releases.</i>
-    </deprecated>
+      <i file [?]  [CDATA]> [+]
+    </deprecated> [?]
 
+      // deprecated features removed in this release
     <removed>
-      <i file="">deprecated features removed in this release.</i>
-    </removed>
+      <i file [?]  [CDATA]> [+]
+    </removed> [?]
 
+      // any bug fixes
     <fixed>
-      <i file="">any bug fixes.</i>
-    </fixed>
-  </release>
+      <i file [?]  [CDATA]> [+]
+    </fixed> [?]
+  </release> [+]
 </changelog>
 
 -->
+

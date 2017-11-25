@@ -1,26 +1,39 @@
+<?xml version='1.0' encoding='utf-8'?>
 
+<!-- Root element                         -->
 <!ELEMENT cheatsheet (header, body, footer)>
+<!-- 'version' will be (1.0 | 2.0) #REQUIRED "2.0" -->
+<!-- 'lang'       format = [en | en-CA]   -->
+<!-- 'created'    format = yyyy.mm.dd     -->
 <!ATTLIST cheatsheet
           version CDATA #FIXED "1.0"
+          title CDATA #IMPLIED
+          argument CDATA #IMPLIED
           lang CDATA #IMPLIED
           created CDATA #IMPLIED
           author CDATA #IMPLIED>
 
-<!ELEMENT header (title, subtitle, text?)>
+<!ELEMENT header (title, subtitle, txline?)>
 <!ELEMENT title (#PCDATA)>
 <!ELEMENT subtitle (#PCDATA)>
-<!ELEMENT text (#PCDATA)>
+<!ELEMENT txline (#PCDATA)>
 
 <!ELEMENT body (chapter*)>
+<!-- "it" means "item"                    -->
 <!ELEMENT chapter (it+)>
 <!ATTLIST chapter
           title CDATA #REQUIRED>
-<!ELEMENT it (k, f, d)>
-<!ELEMENT k (#PCDATA)>
-<!ELEMENT f (#PCDATA)>
-<!ELEMENT d (#PCDATA)>
+<!ELEMENT it (key, func, descr)>
+<!ELEMENT key (#PCDATA)>
+<!ELEMENT func (#PCDATA)>
+<!ENTITY % formattedText "(#PCDATA | kbd | em | b )*">
+<!ELEMENT kbd %formattedText;>
+<!ELEMENT em %formattedText;>
+<!ELEMENT b %formattedText;>
+<!ELEMENT descr %formattedText;>
 
-<!ELEMENT footer (line*)>
-<!ELEMENT line (#PCDATA)>
+<!ELEMENT footer (txline*)>
 
-
+<!ENTITY author "Pete Za Sayari">
+<!ENTITY email "petezasayari@gmail.com">
+<!ENTITY website "https://github.com/PeteZaSayari/emacs-cs">

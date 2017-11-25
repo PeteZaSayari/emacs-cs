@@ -1,44 +1,87 @@
 <?xml version='1.0' encoding='utf-8'?>
 
 <TODO>
-  <task n="10" created="2017.11.18" priority="B" status="open">
+  <task n="17" created="2017.11.25" priority="B" status="open">
+    Some words about "re-builder".
+  </task
+
+  <task n="16" created="2017.11.23" priority="B"
+        status="wontdo">
+    Add some words into the "Search and replace" paragraph about
+    searching into regions, so as for regex into regions. WONTDO: it
+    seem that there is not such a command; it can be replaced with M-%
+    (query-replace) and C-M-% (query-replace-regexp).
+  </task>
+
+  <task n="15" created="2017.11.23" priority="A"
+        status="closed" solved="2017.11.23">
+    CHANGE THE NAMES OF TAGS INTO "tohtml.xsl" ACCORDING TO
+    "cheatsheet.dtd".
+  </task>
+  
+  <task n="14" created="2017.11.21" priority="A"
+        status="closed" solved="2017.11.23">
+    Change the name of tags "d", "f" and "k" into "cheatsheet.dtd".
+  </task>
+  
+  <task n="13" created="2017.11.20" priority="A" status="open">
+    REVIEW THE FORMATTING OF THE PARAGRAPHS ABOUT REGEXs.
+  </task>
+
+  <task n="12" created="2017.11.20" priority="B"
+        status="closed" solved="2017.11.25">
+    The paragraph about rectangles has to be moved right after
+    "Functions for marking and killing text".
+  </task>
+
+  <task n="11" created="2017.11.19" priority="B"
+        status="closed" solved="2017.11.20">
+    Add a paragraph about regex, or set a new thematic cheatsheet upon
+    regular expressions.
+  </task>
+
+  <task n="10" created="2017.11.18" priority="B"
+        status="closed" solved="2017.11.25">
     Rewrite, in "tohtml.xsl", the logic of "page-break"s to improve
     the formatting of the cheatsheet, mainly for the printing.
   </task>
-  
-  <task n="9" created="2017.11.18" priority="B" status="open">
+
+  <task n="9" created="2017.11.18" priority="B"
+        status="closed" solved="2017.11.21">
     Add HTML-like formatting features into "cheatsheet.dtd".
+    See http://www.xmlfiles.com/dtd/dtd_examples.asp
   </task>
-  
+
   <task n="8" created="2017.11.18" priority="B"
-        status="resolved" solved="2017.11.18">
+        status="closed" solved="2017.11.18">
     Add chapter "Abbreviation" in emacs-cs.xml about the "abbrev"
     block of commands. See
     https://www.gnu.org/software/emacs/manual/html_node/emacs/Abbrevs.html
   </task>
-  
+
   <task n="7" created="2017.11.12" priority="B"
-        status="resolved" solved="2017.11.12">
+        status="closed" solved="2017.11.12">
     Refine using new material.
   </task>
 
   <task n="6" created="2017.11.12" priority="B"
-        status="resolved" solved="2017.11.12">
+        status="closed" solved="2017.11.12">
     Add some commands for the shell and for parentheses.
   </task>
 
   <task n="5" created="2017.11.11" priority="B"
-        status="resolved" solved="2017.11.14">
+        status="closed" solved="2017.11.14">
     Find a better font for the "kbd" tag.
   </task>
 
   <task n="4" created="2017.11.05" priority="B"
-        status="resolved" solved="2017.11.11">
+        status="closed" solved="2017.11.11">
     "Games" section: a more complete list and a better description of
     every function.
   </task>
 
-  <task n="3" created="2017.11.04" priority="B" status="open">
+  <task n="3" created="2017.11.04" priority="B"
+        status="closed" solved="2017.11.18">
     The descriptions for the nXML mode are too long. Shorten them.
   </task>
 
@@ -48,30 +91,31 @@
   </task>
 
   <task n="1" created="2017.11.04" priority="A"
-        status="resolved" solved="2017.11.04">
+        status="closed" solved="2017.11.04">
     Ask at stackoverflow about the problem of the fonts.
     Solved by myself!.
   </task>
 
   <task n="0" created="2017.10.29" priority="B"
-        status="resolved" solved="2017.11.05">
+        status="closed" solved="2017.11.05">
     A README file. It needs instructions to read the cheat sheet on a
     web browser and to print it on paper.
   </task>
 </TODO>
 
 <!-- ============================================================= -->
-<!-- TEMPLATE
+<!-- Template
 
 <TODO>
-  <task n="NUM"
-        created="DATE"
-        priority="A (major)|B (normal)|C (trivial)"
-        status="open|resolved|won't do"
-        due="DATE"
-        solved="DATE">
-   TEXT
-  </task>
-</TODO>
+  <task n         [ ]  [INCREMENTAL NUM]
+        created   [ ]  [YYYY.MM.DD]
+        priority  [ ]  [A | B | C]    ["B"]
+          // A = critical  B = normal  C = trivial
+        status    [ ]  [open | closed | wontdo]  ["open"]
+        due       [?]  [YYYY.MM.DD]
+        solved    [?]  [YYYY.M.DD]
+  > [+]
+</TODO>  
 
 -->
+
