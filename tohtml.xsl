@@ -111,6 +111,9 @@
     <div class="headerdiv">
       <span class="headtitle"><xsl:value-of select="title"/></span><br />
       <span class="headsubtitle"><xsl:value-of select="subtitle"/></span>
+      <xsl:for-each select="txline">
+        <p><xsl:value-of select="."/></p>
+      </xsl:for-each>
     </div>
   </xsl:template>
 
@@ -125,6 +128,7 @@
 
   <xsl:template match="body">
     <xsl:for-each select="chapter">
+      <xsl:variable name="TITLE" select="@title"/>
       <div class="bodydiv">
         <div class="bodytitle">
           <xsl:value-of select="@title"/>
@@ -150,7 +154,17 @@
                 <xsl:choose>
                   <xsl:when test="func">
                     <td align="right">
-                      <em><xsl:value-of select="func"/></em>
+                      <xsl:choose>  
+                        <xsl:when test="$TITLE='Regular expressions'">
+                          <xsl:value-of select="func"/>
+                        </xsl:when>
+                        <xsl:when test="$TITLE='Regex examples'">
+                          <xsl:value-of select="func"/>
+                        </xsl:when>
+                        <xsl:otherwise>
+                          <em><xsl:value-of select="func"/></em>
+                        </xsl:otherwise>
+                      </xsl:choose>
                     </td>
                   </xsl:when>
                   <xsl:otherwise>

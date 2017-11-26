@@ -3,7 +3,7 @@
 <TODO>
   <task n="17" created="2017.11.25" priority="B" status="open">
     Some words about "re-builder".
-  </task
+  </task>
 
   <task n="16" created="2017.11.23" priority="B"
         status="wontdo">
@@ -18,13 +18,14 @@
     CHANGE THE NAMES OF TAGS INTO "tohtml.xsl" ACCORDING TO
     "cheatsheet.dtd".
   </task>
-  
+
   <task n="14" created="2017.11.21" priority="A"
         status="closed" solved="2017.11.23">
     Change the name of tags "d", "f" and "k" into "cheatsheet.dtd".
   </task>
-  
-  <task n="13" created="2017.11.20" priority="A" status="open">
+
+  <task n="13" created="2017.11.20" priority="A"
+        status="closed" solved="2017.11.26">
     REVIEW THE FORMATTING OF THE PARAGRAPHS ABOUT REGEXs.
   </task>
 
@@ -113,9 +114,10 @@
           // A = critical  B = normal  C = trivial
         status    [ ]  [open | closed | wontdo]  ["open"]
         due       [?]  [YYYY.MM.DD]
-        solved    [?]  [YYYY.M.DD]
-  > [+]
-</TODO>  
+        solved    [?]  [YYYY.M.DD]>
+     PCDATA
+   </task> [+]
+</TODO>
 
 -->
 

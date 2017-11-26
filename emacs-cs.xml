@@ -84,19 +84,20 @@
       <it>
         <key>M-!</key>
         <func>shell-command</func>
-        <descr>Execute external shell command from within Emacs.The output
-        from the shell command is displayed in the minibuffer or in a
-        separate buffer, depending on the output size. When used with
-        a prefix argument (e.g, <kbd>C-u M-!</kbd>), the shell-command
-        output is inserted in the current buffer at point.</descr>
+        <descr>Execute external shell command from within Emacs.The
+        output from the shell command is displayed in the minibuffer
+        or in a separate buffer, depending on the output size. When
+        used with a prefix argument (e.g, <kbd>C-u M-!</kbd>), the
+        shell-command output is inserted in the current buffer at
+        point.</descr>
       </it>
 
       <it>
         <key>M-|</key>
         <func>shell-command-on-region</func>
-        <descr>Provide the region text to the shell command as input. If
-        you want the shell to replace the region text with the output
-        from the shell command, use <kbd>C-u M-|</kbd>.</descr>
+        <descr>Provide the region text to the shell command as input.
+        If you want the shell to replace the region text with the
+        output from the shell command, use <kbd>C-u M-|</kbd>.</descr>
       </it>
     </chapter>
 
@@ -116,8 +117,9 @@
       <it>
         <key>C-x C-w</key>
         <func>write-file</func>
-        <descr>Ask for a filename and write the current buffer with that
-        name. Like the command "Save as ..." on other editors.</descr>
+        <descr>Ask for a filename and write the current buffer with
+        that name. Like the command "Save as ..." on other
+        editors.</descr>
       </it>
 
       <it>
@@ -155,8 +157,8 @@
       <it>
         <key>C-x C-q</key>
         <func>vc-toggle-read-only</func>
-        <descr>Toggle read-only status on the current buffer (and perform
-        version control if applicable).</descr>
+        <descr>Toggle read-only status on the current buffer (and
+        perform version control if applicable).</descr>
       </it>
 
       <it>
@@ -343,15 +345,15 @@
       <it>
         <key>M-d</key>
         <func>kill-word</func>
-        <descr>Delete the characters from point forward to the end of the
-        word.</descr>
+        <descr>Delete the characters from point forward to the end of
+        the word.</descr>
       </it>
 
       <it>
         <key>M-Backspace | M-Del</key>
         <func>backward-kill-word</func>
-        <descr>Delete the characters from point backward to the beginning
-        of the word.</descr>
+        <descr>Delete the characters from point backward to the
+        beginning of the word.</descr>
       </it>
 
       <it>
@@ -560,26 +562,29 @@
       <it>
         <key>C-x C-i | C-x Tab</key>
         <func>indent-rigidly</func>
-        <descr>This command indents lines in the region (or at point).</descr>
+        <descr>This command indents lines in the region (or at
+        point).</descr>
       </it>
 
       <it>
         <key/>
         <func>fill-region</func>
-        <descr>This command fills all paragraphs in the region.</descr>
+        <descr>This command fills all paragraphs in the
+        region.</descr>
       </it>
 
       <it>
         <key>M-q</key>
         <func>fill-paragraph</func>
-        <descr>This command fills the single paragraph at point.</descr>
+        <descr>This command fills the single paragraph at
+        point.</descr>
       </it>
 
       <it>
         <key>M-\</key>
         <func>delete-horizontal-space</func>
-        <descr>This command removes any horizontal space to the right and
-        left of point.</descr>
+        <descr>This command removes any horizontal space to the right
+        and left of point.</descr>
       </it>
 
       <it>
@@ -1132,6 +1137,74 @@
         <key>&lt;tag[^> C-q C-j ]*>\(.*?\)&lt;/tag></key>
         <func>html tag</func>
         <descr/>
+      </it>
+    </chapter>
+
+    <chapter title="Re-builder">
+      <it>
+        <key>M-x re-b &lt;RET&gt;</key>
+        <func>re-builder</func>
+        <descr>Start the <kbd>RE Buider</kbd> mode.</descr>
+      </it>
+
+      <it>
+        <key>C-c C-c</key>
+        <func>reb-toggle-case</func>
+        <descr>Toggle case sensitivity of searches for RE Builder
+        target buffer.</descr>
+      </it>
+
+      <it>
+        <key>C-c C-q</key>
+        <func>reb-quit</func>
+        <descr>Quit the RE Builder mode.</descr>
+      </it>
+
+      <it>
+        <key>C-c C-w</key>
+        <func>reb-copy</func>
+        <descr>Copy current RE into the kill ring for later
+        insertion.</descr>
+      </it>
+
+      <it>
+        <key>C-c C-s</key>
+        <func>reb-next-match</func>
+        <descr>Go to next match in the RE Builder target
+        window.</descr>
+      </it>
+
+      <it>
+        <key>C-c C-r</key>
+        <func>reb-prev-match</func>
+        <descr>Go to previous match in the RE Builder target
+        window.</descr>
+      </it>
+
+      <it>
+        <key>C-c C-i</key>
+        <func>reb-change-syntax</func>
+        <descr>Change the syntax used by the RE Builder.</descr>
+      </it>
+
+      <it>
+        <key>C-c C-e</key>
+        <func>reb-enter-subexp-mode</func>
+        <descr>Enter the subexpression mode in the RE Builder.</descr>
+      </it>
+
+      <it>
+        <key>C-c C-b</key>
+        <func>reb-change-target-buffer</func>
+        <descr>Change the target buffer and display it in the target
+        window.</descr>
+      </it>
+
+      <it>
+        <key>C-c C-u</key>
+        <func>reb-force-update</func>
+        <descr>Force an update in the RE Builder target window without
+        a match limit.</descr>
       </it>
     </chapter>
 

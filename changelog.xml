@@ -1,6 +1,25 @@
 <?xml version='1.0' encoding='utf-8'?>
 
 <changelog>
+  <release n="11" date="2017.11.26"
+           author="Pete Za Sayari" email="petezasayari@gmail.com"
+           ver="2.2">
+    <added>
+      <i file="emacs-cs.xml">A paragraph about the "re-builder" minor
+      mode.</i>
+    </added>
+
+    <changed>
+      <i file="README.md">Minor changes.</i>
+      <i file="tohtml.xsl">A better foratting for paragraphs about
+      regular expressions. Closed task #13.</i>
+    </changed>
+
+    <fixed>
+      <i file="emacs-cs.xml">Minor bugs.</i>
+    </fixed>
+  </release>
+
   <release n="10" date="2017.11.25"
            author="Pete Za Sayari" email="petezasayari@gmail.com"
            ver="2.1">
@@ -214,27 +233,37 @@
       // new features
     <added>
         // 'i' means 'item'
-      <i file [?]  [CDATA]> [+]
+      <i file [?]  [CDATA]>
+        PCDATA
+      </i> [+]
     </added> [?]
 
       // changes in existing functionality
     <changed>
-      <i file [?]  [CDATA]> [+]
+      <i file [?]  [CDATA]>
+        PCDATA
+      </i> [+]
     </changed> [?]
 
       // once-stable features removed in upcoming releases
     <deprecated>
-      <i file [?]  [CDATA]> [+]
+      <i file [?]  [CDATA]>
+        PCDATA
+      </i> [+]
     </deprecated> [?]
 
       // deprecated features removed in this release
     <removed>
-      <i file [?]  [CDATA]> [+]
+      <i file [?]  [CDATA]>
+        PCDATA
+      </i> [+]
     </removed> [?]
 
       // any bug fixes
     <fixed>
-      <i file [?]  [CDATA]> [+]
+      <i file [?]  [CDATA]>
+        PCDATA
+      </i> [+]
     </fixed> [?]
   </release> [+]
 </changelog>

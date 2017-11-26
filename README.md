@@ -37,17 +37,19 @@ settings:
 
     Format: A4
     Orientation: landscape
-    Scale: Custom > 126%
+    Scale: Custom > 124%
     Print on file > ~/Desktop/emacs-cs.pdf
     Options > Header and Footer > Right: Page #
 
 It takes eight sides of A4 sheets.
 
+Notably, I've managed the metadata of the PDF file with Emacs.
+
 
 ## Acknowledgements
 
-* The design style for the card is taken from the [famous one][1] of
-  Stephen Gildea.
+* The design style for the card is inspired from the [famous one][1]
+  of Stephen Gildea.
 * Most of the material and it's organization is taken from
   the IBM's [Emacs tutorial][2].
 * The section about the Emacs games is taken mostly from the
@@ -57,10 +59,12 @@ It takes eight sides of A4 sheets.
   [New Mexico Tech][6].
 * Regular expressions and some other details are taken from
   the [Emacs Wiki][4].
-* The section about abbreviations (or *abbrev* minor mode) is taken
-  and adapted from the [Emacs manual][5].
+* The sections about abbreviations (or *abbrev* minor mode) and
+  *re-builder* are taken and adapted from the [Emacs
+  manual][5]<sup>*</sup>.
 
-All of the above links were active on november 2017.
+<hr />
+<small>* All of the listed links were active on november 2017.</small>
 
 [1]: https://www.gnu.org/software/emacs/refcards/pdf/refcard.pdf
 [2]: https://www.ibm.com/developerworks/aix/tutorials/au-emacs1/index.html
