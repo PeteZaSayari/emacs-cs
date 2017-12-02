@@ -1,10 +1,13 @@
 <?xml version='1.0' encoding='utf-8'?>
 
-<!-- Root element                         -->
+<!-- Root element
+ !-->
 <!ELEMENT cheatsheet (header, body, footer)>
-<!-- 'version' will be (1.0 | 2.0) #REQUIRED "2.0" -->
-<!-- 'lang'       format = [en | en-CA]   -->
-<!-- 'created'    format = yyyy.mm.dd     -->
+
+<!-- 'version' will be (1.0 | 2.0) #REQUIRED "2.0"
+ !   'lang'       format = [en | en-CA]
+ !   'created'    format = yyyy.mm.dd
+ !-->
 <!ATTLIST cheatsheet
           version CDATA #FIXED "1.0"
           title CDATA #IMPLIED
@@ -19,13 +22,18 @@
 <!ELEMENT txline (#PCDATA)>
 
 <!ELEMENT body (chapter*)>
-<!-- "it" means "item"                    -->
+
+<!-- "it" means "item"
+ !-->
 <!ELEMENT chapter (it+)>
 <!ATTLIST chapter
           title CDATA #REQUIRED>
 <!ELEMENT it (key, func, descr)>
 <!ELEMENT key (#PCDATA)>
 <!ELEMENT func (#PCDATA)>
+
+<!-- 'kbd', 'em' and 'b' are HTML formatting
+ !-->
 <!ENTITY % formattedText "(#PCDATA | kbd | em | b )*">
 <!ELEMENT kbd %formattedText;>
 <!ELEMENT em %formattedText;>

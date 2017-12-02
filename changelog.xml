@@ -1,17 +1,30 @@
 <?xml version='1.0' encoding='utf-8'?>
 
 <changelog>
+  <release n="12" date="2017.12.02"
+           author="Pete Za Sayari" email="petezasayari@gmail.com"
+           ver="2.3">
+    <added>
+      <i file="emacs-cs.xml">Some minor addings.</i>
+    </added>
+    
+    <changed>
+      <i file="emacs-cs.xml">Minor changes.</i>
+      <i file="emacs-cs.pdf">Printed smaller, on six pages.</i>
+    </changed>
+  </release>
+  
   <release n="11" date="2017.11.26"
            author="Pete Za Sayari" email="petezasayari@gmail.com"
            ver="2.2">
     <added>
       <i file="emacs-cs.xml">A paragraph about the "re-builder" minor
-      mode.</i>
+      mode. Closed task #17.</i>
     </added>
 
     <changed>
       <i file="README.md">Minor changes.</i>
-      <i file="tohtml.xsl">A better foratting for paragraphs about
+      <i file="tohtml.xsl">A better formatting for paragraphs about
       regular expressions. Closed task #13.</i>
     </changed>
 
@@ -219,54 +232,54 @@
 
 </changelog>
 
-<!-- ============================================================= -->
-<!-- Template
-
-<changelog>
-  <release
-           n      [ ]  [INCREMENTAL NUM]
-           date   [ ]  [YYYY.MM.DD]
-           author [ ]  [CDATA]
-           email  [ ]  [CDATA]
-           ver    [?]  [NUM.NUM]
-  > [+]
-      // new features
-    <added>
-        // 'i' means 'item'
-      <i file [?]  [CDATA]>
-        PCDATA
-      </i> [+]
-    </added> [?]
-
-      // changes in existing functionality
-    <changed>
-      <i file [?]  [CDATA]>
-        PCDATA
-      </i> [+]
-    </changed> [?]
-
-      // once-stable features removed in upcoming releases
-    <deprecated>
-      <i file [?]  [CDATA]>
-        PCDATA
-      </i> [+]
-    </deprecated> [?]
-
-      // deprecated features removed in this release
-    <removed>
-      <i file [?]  [CDATA]>
-        PCDATA
-      </i> [+]
-    </removed> [?]
-
-      // any bug fixes
-    <fixed>
-      <i file [?]  [CDATA]>
-        PCDATA
-      </i> [+]
-    </fixed> [?]
-  </release> [+]
-</changelog>
-
--->
+<!--
+ !  == Template ===
+ !
+ !  <changelog>
+ !    <release
+ !             n      [ ]  [INCREMENTAL NUM]
+ !             date   [ ]  [YYYY.MM.DD]
+ !             author [ ]  [CDATA]
+ !             email  [ ]  [CDATA]
+ !             ver    [?]  [NUM.NUM]
+ !    > [+]
+ !        // new features
+ !      <added>
+ !          // 'i' means 'item'
+ !        <i file [?]  [CDATA]>
+ !          PCDATA
+ !        </i> [+]
+ !      </added> [?]
+ !
+ !        // changes in existing functionality
+ !      <changed>
+ !        <i file [?]  [CDATA]>
+ !          PCDATA
+ !        </i> [+]
+ !      </changed> [?]
+ !
+ !        // once-stable features removed in upcoming releases
+ !      <deprecated>
+ !        <i file [?]  [CDATA]>
+ !          PCDATA
+ !        </i> [+]
+ !      </deprecated> [?]
+ !
+ !        // deprecated features removed in this release
+ !      <removed>
+ !        <i file [?]  [CDATA]>
+ !          PCDATA
+ !        </i> [+]
+ !      </removed> [?]
+ !
+ !        // any bug fixes
+ !      <fixed>
+ !        <i file [?]  [CDATA]>
+ !          PCDATA
+ !        </i> [+]
+ !      </fixed> [?]
+ !    </release> [+]
+ !  </changelog>
+ !
+ !-->
 

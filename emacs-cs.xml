@@ -5,7 +5,7 @@
 <cheatsheet version="1.0" lang="en" created="2017-09-29">
 
   <header>
-    <title>EMACS Cheatsheet</title>
+    <title>The Big EMACS Cheatsheet</title>
     <subtitle>For version 25</subtitle>
   </header>
 
@@ -143,6 +143,13 @@
       </it>
 
       <it>
+        <key>C-x b</key>
+        <func>Switch-to-buffer</func>
+        <descr>Display buffer <kbd>BUFFER-OR-NAME</kbd> in the
+        selected window.</descr>
+      </it>
+
+      <it>
         <key>C-x C-b</key>
         <func>list-buffers</func>
         <descr>List all buffers.</descr>
@@ -165,21 +172,6 @@
         <key>C-x i</key>
         <func>insert-file</func>
         <descr>Insert the contents of a file at point.</descr>
-      </it>
-
-      <it>
-        <key>C-x z</key>
-        <func>repeat</func>
-        <descr>Repeat most recently executed command.</descr>
-      </it>
-
-      <it>
-        <key>C-x M-: | C-x M-ESC</key>
-        <func>repeat-complex-command</func>
-        <descr>Edit and re-evaluate last complex command. A complex
-        command is one which used the minibuffer. The command is
-        placed in the minibuffer as a Lisp form for editing. The
-        result is executed, repeating the command as changed.</descr>
       </it>
     </chapter>
 
@@ -359,7 +351,23 @@
       <it>
         <key>C-_</key>
         <func>undo</func>
-        <descr>Undo your last typing or action.</descr>
+        <descr>Undo your last typing or action. To <em>redo</em> just
+        undo the last undo (!).</descr>
+      </it>
+
+      <it>
+        <key>C-x z</key>
+        <func>repeat</func>
+        <descr>Repeat most recently executed command.</descr>
+      </it>
+
+      <it>
+        <key>C-x M-: | C-x M-ESC</key>
+        <func>repeat-complex-command</func>
+        <descr>Edit and re-evaluate last complex command. A complex
+        command is one which used the minibuffer. The command is
+        placed in the minibuffer as a Lisp form for editing. The
+        result is executed, repeating the command as changed.</descr>
       </it>
 
       <it>
@@ -1148,16 +1156,16 @@
       </it>
 
       <it>
+        <key>C-c C-q</key>
+        <func>reb-quit</func>
+        <descr>Quit the RE Builder mode.</descr>
+      </it>
+
+      <it>
         <key>C-c C-c</key>
         <func>reb-toggle-case</func>
         <descr>Toggle case sensitivity of searches for RE Builder
         target buffer.</descr>
-      </it>
-
-      <it>
-        <key>C-c C-q</key>
-        <func>reb-quit</func>
-        <descr>Quit the RE Builder mode.</descr>
       </it>
 
       <it>
@@ -1579,6 +1587,12 @@
 
     <chapter title="nXML mode">
       <it>
+        <key>M-x nxml-mode</key>
+        <func/>
+        <descr>Start the nXml mode.</descr>
+      </it>
+      
+      <it>
         <key>C-c C-n</key>
         <func>rng-next-error</func>
         <descr>Move to the next location where the document structure
@@ -1721,7 +1735,7 @@
         <func>auto-save-default</func>
         <descr>If not set to <em>nil</em>, Emacs automatically saves a
 	      changed buffer to its corresponding file at preset
-	      intervals. Its default value is t.</descr>
+	      intervals. Its default value is <kbd>t</kbd>.</descr>
       </it>
 
       <it>
@@ -2529,20 +2543,27 @@
     <txline/>
     <txline>For more Emacs documentation see the Emacs distribution or
     http://www.gnu.org/software/emacs</txline>
-    <txline>For the XML-XSLT source for this cheat sheet see
-    https://github.com/PeteZaSayari/emacs-cs.</txline>
+    <txline/>
+    <txline>The last version of the cheatsheet so as the XML-XSLT
+    source is at https://github.com/PeteZaSayari/emacs-cs.</txline>
   </footer>
 
 </cheatsheet>
 
-<?C Dictionary
-
-  <it>      =   <item>
-  <key>     =   <key>
-  <func>    =   <function>
-  <descr>   =   <description>
-
-
-  Lint it with: xmllint --noout --valid emacs-cs.xml
-
-?>
+<!--
+ !  == Dictionary ===
+ !
+ !  <it>      =   <item>
+ !  <key>     =   <key>
+ !  <func>    =   <function>
+ !  <descr>   =   <description>
+ !
+ !
+ !  == Management ===
+ !
+ !  Validating: xmllint ~~noout ~~valid emacs-cs.xml
+ !
+ !  HTML: xsltproc tohtml.xsl emacs-cs.xml > emacs-cs.html && /
+ !        xmllint ~~format emacs-cs.html -o emacs-cs.html
+ !
+ !-->

@@ -44,10 +44,12 @@
             widows: 2;
             }
           .headtitle {
+            font-family: Adobe Caslon Pro;
             font-size: 1.25em;
             font-weight: bold;
             }
           .headsubtitle {
+            font-family: Adobe Caslon Pro;
             font-size: 1em;
             font-weight: bold;
             }

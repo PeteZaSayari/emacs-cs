@@ -37,11 +37,11 @@ settings:
 
     Format: A4
     Orientation: landscape
-    Scale: Custom > 124%
+    Scale: Custom > 104%
     Print on file > ~/Desktop/emacs-cs.pdf
-    Options > Header and Footer > Right: Page #
+    Options > Header and Footer > Bottom Right: Page #
 
-It takes eight sides of A4 sheets.
+It takes six sides of A4 sheets.
 
 Notably, I've managed the metadata of the PDF file with Emacs.
 
@@ -61,7 +61,7 @@ Notably, I've managed the metadata of the PDF file with Emacs.
   the [Emacs Wiki][4].
 * The sections about abbreviations (or *abbrev* minor mode) and
   *re-builder* are taken and adapted from the [Emacs
-  manual][5]<sup>*</sup>.
+  manual][5]*.
 
 <hr />
 <small>* All of the listed links were active on november 2017.</small>

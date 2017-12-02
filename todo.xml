@@ -1,7 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
 
 <TODO>
-  <task n="17" created="2017.11.25" priority="B" status="open">
+  <task n="17" created="2017.11.25" priority="B"
+        status="closed" solved="2017.11.25">
     Some words about "re-builder".
   </task>
 
@@ -104,20 +105,19 @@
   </task>
 </TODO>
 
-<!-- ============================================================= -->
-<!-- Template
-
-<TODO>
-  <task n         [ ]  [INCREMENTAL NUM]
-        created   [ ]  [YYYY.MM.DD]
-        priority  [ ]  [A | B | C]    ["B"]
-          // A = critical  B = normal  C = trivial
-        status    [ ]  [open | closed | wontdo]  ["open"]
-        due       [?]  [YYYY.MM.DD]
-        solved    [?]  [YYYY.M.DD]>
-     PCDATA
-   </task> [+]
-</TODO>
-
--->
+<!--
+ !   == Template ===
+ !
+ !   <TODO>
+ !     <task n         [ ]  [INCREMENTAL NUM]
+ !           created   [ ]  [YYYY.MM.DD]
+ !             // A = critical  B = normal  C = trivial
+ !           priority  [ ]  [A | B | C]    ["B"]
+ !           status    [ ]  [open | closed | wontdo]  ["open"]
+ !           due       [?]  [YYYY.MM.DD]
+ !           solved    [?]  [YYYY.M.DD]>
+ !       PCDATA
+ !     </task> [+]
+ !   </TODO>
+ !-->
 
