@@ -2,7 +2,7 @@
 
 ## Rationale
 
-I'm studying the IBM Emacs tutorial (to read it follow the link given
+I'm reading the IBM Emacs tutorial (to read it follow the link given
 in the following sections) and I feel the need of taking note of what
 I'm reading. So I started to write this cheat sheet.
 
@@ -17,8 +17,11 @@ file `emacs-cs.xml`; since it's provided a stylesheet for the XML
 (`tohtml.xsl`), you can read the cheat sheet directly with the web
 browser, just like an HTML page. Just put into the same directory both
 the files `emacs-cs.xml` and `tohtml.xsl`, then open `emacs-cs.xml`
-with your browser. I use firefox and it works; I don't know if other
-browsers are good enough.
+with your browser.
+
+> **Note**: The font management in the CSS file uses some advanced
+    features that are (afaik) only supported by Firefox. The font
+    rendering on other browsers is higly unpredictable.
 
 The stylesheet contains directives for printing, so you can print the
 cheatsheet with the "print" feature of your web browser (again, it is

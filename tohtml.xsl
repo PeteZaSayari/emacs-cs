@@ -8,97 +8,7 @@
     <html>
       <head>
         <title>The Big Emacs Cheatsheet</title>
-        <style type="text/css">
-          @font-face {
-            font-family: 'Adobe Caslon Pro';
-            src: local('Adobe Caslon Pro Regular'),
-                 local('ACaslonPro-Regular');
-            font-weight: normal;
-            font-style: normal;
-            }
-          @font-face {
-            font-family: 'Adobe Caslon Pro';
-            src: local('Adobe Caslon Pro Bold'),
-                 local('ACaslonPro-Bold');
-            font-weight: bold;
-            font-style: normal;
-            }
-          @font-face {
-            font-family: 'Adobe Caslon Pro';
-            src: local('Adobe Caslon Pro Italic'),
-                 local('ACaslonPro-Italic');
-            font-weight: normal;
-            font-style: italic;
-            }
-          @font-face {
-            font-family: 'Typewriter';
-            src: local('MathJax_Typewriter'),
-                 local('MathJax_Typewriter-Regular');
-            font-weight: normal;
-            font-style: normal;
-            }
-          @page {
-            size: 297mm 210mm;
-            margin: 10mm;
-            orphans: 2;
-            widows: 2;
-            }
-          .headtitle {
-            font-family: Adobe Caslon Pro;
-            font-size: 1.25em;
-            font-weight: bold;
-            }
-          .headsubtitle {
-            font-family: Adobe Caslon Pro;
-            font-size: 1em;
-            font-weight: bold;
-            }
-          .headerdiv {
-            text-align: center;
-            margin-bottom: 1em;
-            }
-          .bodydiv {
-            margin-bottom: .66667em;
-            page-break-after: avoid;
-            }
-          .bodytitle {
-            text-align: center;
-            font-weight: bold;
-            }
-          .itdiv {
-            padding-bottom: .125em;
-            }
-          .footdiv {
-            page-break-inside: avoid;
-            font-size: .75em;
-            }
-          .foothd{
-            page-break-inside: avoid;
-            padding-top: .3em;
-            padding-bottom: .3em;
-            }
-          body {
-            column-count: 4;
-            column-gap: 10px;
-            font-size: .75em;
-            font-family: Adobe Caslon Pro;
-            }
-          kbd {
-            font-family: Typewriter;
-            }
-          table {
-            font-size: 1em;
-            border: 0;
-            border-spacing: 0;
-            width: 100%;
-            }
-          td {
-            text-indent: 0;
-            vertical-align: top;
-            padding: 0;
-            border-spacing: 10px;
-            }
-        </style>
+        <link rel="stylesheet" type="text/css" href="cheatsheet.css"/>
       </head>
 
       <body>
@@ -156,7 +66,7 @@
                 <xsl:choose>
                   <xsl:when test="func">
                     <td align="right">
-                      <xsl:choose>  
+                      <xsl:choose>
                         <xsl:when test="$TITLE='Regular expressions'">
                           <xsl:value-of select="func"/>
                         </xsl:when>

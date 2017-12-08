@@ -5,7 +5,7 @@
 <cheatsheet version="1.0" lang="en" created="2017-09-29">
 
   <header>
-    <title>The Big EMACS Cheatsheet</title>
+    <title>The Big Emacs Cheatsheet</title>
     <subtitle>For version 25</subtitle>
   </header>
 
@@ -2541,29 +2541,22 @@
     <txline>Released under the terms of the GNU General Public
     License version 3 or later.</txline>
     <txline/>
-    <txline>For more Emacs documentation see the Emacs distribution or
-    http://www.gnu.org/software/emacs</txline>
-    <txline/>
-    <txline>The last version of the cheatsheet so as the XML-XSLT
+    <txline>The last version of this cheatsheet so as the XML-XSLT
     source is at https://github.com/PeteZaSayari/emacs-cs.</txline>
   </footer>
 
 </cheatsheet>
 
 <!--
- !  == Dictionary ===
- !
- !  <it>      =   <item>
- !  <key>     =   <key>
- !  <func>    =   <function>
- !  <descr>   =   <description>
- !
- !
- !  == Management ===
- !
- !  Validating: xmllint ~~noout ~~valid emacs-cs.xml
- !
- !  HTML: xsltproc tohtml.xsl emacs-cs.xml > emacs-cs.html && /
- !        xmllint ~~format emacs-cs.html -o emacs-cs.html
- !
- !-->
+    == Dictionary ===
+    <it>      =   <item>
+    <key>     =   <key>
+    <func>    =   <function>
+    <descr>   =   <description>
+
+    == Management ===
+    Validating: xmllint ~~noout ~~valid emacs-cs.xml
+
+    HTML: xsltproc tohtml.xsl emacs-cs.xml > emacs-cs.html && /
+          xmllint ~~format emacs-cs.html -o emacs-cs.html
+-->

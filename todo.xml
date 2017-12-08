@@ -106,18 +106,18 @@
 </TODO>
 
 <!--
- !   == Template ===
- !
- !   <TODO>
- !     <task n         [ ]  [INCREMENTAL NUM]
- !           created   [ ]  [YYYY.MM.DD]
- !             // A = critical  B = normal  C = trivial
- !           priority  [ ]  [A | B | C]    ["B"]
- !           status    [ ]  [open | closed | wontdo]  ["open"]
- !           due       [?]  [YYYY.MM.DD]
- !           solved    [?]  [YYYY.M.DD]>
- !       PCDATA
- !     </task> [+]
- !   </TODO>
- !-->
+== Template ===
 
+<TODO>
+  <task [+]
+        n         [ ]  [INCREMENTAL NUM]
+        created   [ ]  [YYYY.MM.DD]
+        // A = critical  B = normal  C = trivial
+        priority  [ ]  [A | B | C]    ["B"]
+        status    [ ]  [open | closed | wontdo]  ["open"]
+        due       [?]  [YYYY.MM.DD]
+        solved    [?]  [YYYY.M.DD]>
+    [PCDATA]
+  </task>
+</TODO>
+-->
