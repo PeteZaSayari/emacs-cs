@@ -16,12 +16,12 @@ The body of the cheat sheet is an XML structure contained into the
 file `emacs-cs.xml`; since it's provided a stylesheet for the XML
 (`tohtml.xsl`), you can read the cheat sheet directly with the web
 browser, just like an HTML page. Just put into the same directory both
-the files `emacs-cs.xml` and `tohtml.xsl`, then open `emacs-cs.xml`
-with your browser.
+the files `emacs-cs.xml`, `tohtml.xsl` and `cheatsheet.css`, then open
+`emacs-cs.xml` with your browser.
 
 > **Note**: The font management in the CSS file uses some advanced
-    features that are (afaik) only supported by Firefox. The font
-    rendering on other browsers is higly unpredictable.
+> features that are (afaik) only supported by Firefox. The font
+> rendering on other browsers is higly unpredictable.
 
 The stylesheet contains directives for printing, so you can print the
 cheatsheet with the "print" feature of your web browser (again, it is
