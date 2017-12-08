@@ -15,7 +15,7 @@ my Emacs commands.
 The body of the cheat sheet is an XML structure contained into the
 file `emacs-cs.xml`; since it's provided a stylesheet for the XML
 (`tohtml.xsl`), you can read the cheat sheet directly with the web
-browser, just like an HTML page. Just put into the same directory both
+browser, just like an HTML page. Just put into the same directory 
 the files `emacs-cs.xml`, `tohtml.xsl` and `cheatsheet.css`, then open
 `emacs-cs.xml` with your browser.
 
