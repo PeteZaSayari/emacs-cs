@@ -21,7 +21,7 @@ the files `emacs-cs.xml`, `tohtml.xsl` and `cheatsheet.css`, then open
 
 > **Note**: The font management in the CSS file uses some advanced
 > features that are (afaik) only supported by Firefox. The font
-> rendering on other browsers is higly unpredictable.
+> rendering on other browsers is highly unpredictable.
 
 The stylesheet contains directives for printing, so you can print the
 cheatsheet with the "print" feature of your web browser (again, it is
